@@ -36,7 +36,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans">
         <SiteHeader />
-        <main id="main" className="flex-1 bg-secondary">
+        <main id="main" className="flex-1">
           {children}
         </main>
         <SiteFooter />

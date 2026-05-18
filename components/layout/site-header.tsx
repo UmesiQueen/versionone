@@ -33,17 +33,17 @@ const NAV_LINKS: NavLink[] = [
     label: "Immigration",
     href: "/immigration",
     children: [
-      { label: "Migrate", href: "/immigration/migrate" },
-      { label: "Work Abroad", href: "/immigration/work" },
-      { label: "Study Abroad", href: "/immigration/study" },
+      { label: "Migrate", href: "/migrate" },
+      { label: "Work Abroad", href: "/work-abroad" },
+      { label: "Study Abroad", href: "/study-abroad" },
     ],
   },
   {
     label: "Travel",
     href: "/travel",
     children: [
-      { label: "Visit", href: "/travel/visit" },
-      { label: "Tour Packages", href: "/travel/tour-packages" },
+      { label: "Visit", href: "/visit" },
+      { label: "Tour Packages", href: "/tour-packages" },
     ],
   },
   { label: "Services", href: "/services" },
@@ -69,7 +69,7 @@ function SiteHeader() {
 
   return (
     <header data-slot="site-header" className="sticky top-0 z-40 w-full">
-      <div className="absolute top-3 bg-white mx-auto flex h-18 w-full items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+      <div className="absolute top-3 bg-white mx-auto flex h-18 w-full items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 shadow-md">
         <Link href="/" className="h-14 w-fit">
           <Image
             src={Logo}
@@ -115,11 +115,11 @@ function SiteHeader() {
           )}
         </nav>
 
-        <div className="hidden lg:block p-px rounded-full bg-linear-to-b from-[#004E99]/40 to-[#004E99]">
+        <div className=" group hidden lg:block p-px rounded-full bg-linear-to-b from-[#004E99]/40 to-[#004E99] hover:to-blue-950/80 transition-colors duration-300 ease-in-out">
           <Button
             asChild
             size="lg"
-            className="rounded-full h-10 px-5 bg-linear-to-b from-[#004E99]/60 to-[#004E99] text-white hover:bg-linear-to-b hover:from-[#004E99]/10 hover:to-[#004E99]/30 transition-all duration-300 ease-out"
+            className="rounded-full px-5 bg-linear-to-b from-[#004E99]/60 to-[#004E99] text-white group-hover:to-blue-950/80 transition-colors duration-300 ease-in-out"
           >
             <Link href="#consultation">Get in Touch</Link>
           </Button>

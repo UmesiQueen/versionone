@@ -46,6 +46,7 @@
   --color-brand-amber: var(--brand-amber);
   --color-brand-amber-foreground: var(--brand-amber-foreground);
   --color-brand-cream: var(--brand-cream);
+  --color-brand-light-blue: var(--brand-light-blue);
 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -59,8 +60,8 @@
 :root {
   /* Surfaces */
   --background: oklch(1 0 0); /* #FFFFFF */
-  --foreground: oklch(0.18 0.02 260); /* near-black slate */
-  --card: oklch(1 0 0);
+  --foreground: oklch(27.76% 0.03418 255.832); /* near-black slate */
+  --card: oklch(98.846% 0.00552 274.896);
   --card-foreground: oklch(0.18 0.02 260);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.18 0.02 260);
@@ -74,15 +75,15 @@
   --secondary-foreground: oklch(0.18 0 0);
 
   /* Muted = cream "redefining travel" band */
-  --muted: oklch(0.97 0.005 90); /* ~#F5F3EE */
-  --muted-foreground: oklch(0.5 0.01 260); /* ~#64748B */
+  --muted: oklch(98.463% 0.00181 249.248); /* ~#F9FAFB */
+  --muted-foreground: oklch(44.224% 0.03552 257.813); /* ~#475467 */
 
   /* Accent = very light blue tint (hover/secondary surfaces) */
   --accent: oklch(0.96 0.02 255);
   --accent-foreground: oklch(0.22 0.06 260);
 
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.93 0.005 260);
+  --border: oklch(96.536% 0.01647 274.805);
   --input: oklch(0.93 0.005 260);
   --ring: oklch(0.55 0.2 255); /* focus ring = primary blue */
 
@@ -92,6 +93,7 @@
   --brand-amber: oklch(0.78 0.15 70); /* same hue as secondary */
   --brand-amber-foreground: oklch(0.18 0 0);
   --brand-cream: oklch(0.97 0.005 90);
+  --brand-light-blue: oklch(52.047% 0.11819 250.33); /* #2B6CAA */
 
   --chart-1: oklch(0.55 0.2 255);
   --chart-2: oklch(0.78 0.15 70);
