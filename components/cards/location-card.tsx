@@ -4,16 +4,20 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 /**
- * MigrationDestinationCard
- * Variant of the destination card used on the Migrate page only.
- * Differs from the shared `DestinationCard` in that it shows a description
- * and a "Learn more" affordance beneath the image instead of a single overlay.
+ * LocationCard
+ * Country-focused destination card with an image, flag chip, short description,
+ * and a "Learn more →" affordance. Used on pages that present multiple
+ * countries (Migrate, Study Abroad, Work Abroad, etc.).
  *
- * - The whole card is a single link (the trailing "Learn more →" is purely
- *   decorative so the link target is unambiguous to screen readers).
+ * Distinct from `DestinationCard` (which is a single image-with-overlay tile
+ * for the homepage grid). Use that for compact image grids; use this when the
+ * card needs supporting copy.
+ *
+ * Notes
+ * - The whole card is a single link. The trailing arrow is decorative.
  * - The flag is decorative; `country` text carries the accessible name.
  */
-type MigrationDestinationCardProps = {
+type LocationCardProps = {
   country: string;
   /** ISO-2 country code, e.g. "ca" for Canada — drives the flag image. */
   flagCode: string;
@@ -21,28 +25,31 @@ type MigrationDestinationCardProps = {
   image: string;
   imageAlt?: string;
   href: string;
+  /** Override the default aria-label ("Learn more about {country}"). */
+  ariaLabel?: string;
   className?: string;
 };
 
-function MigrationDestinationCard({
+function LocationCard({
   country,
   flagCode,
   description,
   image,
   imageAlt,
   href,
+  ariaLabel,
   className,
-}: MigrationDestinationCardProps) {
+}: LocationCardProps) {
   return (
     <Link
       href={href}
-      aria-label={`Learn more about migration pathways to ${country}`}
+      aria-label={ariaLabel ?? `Learn more about ${country}`}
       className={cn(
-        "group flex flex-col rounded-xl overflow-hidden outline-none border shadow-2xs",
+        "group flex flex-col gap-3 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
         className,
       )}
     >
-      <div className="relative aspect-5/3 w-full bg-muted">
+      <div className="relative aspect-5/3 w-full overflow-hidden rounded-xl bg-muted">
         <Image
           src={image}
           alt={imageAlt ?? ""}
@@ -67,7 +74,7 @@ function MigrationDestinationCard({
         </span>
       </div>
 
-      <div className="flex flex-col gap-2 p-5">
+      <div className="flex flex-col gap-2 px-1">
         <p className="text-sm text-muted-foreground leading-snug">
           {description}
         </p>
@@ -83,4 +90,4 @@ function MigrationDestinationCard({
   );
 }
 
-export { MigrationDestinationCard };
+export { LocationCard };

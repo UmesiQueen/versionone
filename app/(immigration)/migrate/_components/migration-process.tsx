@@ -1,13 +1,6 @@
-import { Container, Section } from "@/components/layout/section";
-import { SectionHeading } from "@/components/layout/section-heading";
+import { JourneyProcessSection } from "@/components/sections/journey-process";
 
-type ProcessStep = {
-  step: string;
-  title: string;
-  description: string;
-};
-
-const PROCESS_STEPS: ProcessStep[] = [
+const MIGRATION_STEPS = [
   {
     step: "01",
     title: "Initial Consultation",
@@ -44,50 +37,21 @@ const PROCESS_STEPS: ProcessStep[] = [
     description:
       "Once approved, we guide you through the next steps toward your relocation.",
   },
-];
+] as const;
 
 function MigrationProcessSection() {
   return (
-    <Section
-      padding="default"
-      aria-labelledby="migration-process-heading"
-      className="bg-background"
-    >
-      <Container>
-        <SectionHeading
-          eyebrow="Our Process"
-          heading={
-            <span id="migration-process-heading">
-              A Proven Path to Your New Beginning
-            </span>
-          }
-          subtitle="Our structured process ensures clarity, confidence, and expert support at every stage of your migration journey."
-        />
-        <ol className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
-          {PROCESS_STEPS.map(({ step, title, description }) => (
-            <li key={step} className="flex">
-              <article className="flex w-full flex-col gap-3 rounded-2xl border bg-card px-6 py-7 sm:px-7 sm:py-8 shadow-xs">
-                <span
-                  aria-hidden="true"
-                  className="text-3xl font-bold tracking-tight text-brand-light-blue sm:text-4xl"
-                >
-                  {step}
-                </span>
-                <div className="mt-2 flex flex-col gap-2">
-                  <h3 className="text-base font-semibold leading-snug text-foreground sm:text-lg">
-                    <span className="sr-only">{`Step ${step}: `}</span>
-                    {title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
-                    {description}
-                  </p>
-                </div>
-              </article>
-            </li>
-          ))}
-        </ol>
-      </Container>
-    </Section>
+    <JourneyProcessSection
+      eyebrow="Our Process"
+      headingId="migration-process-heading"
+      heading={
+        <span id="migration-process-heading">
+          A Proven Path to Your New Beginning
+        </span>
+      }
+      subtitle="Our structured process ensures clarity, confidence, and expert support at every stage of your migration journey."
+      steps={MIGRATION_STEPS}
+    />
   );
 }
 

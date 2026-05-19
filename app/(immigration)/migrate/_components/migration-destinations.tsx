@@ -1,6 +1,6 @@
+import { LocationCard } from "@/components/cards/location-card";
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
-import { MigrationDestinationCard } from "./migration-destination-card";
 
 type MigrationDestination = {
   country: string;
@@ -106,10 +106,7 @@ const DESTINATIONS: MigrationDestination[] = [
 
 function MigrationDestinationsSection() {
   return (
-    <Section
-      padding="default"
-      aria-labelledby="migration-destinations-heading"
-    >
+    <Section padding="default" aria-labelledby="migration-destinations-heading">
       <Container>
         <SectionHeading
           eyebrow="Destinations"
@@ -123,8 +120,9 @@ function MigrationDestinationsSection() {
         <ul className="mt-12 grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-6 lg:gap-y-10">
           {DESTINATIONS.map((destination) => (
             <li key={destination.country} className="flex">
-              <MigrationDestinationCard
+              <LocationCard
                 {...destination}
+                ariaLabel={`Learn more about migration pathways to ${destination.country}`}
                 className="w-full"
               />
             </li>
