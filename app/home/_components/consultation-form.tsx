@@ -1,6 +1,7 @@
 "use client";
 import { Check, Target, User, Video } from "lucide-react";
 import { Container } from "@/components/layout/section";
+import { SectionHeading } from "@/components/layout/section-heading";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -11,7 +12,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { SectionHeading } from "../layout/section-heading";
 
 const WHAT_TO_EXPECT = [
   { icon: Check, title: "20-30 minute session" },
