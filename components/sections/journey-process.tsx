@@ -1,5 +1,6 @@
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
+import { cn } from "@/lib/utils";
 
 type JourneyStep = {
   /** Display label, e.g. "01". Also used as a key — must be unique. */
@@ -19,6 +20,7 @@ type JourneyProcessSectionProps = {
   headingId: string;
   /** Ordered list of steps. Typically 4–6 items. */
   steps: ReadonlyArray<JourneyStep>;
+  className?: string;
 };
 
 /**
@@ -37,6 +39,7 @@ function JourneyProcessSection({
   subtitle,
   headingId,
   steps,
+  className,
 }: JourneyProcessSectionProps) {
   return (
     <Section
@@ -50,7 +53,7 @@ function JourneyProcessSection({
           heading={heading}
           subtitle={subtitle}
         />
-        <ol className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+        <ol className={cn("mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6", className)}>
           {steps.map(({ step, title, description }) => (
             <li key={step} className="flex">
               <article className="flex w-full flex-col gap-3 rounded-2xl border border-border bg-muted/40 px-6 py-7 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-primary/20 hover:shadow-md sm:px-7 sm:py-8">
