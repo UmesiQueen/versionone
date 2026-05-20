@@ -33,9 +33,7 @@ export default function FaqPage() {
         <Container className="flex flex-col gap-10">
           <SectionHeading
             eyebrow="Commonly Asked"
-            heading={
-              <span id="faq-heading">Frequently Asked Questions</span>
-            }
+            heading={<span id="faq-heading">Frequently Asked Questions</span>}
             subtitle="Still have questions? Reach out to our team directly via WhatsApp or the enquiry form below."
             align="left"
           />
@@ -43,7 +41,10 @@ export default function FaqPage() {
         </Container>
       </Section>
 
-      <FinalCtaSection />
+      <FinalCtaSection
+        heading="Still Need Help?"
+        subtitle="Our team is available to guide you through your questions and help you choose the right path."
+      />
     </>
   );
 }

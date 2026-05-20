@@ -32,7 +32,10 @@ export default function TourPackagesPage() {
       <OurPhilosophySection />
       <FindYourJourneySection />
       <PackageIncludesSection />
-      <FinalCtaSection />
+      <FinalCtaSection
+        heading="Ready to Plan Your Next Adventure?"
+        subtitle="Let our travel experts craft the perfect itinerary for you. Whether it's a spontaneous escape or a milestone trip — we're ready to make it extraordinary."
+      />
     </>
   );
 }

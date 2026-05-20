@@ -5,9 +5,24 @@ import { Container } from "@/components/layout/section";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "../layout/section-heading";
 
-function FinalCtaSection() {
+type FinalCtaSectionProps = {
+  heading?: string;
+  subtitle?: string;
+};
+
+const DEFAULT_HEADING = "Ready to Begin Your Journey Today?";
+const DEFAULT_SUBTITLE =
+  "Speak with one of our expert advisors — no obligation. We'll assess your profile, recommend programs, and map out the right path for you.";
+
+function FinalCtaSection({
+  heading = DEFAULT_HEADING,
+  subtitle = DEFAULT_SUBTITLE,
+}: FinalCtaSectionProps = {}) {
   return (
-    <section aria-labelledby="final-cta-heading" className="py-16 sm:py-20 px-4 sm:px-0">
+    <section
+      aria-labelledby="final-cta-heading"
+      className="py-16 sm:py-20 px-4 sm:px-0"
+    >
       <Container className="relative isolate w-full overflow-hidden py-20 rounded-2xl">
         <Image
           src={FinalCTAImage}
@@ -27,12 +42,10 @@ function FinalCtaSection() {
                 id="final-cta-heading"
                 className="lg:text-3xl font-semibold"
               >
-                Ready to Begin Your Journey Today?
+                {heading}
               </span>
             }
-            subtitle="Travel with one of our expert advisors &mdash; no obligation.
-            We&rsquo;ll assess your profile, recommend programs, and map out the
-            right path for you."
+            subtitle={subtitle}
             tone="inverse"
           />
           <div className="group rounded-full bg-[#004E99]/40 hover:bg-white/20 transition-colors duration-300 ease-in-out">

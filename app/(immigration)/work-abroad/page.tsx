@@ -34,7 +34,10 @@ export default function WorkAbroadPage() {
       <WorkDestinationsSection />
       <VisaPathwaysSection />
       <WorkProcessSection />
-      <FinalCtaSection />
+      <FinalCtaSection
+        heading="Ready to Take Your Career Global?"
+        subtitle="Speak with a VersionOne advisor today. We'll assess your profile, recommend the right countries and visa pathways, and walk you through every step of the process."
+      />
     </>
   );
 }
