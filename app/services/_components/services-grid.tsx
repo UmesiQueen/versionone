@@ -1,12 +1,15 @@
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import {
-  ServiceFeatureRow,
-  type ServiceFeatureRowProps,
-} from "./service-feature-row";
-import { type NavItem, ServicesSideNav } from "./services-side-nav";
+  FeatureRow,
+  type FeatureRowProps,
+} from "@/components/sections/feature-row";
+import {
+  type SectionNavItem,
+  SectionSideNav,
+} from "@/components/sections/section-side-nav";
 
-type ServiceEntry = Omit<ServiceFeatureRowProps, "reverse" | "headingId"> & {
+type ServiceEntry = Omit<FeatureRowProps, "headingId"> & {
   id: string;
 };
 
@@ -175,7 +178,7 @@ const SERVICES: ServiceEntry[] = [
   },
 ];
 
-const NAV_ITEMS: NavItem[] = SERVICES.map((service, idx) => ({
+const NAV_ITEMS: SectionNavItem[] = SERVICES.map((service, idx) => ({
   id: service.id,
   title: service.title,
   index: String(idx + 1).padStart(2, "0"),
@@ -204,7 +207,7 @@ function ServicesGridSection() {
           can pivot between services while scrolling without a sidebar.
         */}
         <div className="sticky top-20 z-30 -mx-4 mt-10 sm:-mx-6 lg:hidden shadow-sm bg-foreground">
-          <ServicesSideNav items={NAV_ITEMS} layout="horizontal" />
+          <SectionSideNav items={NAV_ITEMS} layout="horizontal" />
         </div>
 
         {/*
@@ -215,13 +218,13 @@ function ServicesGridSection() {
         <div className="mt-8 lg:mt-12 lg:grid lg:grid-cols-12 lg:gap-10">
           <aside className="hidden lg:col-span-3 lg:block">
             <div className="sticky top-28">
-              <ServicesSideNav items={NAV_ITEMS} layout="vertical" />
+              <SectionSideNav items={NAV_ITEMS} layout="vertical" />
             </div>
           </aside>
 
           <div className="flex flex-col lg:col-span-9">
             {SERVICES.map((service) => (
-              <ServiceFeatureRow
+              <FeatureRow
                 key={service.id}
                 {...service}
                 headingId={`service-${service.id}-heading`}

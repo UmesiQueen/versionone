@@ -3,31 +3,34 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
-type NavItem = {
+type SectionNavItem = {
   id: string;
   title: string;
   /** Display index, e.g. "01". */
   index: string;
 };
 
-type ServicesSideNavProps = {
-  items: ReadonlyArray<NavItem>;
+type SectionSideNavProps = {
+  items: ReadonlyArray<SectionNavItem>;
   /** Render style — vertical for desktop sidebar, horizontal for mobile tab strip. */
   layout: "vertical" | "horizontal";
+  /** Optional eyebrow above the vertical list (e.g. "Our Services", "Investment Routes"). */
+  eyebrow?: string;
+  /** Accessible label for the <nav>. Defaults to "On this page". */
+  ariaLabel?: string;
 };
 
 /**
- * useServicesSpy
+ * useSectionSpy
  * Watches the DOM nodes whose ids match `ids` and reports the topmost
  * intersecting one as "active". Used to drive scroll-spy highlight in the
- * services side nav.
+ * section side nav.
  *
- * The rootMargin shape (-25% top, -60% bottom) means a service becomes
- * "active" when its row enters the upper-middle band of the viewport,
- * which feels right while scrolling. Tuned for the long service rows
- * with sticky header above.
+ * The rootMargin shape (-25% top, -60% bottom) means a row becomes
+ * "active" when it enters the upper-middle band of the viewport, which
+ * feels right while scrolling and avoids jumpy switching.
  */
-function useServicesSpy(ids: ReadonlyArray<string>) {
+function useSectionSpy(ids: ReadonlyArray<string>) {
   const [activeId, setActiveId] = useState<string | null>(ids[0] ?? null);
   // Join ids into a stable string so the effect deps don't re-fire on
   // every render even if the parent recreates the array.
@@ -78,13 +81,18 @@ function handleNavClick(
   }
 }
 
-function ServicesSideNav({ items, layout }: ServicesSideNavProps) {
-  const activeId = useServicesSpy(items.map((item) => item.id));
+function SectionSideNav({
+  items,
+  layout,
+  eyebrow = "On this page",
+  ariaLabel = "On this page",
+}: SectionSideNavProps) {
+  const activeId = useSectionSpy(items.map((item) => item.id));
 
   if (layout === "horizontal") {
     return (
       <nav
-        aria-label="Services on this page"
+        aria-label={ariaLabel}
         className="border-y border-border bg-background/90 backdrop-blur-md"
       >
         <ul className="mx-auto flex max-w-350 gap-2 overflow-x-auto px-4 py-3 sm:px-6 scrollbar-none [&::-webkit-scrollbar]:hidden">
@@ -117,10 +125,10 @@ function ServicesSideNav({ items, layout }: ServicesSideNavProps) {
   }
 
   return (
-    <nav aria-label="Services on this page">
+    <nav aria-label={ariaLabel}>
       <p className="mb-3 inline-flex items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-secondary">
         <span aria-hidden="true" className="h-px w-6 bg-secondary/90" />
-        Our services
+        {eyebrow}
       </p>
       <ul className="flex flex-col gap-0.5">
         {items.map((item) => {
@@ -160,4 +168,5 @@ function ServicesSideNav({ items, layout }: ServicesSideNavProps) {
   );
 }
 
-export { type NavItem, ServicesSideNav };
+export { SectionSideNav };
+export type { SectionNavItem };
