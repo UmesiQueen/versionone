@@ -2,17 +2,7 @@
 import { Check, Target, User, Video } from "lucide-react";
 import { Container } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import PersonalDetails from "@/components/sections/personal-details";
+import PersonalDetailsForm from "@/components/sections/personal-details-form";
 
 const WHAT_TO_EXPECT = [
   { icon: Check, title: "20-30 minute session" },
@@ -75,7 +65,7 @@ function ConsultationFormSection() {
         </div>
 
         {/* Right panel — Form */}
-        <PersonalDetails />
+        <PersonalDetailsForm />
       </Container>
     </section>
   );

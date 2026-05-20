@@ -8,19 +8,44 @@ import { Button } from '../ui/button'
 import { type SubmitHandler, useForm, Controller } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { type ConsultationFormData, consultationSchema, SERVICE_OPTIONS, TIMELINE_OPTIONS } from '@/lib/booking'
+import { toast } from 'sonner'
 
-const PersonalDetails = () => {
+const PersonalDetailsForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     control,
     formState: { errors, isSubmitting },
   } = useForm<ConsultationFormData>({
     resolver: zodResolver(consultationSchema),
   })
 
-  const onSubmit: SubmitHandler<ConsultationFormData> = (data) => {
-    console.log(data)
+  const onSubmit: SubmitHandler<ConsultationFormData> = async (data) => {
+    try {
+      const response = await fetch(
+        `https://formspree.io/f/${process.env.NEXT_PUBLIC_CONTACT_FORMSPREE_ID}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      )
+
+      if (response.ok) {
+        toast.success("Your message has been sent successfully!")
+        reset()
+        window.location.href = "https://calendly.com/your-username/meeting"
+      } else {
+        throw new Error("Failed to send message")
+      }
+    } catch (error) {
+      console.error("Form submission error:", error)
+      toast.error("Something went wrong. Please try again later.")
+    }
   }
 
   return (
@@ -189,4 +214,4 @@ const PersonalDetails = () => {
   )
 }
 
-export default PersonalDetails
+export default PersonalDetailsForm
