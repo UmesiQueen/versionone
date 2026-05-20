@@ -31,7 +31,7 @@ const FOOTER_COLUMNS: FooterColumn[] = [
   {
     title: "Travel",
     links: [
-      { label: "Visit & Travel", href: "/visit-travel" },
+      { label: "Visit & Travel", href: "/visit" },
       { label: "Tour Packages", href: "/tour-packages" },
     ],
   },
@@ -40,7 +40,7 @@ const FOOTER_COLUMNS: FooterColumn[] = [
     links: [
       { label: "FAQ", href: "/faq" },
       { label: "Contact Us", href: "/contact" },
-      { label: "Book a Consultation", href: "#consultation" },
+      { label: "Book a Consultation", href: "/book-consultation" },
     ],
   },
 ];
@@ -153,13 +153,13 @@ function SiteFooter() {
           <div className="flex flex-col gap-2 text-xs text-brand-navy-foreground/60 sm:flex-row sm:items-center sm:gap-6">
             <span>&copy; {year} VersionOne. All rights reserved.</span>
             <Link
-              href="/privacy"
+              href="/privacy-policy"
               className="hover:text-brand-navy-foreground focus-visible:underline"
             >
               Privacy Policy
             </Link>
             <Link
-              href="/terms"
+              href="/terms-of-service"
               className="hover:text-brand-navy-foreground focus-visible:underline"
             >
               Terms of Service
