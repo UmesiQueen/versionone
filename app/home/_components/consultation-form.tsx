@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import PersonalDetails from "./personal-details";
+import PersonalDetails from "@/components/sections/personal-details";
 
 const WHAT_TO_EXPECT = [
   { icon: Check, title: "20-30 minute session" },
