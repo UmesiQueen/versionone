@@ -20,7 +20,7 @@ export const consultationSchema = z.object({
   firstName: z.string().min(2, "First name is required"),
   lastName: z.string().min(2, "Last name is required"),
   email: z.string().email("Invalid email address"),
-  phone: z.string().optional(),
+  phone: z.string().min(10, "Phone number is required"),
   service: z.enum(SERVICE_OPTIONS, {
     error: () => ({ message: "Please select a service" }),
   }),

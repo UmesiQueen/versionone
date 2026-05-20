@@ -1,6 +1,7 @@
 "use client"
 
-import * as React from "react"
+// biome-ignore assist/source/organizeImports: <explanation>
+import type * as React from "react"
 import { Select as SelectPrimitive } from "radix-ui"
 
 import { cn } from "@/lib/utils"
