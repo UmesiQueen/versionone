@@ -1,4 +1,5 @@
-import * as React from "react"
+// biome-ignore assist/source/organizeImports: <explanation>
+import type * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { Slot } from "radix-ui"
 
