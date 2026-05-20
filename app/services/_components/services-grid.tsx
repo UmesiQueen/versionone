@@ -4,6 +4,7 @@ import {
   ServiceFeatureRow,
   type ServiceFeatureRowProps,
 } from "./service-feature-row";
+import { type NavItem, ServicesSideNav } from "./services-side-nav";
 
 type ServiceEntry = Omit<ServiceFeatureRowProps, "reverse" | "headingId"> & {
   id: string;
@@ -27,10 +28,6 @@ const SERVICES: ServiceEntry[] = [
       "Comparative pathway analysis across destinations",
       "No-pressure, fully confidential conversation",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "An advisor reviewing documents with a client in a meeting room",
   },
   {
     id: "eligibility-assessment",
@@ -49,10 +46,6 @@ const SERVICES: ServiceEntry[] = [
       "Risk factors flagged before you spend on fees",
       "Recommendations to strengthen weak profile areas",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Pages of an immigration application form on a desk",
   },
   {
     id: "application-processing",
@@ -71,10 +64,6 @@ const SERVICES: ServiceEntry[] = [
       "Translation and notarization coordination",
       "Submission tracking with status updates",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1623674389905-9c5e0bdf9921?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "A passport and immigration documents on a desk",
   },
   {
     id: "embassy-appointment-support",
@@ -93,10 +82,6 @@ const SERVICES: ServiceEntry[] = [
       "Document pack assembly for in-person submission",
       "Reminder and rescheduling support if needed",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1493340236077-0bfd674c7eef?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Neoclassical embassy building facade",
   },
   {
     id: "pre-landing-guidance",
@@ -115,10 +100,6 @@ const SERVICES: ServiceEntry[] = [
       "Customs and arrival documentation checklist",
       "Cultural and weather preparation tips",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "A passenger aircraft on the tarmac at sunrise",
   },
   {
     id: "flight-booking",
@@ -137,10 +118,6 @@ const SERVICES: ServiceEntry[] = [
       "Group and family fare optimization",
       "Coordination with onward and return travel",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "View from an airport window of a parked airliner",
   },
   {
     id: "hotel-accommodation",
@@ -159,10 +136,6 @@ const SERVICES: ServiceEntry[] = [
       "Embassy-compliant booking documentation",
       "Free cancellation terms wherever possible",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1551776235-dde6d482980b?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "A neatly made hotel bedroom with warm bedside lighting",
   },
   {
     id: "travel-insurance",
@@ -178,13 +151,9 @@ const SERVICES: ServiceEntry[] = [
     bullets: [
       "Embassy-accepted policy documentation",
       "Medical, baggage, and trip cancellation cover",
-      "Multi-trip and annual options for frequent travellers",
+      "Multi-trip and annual options for frequent travelers",
       "24/7 emergency assistance hotline included",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "A health insurance card on a clipboard with a stethoscope",
   },
   {
     id: "post-landing-assistance",
@@ -203,12 +172,14 @@ const SERVICES: ServiceEntry[] = [
       "Local partner network for housing and banking",
       "Dedicated post-arrival advisor for 30 days",
     ],
-    ctaHref: "#consultation",
-    image:
-      "https://images.unsplash.com/photo-1503551723145-6c040742065b?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "A new arrival walking with luggage through a city street",
   },
 ];
+
+const NAV_ITEMS: NavItem[] = SERVICES.map((service, idx) => ({
+  id: service.id,
+  title: service.title,
+  index: String(idx + 1).padStart(2, "0"),
+}));
 
 function ServicesGridSection() {
   return (
@@ -227,15 +198,36 @@ function ServicesGridSection() {
           }
           subtitle="From the first call to settling into your new country, here is what's on offer — pick what you need or take the full package."
         />
-        <div className="mt-12 flex flex-col gap-8 sm:gap-12">
-          {SERVICES.map((service, idx) => (
-            <ServiceFeatureRow
-              key={service.id}
-              {...service}
-              reverse={idx % 2 === 1}
-              headingId={`service-${service.id}-heading`}
-            />
-          ))}
+
+        {/*
+          Mobile-only sticky tab strip. Sits below the site header so users
+          can pivot between services while scrolling without a sidebar.
+        */}
+        <div className="sticky top-20 z-30 -mx-4 mt-10 sm:-mx-6 lg:hidden shadow-sm bg-foreground">
+          <ServicesSideNav items={NAV_ITEMS} layout="horizontal" />
+        </div>
+
+        {/*
+          Desktop two-column layout: sticky vertical scrollspy nav on the
+          left, service rows on the right. The aside is itself sticky so it
+          tracks scroll position while the right column flows past it.
+        */}
+        <div className="mt-8 lg:mt-12 lg:grid lg:grid-cols-12 lg:gap-10">
+          <aside className="hidden lg:col-span-3 lg:block">
+            <div className="sticky top-28">
+              <ServicesSideNav items={NAV_ITEMS} layout="vertical" />
+            </div>
+          </aside>
+
+          <div className="flex flex-col lg:col-span-9">
+            {SERVICES.map((service) => (
+              <ServiceFeatureRow
+                key={service.id}
+                {...service}
+                headingId={`service-${service.id}-heading`}
+              />
+            ))}
+          </div>
         </div>
       </Container>
     </Section>

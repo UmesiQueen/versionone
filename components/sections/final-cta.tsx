@@ -7,7 +7,7 @@ import { SectionHeading } from "../layout/section-heading";
 
 function FinalCtaSection() {
   return (
-    <section aria-labelledby="final-cta-heading" className="py-16 sm:py-20">
+    <section aria-labelledby="final-cta-heading" className="py-16 sm:py-20 px-4 sm:px-0">
       <Container className="relative isolate w-full overflow-hidden py-20 rounded-2xl">
         <Image
           src={FinalCTAImage}

@@ -49,7 +49,7 @@ function DestinationCard({
         <Image
           src={`https://flagcdn.com/${flagCode.toLowerCase()}.svg`}
           width="30"
-          height="20"
+          height="23"
           alt={country}
           aria-hidden="true"
         />
