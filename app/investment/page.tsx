@@ -30,7 +30,10 @@ export default function InvestmentPage() {
       />
       <GlobalAccessOverviewSection />
       <InvestmentRoutesSection />
-      <FinalCtaSection />
+      <FinalCtaSection
+        heading="Explore Your Investment Options"
+        subtitle="Speak with an advisor to identify the right pathway for your goals — all consultations are strictly confidential."
+      />
     </>
   );
 }

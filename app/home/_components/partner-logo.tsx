@@ -2,17 +2,20 @@ import Image from "next/image";
 import { Container, Section } from "@/components/layout/section";
 import { cn } from "@/lib/utils";
 
-/**
- * PartnerLogo
- * Used 8+ times in the "Recognized by Leading Global Regulatory and Industry Bodies" strip.
- *
- * Renders an <img> if `src` is provided; otherwise falls back to a styled
- * text wordmark placeholder. Swap in real SVGs by passing `src`.
- */
+const PARTNERS = [
+  { name: "CICC" },
+  { name: "IATA" },
+  { name: "CCBA" },
+  { name: "ATTA" },
+  { name: "CLIA" },
+  { name: "ASTA" },
+  { name: "IDP" },
+  { name: "IELTS" },
+] as const;
+
 type PartnerLogoProps = {
   name: string;
   src?: string;
-  /** Optional explicit dimensions to preserve aspect ratio. */
   width?: number;
   height?: number;
   className?: string;
@@ -48,17 +51,6 @@ function PartnerLogo({
     </div>
   );
 }
-
-const PARTNERS = [
-  { name: "CICC" },
-  { name: "IATA" },
-  { name: "CCBA" },
-  { name: "ATTA" },
-  { name: "CLIA" },
-  { name: "ASTA" },
-  { name: "IDP" },
-  { name: "IELTS" },
-] as const;
 
 export function PartnerLogoSection() {
   return (

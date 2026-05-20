@@ -55,7 +55,7 @@ function TourPackageCard({
         className,
       )}
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
+      <div className="relative aspect-4/3 w-full overflow-hidden bg-muted">
         <Image
           src={image}
           alt={imageAlt}
@@ -70,23 +70,24 @@ function TourPackageCard({
 
       <div className="flex flex-col gap-3 px-5 py-5">
         <div className="flex items-center gap-1.5" aria-hidden="true">
-          {Array.from({ length: 5 }).map((_, i) => (
-            <Star
-              key={i}
-              className={cn(
-                "size-4",
-                i < filledStars
-                  ? "fill-secondary text-secondary"
-                  : "fill-muted text-muted-foreground/40",
-              )}
-            />
-          ))}
+          {Array.from({ length: 5 }).map((_, i) => {
+            const key = `star-${i}`;
+            return (
+              <Star
+                key={key}
+                className={cn(
+                  "size-4",
+                  i < filledStars
+                    ? "fill-secondary text-secondary"
+                    : "fill-muted text-muted-foreground/40",
+                )}
+              />
+            );
+          })}
           <span className="ml-1 text-xs font-medium text-foreground">
             {rating.toFixed(1)}
           </span>
-          <span className="text-xs text-muted-foreground">
-            ({reviewCount})
-          </span>
+          <span className="text-xs text-muted-foreground">({reviewCount})</span>
         </div>
 
         <h3 className="text-lg font-semibold leading-snug text-foreground">

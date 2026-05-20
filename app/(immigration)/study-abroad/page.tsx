@@ -34,7 +34,10 @@ export default function StudyAbroadPage() {
       <StudyDestinationsSection />
       <WhatsIncludedSection />
       <StudyProcessSection />
-      <FinalCtaSection />
+      <FinalCtaSection
+        heading="Ready to Start Your Study Abroad Journey?"
+        subtitle="Speak with one of our education advisors — we'll review your academic profile, explore your destination options, and map out a clear path from application to arrival. No pressure, just honest guidance."
+      />
     </>
   );
 }
