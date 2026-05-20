@@ -16,6 +16,7 @@ export const TIMELINE_OPTIONS = [
   "Just exploring",
 ] as const;
 
+
 export const consultationSchema = z.object({
   firstName: z.string().min(2, "First name is required"),
   lastName: z.string().min(2, "Last name is required"),
