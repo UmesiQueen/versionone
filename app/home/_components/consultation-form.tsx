@@ -1,8 +1,9 @@
 "use client";
+// biome-ignore assist/source/organizeImports: <explanation>
 import { Check, Target, User, Video } from "lucide-react";
 import { Container } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
-import PersonalDetailsForm from "@/components/sections/personal-details-form";
+import BookingForm from "@/app/book-consultation/_components/booking-form";
 
 const WHAT_TO_EXPECT = [
   { icon: Check, title: "20-30 minute session" },
@@ -65,7 +66,7 @@ function ConsultationFormSection() {
         </div>
 
         {/* Right panel — Form */}
-        <PersonalDetailsForm />
+        <BookingForm className="bg-[#FF8A00DE] border border-border" labelClassName="text-[#FFFFFFCC]" legendClassName="text-white"/>
       </Container>
     </section>
   );

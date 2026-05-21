@@ -17,8 +17,35 @@ import { type BookingFormData, bookingSchema, DESTINATION_OPTIONS, SERVICE_OPTIO
 import { useForm, Controller, type SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { toast } from "sonner"
+import { cn } from "@/lib/utils"
 
-const BookingForm = () => {
+interface BookingFormProps {
+    className?: string
+    calendlyUrl?: string
+    formspreeId?: string
+    submitLabel?: string
+    buttonClassName?: string
+    inputClassName?: string
+    selectClassName?: string
+    textareaClassName?: string
+    labelClassName?: string
+    legendClassName?: string
+    onSuccess?: (data: BookingFormData) => void
+}
+
+const BookingForm = ({
+    className,
+    calendlyUrl = "https://calendly.com/your-username/meeting",
+    formspreeId = process.env.NEXT_PUBLIC_CONTACT_FORMSPREE_ID,
+    submitLabel = "Book a Consultation",
+    buttonClassName,
+    inputClassName,
+    selectClassName,
+    textareaClassName,
+    labelClassName,
+    legendClassName,
+    onSuccess,
+}: BookingFormProps) => {
     const {
         register,
         handleSubmit,
@@ -32,7 +59,7 @@ const BookingForm = () => {
     const onSubmit: SubmitHandler<BookingFormData> = async (data) => {
         try {
             const response = await fetch(
-                `https://formspree.io/f/${process.env.NEXT_PUBLIC_CONTACT_FORMSPREE_ID}`,
+                `https://formspree.io/f/${formspreeId}`,
                 {
                     method: "POST",
                     headers: {
@@ -46,7 +73,20 @@ const BookingForm = () => {
             if (response.ok) {
                 toast.success("Your message has been sent successfully!")
                 reset()
-                window.location.href = "https://calendly.com/your-username/meeting"
+
+                if (onSuccess) {
+                    onSuccess(data)
+                } else {
+                    const params = new URLSearchParams({
+                        name: data.fullName,
+                        email: data.email,
+                        a1: data.phone,
+                        a2: data.destination,
+                        a3: data.service,
+                        a4: data.additionalInformation ?? "",
+                    })
+                    window.location.href = `${calendlyUrl}?${params.toString()}`
+                }
             } else {
                 throw new Error("Failed to send message")
             }
@@ -56,24 +96,30 @@ const BookingForm = () => {
         }
     }
 
+    // Shared label class
+    const sharedLabelClass = cn(
+        "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+        labelClassName
+    )
+
     return (
         <form
             aria-label="Book a free consultation"
-            className="flex flex-col gap-6 rounded-2xl border border-border bg-primary/5 p-6 sm:p-10 [&_input,textarea]:placeholder:text-muted-foreground/60"
+            className={cn(
+                "flex flex-col gap-6 rounded-2xl border border-border bg-primary/5 p-6 sm:p-10 [&_input,textarea]:placeholder:text-muted-foreground/60",
+                className
+            )}
             onSubmit={handleSubmit(onSubmit)}
         >
             {/* Personal Details */}
             <fieldset className="flex flex-col gap-4">
-                <legend className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground/60 mb-5">
+                <legend className={cn("text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground/60 mb-5", legendClassName)}>
                     Personal Details
                 </legend>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="flex flex-col gap-1.5">
-                        <Label
-                            htmlFor="bc-full-name"
-                            className="text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground"
-                        >
+                        <Label htmlFor="bc-full-name" className={sharedLabelClass}>
                             Full Name <span aria-hidden="true">*</span>
                             <span className="sr-only">(required)</span>
                         </Label>
@@ -82,6 +128,7 @@ const BookingForm = () => {
                             placeholder="Your full name"
                             autoComplete="name"
                             aria-invalid={!!errors.fullName}
+                            className={inputClassName}
                             {...register("fullName")}
                         />
                         {errors.fullName && (
@@ -90,10 +137,7 @@ const BookingForm = () => {
                     </div>
 
                     <div className="flex flex-col gap-1.5">
-                        <Label
-                            htmlFor="bc-nationality"
-                            className="text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground"
-                        >
+                        <Label htmlFor="bc-nationality" className={sharedLabelClass}>
                             Nationality <span aria-hidden="true">*</span>
                             <span className="sr-only">(required)</span>
                         </Label>
@@ -102,6 +146,7 @@ const BookingForm = () => {
                             placeholder="e.g. Nigerian, Ghanaian"
                             autoComplete="country-name"
                             aria-invalid={!!errors.nationality}
+                            className={inputClassName}
                             {...register("nationality")}
                         />
                         {errors.nationality && (
@@ -110,10 +155,7 @@ const BookingForm = () => {
                     </div>
 
                     <div className="flex flex-col gap-1.5">
-                        <Label
-                            htmlFor="bc-email"
-                            className="text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground"
-                        >
+                        <Label htmlFor="bc-email" className={sharedLabelClass}>
                             Email Address <span aria-hidden="true">*</span>
                             <span className="sr-only">(required)</span>
                         </Label>
@@ -123,6 +165,7 @@ const BookingForm = () => {
                             placeholder="your@email.com"
                             autoComplete="email"
                             aria-invalid={!!errors.email}
+                            className={inputClassName}
                             {...register("email")}
                         />
                         {errors.email && (
@@ -131,10 +174,7 @@ const BookingForm = () => {
                     </div>
 
                     <div className="flex flex-col gap-1.5">
-                        <Label
-                            htmlFor="bc-phone"
-                            className="text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground"
-                        >
+                        <Label htmlFor="bc-phone" className={sharedLabelClass}>
                             Phone / WhatsApp <span aria-hidden="true">*</span>
                             <span className="sr-only">(required)</span>
                         </Label>
@@ -144,6 +184,7 @@ const BookingForm = () => {
                             placeholder="+44 7000 000000"
                             autoComplete="tel"
                             aria-invalid={!!errors.phone}
+                            className={inputClassName}
                             {...register("phone")}
                         />
                         {errors.phone && (
@@ -157,16 +198,13 @@ const BookingForm = () => {
 
             {/* Immigration Needs */}
             <fieldset className="flex flex-col gap-4">
-                <legend className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground/60 mb-5">
+                <legend className={cn("text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground/60 mb-5", legendClassName)}>
                     Your Immigration Needs
                 </legend>
 
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="flex flex-col gap-1.5">
-                        <Label
-                            htmlFor="bc-destination"
-                            className="text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground"
-                        >
+                        <Label htmlFor="bc-destination" className={sharedLabelClass}>
                             Destination Country <span aria-hidden="true">*</span>
                             <span className="sr-only">(required)</span>
                         </Label>
@@ -175,7 +213,11 @@ const BookingForm = () => {
                             name="destination"
                             render={({ field }) => (
                                 <Select onValueChange={field.onChange} value={field.value}>
-                                    <SelectTrigger id="bc-destination" aria-invalid={!!errors.destination}>
+                                    <SelectTrigger
+                                        id="bc-destination"
+                                        aria-invalid={!!errors.destination}
+                                        className={selectClassName}
+                                    >
                                         <SelectValue placeholder="Select" />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -194,10 +236,7 @@ const BookingForm = () => {
                     </div>
 
                     <div className="flex flex-col gap-1.5">
-                        <Label
-                            htmlFor="bc-service"
-                            className="text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground"
-                        >
+                        <Label htmlFor="bc-service" className={sharedLabelClass}>
                             Visa / Service Type <span aria-hidden="true">*</span>
                             <span className="sr-only">(required)</span>
                         </Label>
@@ -206,7 +245,11 @@ const BookingForm = () => {
                             name="service"
                             render={({ field }) => (
                                 <Select onValueChange={field.onChange} value={field.value}>
-                                    <SelectTrigger id="bc-service" aria-invalid={!!errors.service}>
+                                    <SelectTrigger
+                                        id="bc-service"
+                                        aria-invalid={!!errors.service}
+                                        className={selectClassName}
+                                    >
                                         <SelectValue placeholder="Select" />
                                     </SelectTrigger>
                                     <SelectContent>
@@ -229,18 +272,15 @@ const BookingForm = () => {
             <hr className="border-primary/10" />
 
             <div className="flex flex-col gap-1.5">
-                <Label
-                    htmlFor="bc-additional"
-                    className="text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground"
-                >
+                <Label htmlFor="bc-additional" className={sharedLabelClass}>
                     Additional Information
                 </Label>
                 <Textarea
                     id="bc-additional"
                     placeholder="Tell us more about your situation — employment, family circumstances, previous visa history, or anything else relevant to your case…"
                     rows={4}
-                    className="min-h-28"
                     aria-invalid={!!errors.additionalInformation}
+                    className={cn("min-h-28", textareaClassName)}
                     {...register("additionalInformation")}
                 />
                 {errors.additionalInformation && (
@@ -252,9 +292,12 @@ const BookingForm = () => {
                 type="submit"
                 size="xl"
                 disabled={isSubmitting}
-                className="mt-2 w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
+                className={cn(
+                    "mt-2 w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90",
+                    buttonClassName
+                )}
             >
-                {isSubmitting ? "Submitting..." : "Book a Consultation"}
+                {isSubmitting ? "Submitting..." : submitLabel}
                 <ArrowRight aria-hidden="true" className="ml-1" />
             </Button>
         </form>
