@@ -36,33 +36,22 @@ export const DESTINATION_OPTIONS = [
   "Other",
 ] as const;
 
-
-export const consultationSchema = z.object({
-  firstName: z.string().min(2, "First name is required"),
-  lastName: z.string().min(2, "Last name is required"),
-  email: z.string().email("Invalid email address"),
-  phone: z.string().min(10, "Phone number is required"),
-  service: z.enum(SERVICE_OPTIONS, {
-    error: () => ({ message: "Please select a service" }),
-  }),
-  timeline: z.enum(TIMELINE_OPTIONS, {
-    error: () => ({ message: "Please select a timeline" }),
-  }),
-});
-
 export const bookingSchema = z.object({
   fullName: z.string().min(2, "Full name is required"),
   nationality: z.string().min(2, "Nationality is required"),
   email: z.string().email("Invalid email address"),
   phone: z.string().min(5, "Phone number is required"),
-  destination: z.enum(DESTINATION_OPTIONS, {
-    error: "Please select a destination country",
-  }),
-  service: z.enum(SERVICE_OPTIONS, {
-    error: "Please select a service type",
-  }),
+  destination: z
+    .string()
+    .refine((val) => DESTINATION_OPTIONS.includes(val as typeof DESTINATION_OPTIONS[number]), {
+      message: "Please select a destination country",
+    }),
+  service: z
+    .string()
+    .refine((val) => SERVICE_OPTIONS.includes(val as typeof SERVICE_OPTIONS[number]), {
+      message: "Please select a service type",
+    }),
   additionalInformation: z.string().optional(),
 })
 
 export type BookingFormData = z.infer<typeof bookingSchema>
-export type ConsultationFormData = z.infer<typeof consultationSchema>;
