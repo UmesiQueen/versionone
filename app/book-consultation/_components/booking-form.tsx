@@ -18,6 +18,7 @@ import { useForm, Controller, type SubmitHandler } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { toast } from "sonner"
 import { cn } from "@/lib/utils"
+import PhoneInput from "@/components/ui/phone-input"
 
 interface BookingFormProps {
     className?: string
@@ -178,14 +179,18 @@ const BookingForm = ({
                             Phone / WhatsApp <span aria-hidden="true">*</span>
                             <span className="sr-only">(required)</span>
                         </Label>
-                        <Input
-                            id="bc-phone"
-                            type="tel"
-                            placeholder="+44 7000 000000"
-                            autoComplete="tel"
-                            aria-invalid={!!errors.phone}
-                            className={inputClassName}
-                            {...register("phone")}
+                        <Controller
+                            control={control}
+                            name="phone"
+                            render={({ field }) => (
+                                <PhoneInput
+                                    value={field.value}
+                                    onChange={field.onChange}
+                                    aria-invalid={!!errors.phone}
+                                    inputClassName={inputClassName}
+                                    selectClassName={selectClassName}
+                                />
+                            )}
                         />
                         {errors.phone && (
                             <p className="text-xs text-destructive">{errors.phone.message}</p>
