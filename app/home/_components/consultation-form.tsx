@@ -66,7 +66,7 @@ function ConsultationFormSection() {
         </div>
 
         {/* Right panel — Form */}
-        <BookingForm className="bg-[#FF8A00DE] border border-border" labelClassName="text-[#FFFFFFCC]" legendClassName="text-white"/>
+        <BookingForm className="bg-[#FF8A00DE] border border-[#FF8A00DE]" labelClassName="text-[#FFFFFFCC]" legendClassName="text-white"/>
       </Container>
     </section>
   );
