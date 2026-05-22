@@ -106,22 +106,19 @@ function FeatureRow({
             </p>
           </div>
         ) : null}
-
-        <div className="group rounded-full w-fit mt-3 bg-[#004E99]/40 hover:bg-white/20 transition-colors duration-300 ease-in-out">
-          <Button
-            asChild
-            size="xl"
-            className="rounded-full px-5 bg-linear-to-b from-[#004E99]/60 to-[#004E99] text-white group-hover:to-blue-950/80 transition-colors duration-300 ease-in-out"
-          >
-            <Link href="/book-consultation">
-              Book a Consultation
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 group-hover:translate-x-1 transition-transform duration-300 ease-in-out"
-              />
-            </Link>
-          </Button>
-        </div>
+        <Button
+          asChild
+          size="xl"
+          className="group rounded-full px-5 w-fit mt-3 border border-blue-900/60 bg-linear-to-b from-blue-400 via-blue-500/70 to-blue-950/40 text-white/90 hover:text-white hover:border-blue-900/80 hover:via-blue-600 hover:to-blue-950 hover:shadow-lg transition-colors duration-300 ease-in-out"
+        >
+          <Link href="/book-consultation">
+            Book a Consultation
+            <ArrowRight
+              aria-hidden="true"
+              className="size-4 group-hover:translate-x-1 transition-transform duration-300 ease-in-out"
+            />
+          </Link>
+        </Button>
       </div>
     </article>
   );

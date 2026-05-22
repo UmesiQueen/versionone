@@ -1,5 +1,4 @@
 import { Container, Section } from "@/components/layout/section";
-import { SectionHeading } from "@/components/layout/section-heading";
 import {
   FeatureRow,
   type FeatureRowProps,
@@ -188,19 +187,10 @@ function ServicesGridSection() {
   return (
     <Section
       surface="muted"
-      padding="default"
+      padding="sm"
       aria-labelledby="services-grid-heading"
     >
       <Container>
-        <SectionHeading
-          eyebrow="Service Suite"
-          heading={
-            <span id="services-grid-heading">
-              Every Service, Under One Roof
-            </span>
-          }
-          subtitle="From the first call to settling into your new country, here is what's on offer — pick what you need or take the full package."
-        />
 
         {/*
           Mobile-only sticky tab strip. Sits below the site header so users

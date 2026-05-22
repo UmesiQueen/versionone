@@ -5,21 +5,6 @@ import { Container } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 import { cn } from "@/lib/utils";
 
-/**
- * PageHero
- * Reusable hero banner for inner pages (About, Services, Investment, etc.).
- * Patterned after the About hero: full-bleed background image on a brand-navy
- * surface with a diagonal gradient overlay, an optional amber eyebrow, an
- * H1, and an optional supporting paragraph.
- *
- * Notes:
- * - Renders as a semantic <section> labelled via `aria-labelledby`.
- * - Background image is decorative by default (`imageAlt=""`); pass a
- *   descriptive `imageAlt` only when the image conveys meaning beyond decoration.
- * - The H1's `id` defaults to `"page-hero-heading"`. Override `headingId`
- *   when more than one PageHero could ever appear in the same document
- *   (e.g. duplicate id collisions) — typically you won't need to.
- */
 type PageHeroProps = {
   /** Background image — accepts an imported static asset or a remote URL string. */
   image: StaticImageData | string;
@@ -70,7 +55,7 @@ function PageHero({
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-linear-125 from-[#0B1F3A]/85 via-[#0B1F3A]/70 to-[#0B1F3A]/45"
+        className="absolute inset-0 -z-10 bg-linear-125 from-[#0B1F3A]/75 via-[#0B1F3A]/60 to-[#0B1F3A]/35"
       />
 
       <Container

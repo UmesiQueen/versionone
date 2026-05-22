@@ -1,5 +1,4 @@
 import { Container, Section } from "@/components/layout/section";
-import { SectionHeading } from "@/components/layout/section-heading";
 import {
   FeatureRow,
   type FeatureRowProps,
@@ -186,20 +185,10 @@ function InvestmentRoutesSection() {
   return (
     <Section
       surface="muted"
-      padding="default"
+      padding="sm"
       aria-labelledby="investment-routes-heading"
     >
       <Container>
-        <SectionHeading
-          eyebrow="Routes to Residency"
-          heading={
-            <span id="investment-routes-heading">
-              Eight Routes to Global Residency
-            </span>
-          }
-          subtitle="Real outcomes, real money. Where it lands, what it returns, the milestones along the way."
-        />
-
         {/*
           Mobile-only sticky tab strip. Sits below the site header so users
           can pivot between routes while scrolling without a sidebar.
