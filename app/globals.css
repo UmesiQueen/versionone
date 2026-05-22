@@ -67,7 +67,7 @@
   --popover-foreground: oklch(0.18 0.02 260);
 
   /* Primary = bright CTA blue (matches "Book a Consultation" button, stats band) */
-  --primary: oklch(42.905% 0.13924 254.584); /* ~#1E62D8 */
+  --primary: oklch(42.905% 0.13924 254.584); /* ~#004e99 */
   --primary-foreground: oklch(0.985 0 0);
 
   /* Secondary = warm amber (consultation form left panel) */
@@ -170,4 +170,46 @@
   html {
     @apply font-sans;
   }
+}
+
+/* Lenis smooth scroll  */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #c6c6c6;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fb9e33ea;
+  border-radius: 4px;
+  min-height: 40px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #bc6909;
 }
