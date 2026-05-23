@@ -1,0 +1,263 @@
+{
+  "destinations": [
+    {
+      "id": "canada",
+      "country": "Canada",
+      "flagCode": "ca",
+      "href": "/destinations/canada",
+      "image": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Toronto skyline featuring the CN Tower at dusk",
+      "featured": true,
+      "descriptions": {
+        "migrate": "Permanent Residency through Express Entry.",
+        "study": "Post-graduate work permits & pathways to permanent residency.",
+        "work": "Express Entry & Provincial Nominee Program for skilled workers."
+      }
+    },
+    {
+      "id": "united-kingdom",
+      "country": "United Kingdom",
+      "flagCode": "gb",
+      "href": "/destinations/united-kingdom",
+      "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Red double-decker buses passing the London Eye",
+      "featured": true,
+      "descriptions": {
+        "study": "Oxford, Cambridge & Russell Group universities with prestige.",
+        "work": "Skilled Worker Visa with route to indefinite leave to remain and work.",
+        "visit": "UK Standard Visitor Visa — embassy required."
+      }
+    },
+    {
+      "id": "uae",
+      "country": "United Arab Emirates",
+      "flagCode": "ae",
+      "href": "/destinations/uae",
+      "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Dubai skyline with the Burj Khalifa",
+      "featured": true,
+      "descriptions": {
+        "migrate": "Long-term residency options for professionals & investors.",
+        "work": "Golden Visa & employment sponsorship in a tax-free economy.",
+        "visit": "Visa on arrival — Dubai, Abu Dhabi, Sharjah."
+      }
+    },
+    {
+      "id": "germany",
+      "country": "Germany",
+      "flagCode": "de",
+      "href": "/destinations/germany",
+      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Aerial view of central Berlin",
+      "featured": true,
+      "descriptions": {
+        "migrate": "Strong opportunities for skilled professionals.",
+        "study": "Tuition-free public universities with world-class STEM programs.",
+        "work": "EU Blue Card for qualified professionals with job offers on the go.",
+        "visit": "Schengen visa — tourism & business."
+      }
+    },
+    {
+      "id": "united-states",
+      "country": "United States",
+      "flagCode": "us",
+      "href": "/destinations/united-states",
+      "image": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Manhattan skyline at sunset",
+      "featured": true,
+      "descriptions": {
+        "migrate": "Employment, family-sponsored routes.",
+        "study": "Ivy League & top-ranked programs across every discipline.",
+        "work": "H-1B, O-1, and L-1 visas for professionals, executives and managers.",
+        "visit": "B-1/B-2 tourist & business visa required."
+      }
+    },
+    {
+      "id": "poland",
+      "country": "Poland",
+      "flagCode": "pl",
+      "href": "/destinations/poland",
+      "image": "https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Historic Old Town square in Warsaw, Poland",
+      "featured": true,
+      "descriptions": {}
+    },
+    {
+      "id": "australia",
+      "country": "Australia",
+      "flagCode": "au",
+      "href": "/destinations/australia",
+      "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Sydney Opera House at golden hour",
+      "featured": true,
+      "descriptions": {
+        "migrate": "Skilled migration pathways for professionals and families.",
+        "study": "Group of universities with strong graduate employment outcomes.",
+        "work": "TSS & Employer Nomination Scheme across in-demand industries."
+      }
+    },
+    {
+      "id": "singapore",
+      "country": "Singapore",
+      "flagCode": "sg",
+      "href": "/destinations/singapore",
+      "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Singapore's Marina Bay Sands at twilight",
+      "featured": true,
+      "descriptions": {
+        "work": "Employment Pass for professionals in Asia's premier business hub."
+      }
+    },
+    {
+      "id": "spain",
+      "country": "Spain",
+      "flagCode": "es",
+      "href": "/destinations/spain",
+      "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Park Güell in Barcelona, Spain",
+      "featured": false,
+      "descriptions": {
+        "migrate": "Residency options for professionals and families.",
+        "visit": "Schengen visa — tourist & business visits."
+      }
+    },
+    {
+      "id": "switzerland",
+      "country": "Switzerland",
+      "flagCode": "ch",
+      "href": "/destinations/switzerland",
+      "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Swiss Alps with a mountain village",
+      "featured": false,
+      "descriptions": {
+        "migrate": "Premium relocation opportunities in Europe."
+      }
+    },
+    {
+      "id": "netherlands",
+      "country": "Netherlands",
+      "flagCode": "nl",
+      "href": "/destinations/netherlands",
+      "image": "https://images.unsplash.com/photo-1534351590666-13e3e96c5017?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Canal-side buildings in Amsterdam, the Netherlands",
+      "featured": false,
+      "descriptions": {
+        "migrate": "Excellent pathways for skilled workers and families.",
+        "study": "Top-ranked Dutch universities with extensive English-taught programs.",
+        "work": "Highly Skilled Migrant Programme for knowledge economy professionals."
+      }
+    },
+    {
+      "id": "new-zealand",
+      "country": "New Zealand",
+      "flagCode": "nz",
+      "href": "/destinations/new-zealand",
+      "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Milford Sound fjord in New Zealand",
+      "featured": false,
+      "descriptions": {
+        "migrate": "A high-quality lifestyle with skilled migration programs.",
+        "study": "Welcoming study environment with post-study work rights.",
+        "work": "Accredited Employer Work Visa with strong pathways to residency."
+      }
+    },
+    {
+      "id": "luxembourg",
+      "country": "Luxembourg",
+      "flagCode": "lu",
+      "href": "/destinations/luxembourg",
+      "image": "https://images.unsplash.com/photo-1605108042834-7d4d83be0d63?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Old town of Luxembourg City at sunset",
+      "featured": false,
+      "descriptions": {
+        "migrate": "Access to Europe with attractive residency pathways."
+      }
+    },
+    {
+      "id": "france",
+      "country": "France",
+      "flagCode": "fr",
+      "href": "/destinations/france",
+      "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Paris cityscape with the Eiffel Tower at sunset",
+      "featured": false,
+      "descriptions": {
+        "study": "Grandes Écoles, Sorbonne & affordable EU tuition fees.",
+        "visit": "Embassy visa — Schengen zone covers 26 countries."
+      }
+    },
+    {
+      "id": "ireland",
+      "country": "Ireland",
+      "flagCode": "ie",
+      "href": "/destinations/ireland",
+      "image": "https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Trinity College Dublin's Long Room library",
+      "featured": false,
+      "descriptions": {
+        "study": "English-language education with strong tech industry links.",
+        "work": "Critical Skills Employment Permit for people in the tech and healthcare sectors."
+      }
+    },
+    {
+      "id": "japan",
+      "country": "Japan",
+      "flagCode": "jp",
+      "href": "/destinations/japan",
+      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Cherry blossoms framing a Japanese temple",
+      "featured": false,
+      "descriptions": {
+        "study": "World-renowned institutions with government scholarship programs."
+      }
+    },
+    {
+      "id": "turkey",
+      "country": "Turkey",
+      "flagCode": "tr",
+      "href": "/destinations/turkey",
+      "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Blue Mosque domes in Istanbul, Turkey",
+      "featured": false,
+      "descriptions": {
+        "visit": "e-visa available — fast online approval."
+      }
+    },
+    {
+      "id": "italy",
+      "country": "Italy",
+      "flagCode": "it",
+      "href": "/destinations/italy",
+      "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "The Colosseum in Rome on a sunny day",
+      "featured": false,
+      "descriptions": {
+        "visit": "Schengen visa for tourism and culture."
+      }
+    },
+    {
+      "id": "mexico",
+      "country": "Mexico",
+      "flagCode": "mx",
+      "href": "/destinations/mexico",
+      "image": "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Tulum beach with palm trees and turquoise sea",
+      "featured": false,
+      "descriptions": {
+        "visit": "No visa required for most nationalities."
+      }
+    },
+    {
+      "id": "qatar",
+      "country": "Qatar",
+      "flagCode": "qa",
+      "href": "/destinations/qatar",
+      "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=800&q=80",
+      "imageAlt": "Doha skyline along the Corniche at dusk",
+      "featured": false,
+      "descriptions": {
+        "visit": "Visa on arrival for eligible passport holders."
+      }
+    }
+  ]
+}

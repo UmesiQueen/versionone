@@ -1,34 +1,54 @@
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-/**
- * DestinationCard
- * Used 8x in the "Where Would You Like to Go?" grid.
- * Image background + flag + country name overlay.
- */
-type DestinationCardProps = {
+type DestinationCardVariant = "overlay" | "detailed";
+
+type CommonProps = {
   country: string;
+  flagCode: string;
   image: string;
   imageAlt?: string;
-  /** ISO-2 country code, e.g. "ca" for Canada — drives the flag image. */
-  flagCode: string;
   href: string;
+  ariaLabel?: string;
   className?: string;
 };
 
-function DestinationCard({
+type OverlayProps = CommonProps & {
+  variant?: "overlay";
+  description?: never;
+};
+
+type DetailedProps = CommonProps & {
+  variant: "detailed";
+  description: string;
+};
+
+type DestinationCardProps = OverlayProps | DetailedProps;
+
+function DestinationCard(props: DestinationCardProps) {
+  if (props.variant === "detailed") {
+    return <DetailedCard {...props} />;
+  }
+  return <OverlayCard {...props} />;
+}
+
+function OverlayCard({
   country,
+  flagCode,
   image,
   imageAlt,
-  flagCode,
   href,
+  ariaLabel,
   className,
-}: DestinationCardProps) {
+}: CommonProps) {
   return (
     <Link
       href={href}
-      aria-label={`Explore travel and immigration options for ${country}`}
+      aria-label={
+        ariaLabel ?? `Explore travel and immigration options for ${country}`
+      }
       className={cn(
         "group relative block aspect-video overflow-hidden rounded-2xl bg-muted shadow-sm outline-none transition-shadow hover:shadow-lg focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
         className,
@@ -36,7 +56,7 @@ function DestinationCard({
     >
       <Image
         src={image}
-        alt={imageAlt ?? "destination country"}
+        alt={imageAlt ?? ""}
         fill
         sizes="(min-width: 1024px) 280px, (min-width: 640px) 33vw, 50vw"
         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -48,9 +68,9 @@ function DestinationCard({
       <div className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white">
         <Image
           src={`https://flagcdn.com/${flagCode.toLowerCase()}.svg`}
-          width="30"
-          height="23"
-          alt={country}
+          width={30}
+          height={23}
+          alt=""
           aria-hidden="true"
         />
         <span>{country}</span>
@@ -59,4 +79,68 @@ function DestinationCard({
   );
 }
 
-export { DestinationCard };
+function DetailedCard({
+  country,
+  flagCode,
+  description,
+  image,
+  imageAlt,
+  href,
+  ariaLabel,
+  className,
+}: CommonProps & { description: string }) {
+  return (
+    <Link
+      href={href}
+      aria-label={ariaLabel ?? `Learn more about ${country}`}
+      className={cn(
+        "group flex flex-col gap-3 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-muted shadow-none transition-shadow duration-500 hover:shadow-sm",
+        className,
+      )}
+    >
+      <div className="relative aspect-5/3 w-full overflow-hidden rounded-xl bg-muted">
+        <Image
+          src={image}
+          alt={imageAlt ?? ""}
+          fill
+          sizes="(min-width: 1024px) 240px, (min-width: 640px) 33vw, 50vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <span
+          aria-hidden="true"
+          className="absolute inset-0 bg-linear-to-t from-foreground/60 via-foreground/10 to-transparent"
+        />
+        <span className="absolute bottom-3 left-3 flex items-center gap-2 text-sm font-medium text-white">
+          <Image
+            src={`https://flagcdn.com/${flagCode.toLowerCase()}.svg`}
+            width={22}
+            height={16}
+            alt=""
+            aria-hidden="true"
+            className="h-4 w-auto rounded-xs shadow-sm"
+          />
+          <span>{country}</span>
+        </span>
+      </div>
+
+      <div className="flex flex-col gap-2 p-4 pt-0">
+        <p className="text-sm text-muted-foreground leading-snug">
+          {description}
+        </p>
+        <span className="inline-flex items-center gap-1 text-sm font-medium text-brand-light-blue transition-colors group-hover:text-primary">
+          Learn more
+          <ArrowRight
+            aria-hidden="true"
+            className="size-3.5 transition-transform duration-300 ease-out group-hover:translate-x-1"
+          />
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+export {
+  DestinationCard,
+  type DestinationCardProps,
+  type DestinationCardVariant,
+};

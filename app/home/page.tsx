@@ -1,7 +1,7 @@
-import { DestinationsSection } from "@/components/sections/destinations";
 import { FinalCtaSection } from "@/components/sections/final-cta";
 import { BrandStatement } from "./_components/brand-statement";
 import { ConsultationFormSection } from "./_components/consultation-form";
+import { DestinationsSection } from "./_components/destinations";
 import { HeroSection } from "./_components/hero";
 import { PartnerLogoSection } from "./_components/partner-logo";
 import { PathwaysSection } from "./_components/pathways";
