@@ -1,11 +1,6 @@
-import {
-  ArrowRight,
-  type LucideIcon,
-  Mail,
-  MessageCircle,
-  Phone,
-} from "lucide-react";
+import { ArrowRight, type LucideIcon, Mail, Phone } from "lucide-react";
 
+import { WhatsApp } from "@/components/icons";
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import { cn } from "@/lib/utils";
@@ -16,19 +11,17 @@ type DirectChannel = {
   helper: string;
   href: string;
   cta: string;
-  icon: LucideIcon;
-  /** Tailwind classes for the icon chip (bg + text color). */
+  icon: LucideIcon | React.ElementType;
   chipClass: string;
-  /** Tailwind classes for the inline CTA text. */
   ctaClass: string;
 };
 
 const CHANNELS: ReadonlyArray<DirectChannel> = [
   {
     label: "Call Us",
-    value: "+234 800 000 0000",
+    value: "+234 817 000 0165",
     helper: "Mon–Fri, 8am – 6pm WAT",
-    href: "tel:+2348000000000",
+    href: "tel:+2348170000165",
     cta: "Call now",
     icon: Phone,
     chipClass: "bg-blue-100 text-blue-600",
@@ -36,19 +29,19 @@ const CHANNELS: ReadonlyArray<DirectChannel> = [
   },
   {
     label: "WhatsApp",
-    value: "+234 800 000 0000",
+    value: "+234 817 000 0169",
     helper: "Quick replies within minutes",
-    href: "https://wa.me/2348000000000",
+    href: "https://wa.me/2348170000169",
     cta: "Chat now",
-    icon: MessageCircle,
+    icon: WhatsApp,
     chipClass: "bg-emerald-100 text-emerald-600",
     ctaClass: "text-emerald-600 hover:text-emerald-700",
   },
   {
     label: "Email Us",
-    value: "hello@versionone.global",
+    value: "ph@versiononetravels.com",
     helper: "We respond within 24 hours",
-    href: "mailto:hello@versionone.global",
+    href: "mailto:ph@versiononetravels.com",
     cta: "Send email",
     icon: Mail,
     chipClass: "bg-amber-100 text-amber-600",
@@ -56,12 +49,6 @@ const CHANNELS: ReadonlyArray<DirectChannel> = [
   },
 ];
 
-/**
- * ReachUsDirectlySection
- * Three contact-channel cards (Call / WhatsApp / Email). Each card is a fully
- * clickable surface — wrapped in an <a> with an aria-label that combines the
- * channel and value for screen readers.
- */
 function ReachUsDirectlySection() {
   return (
     <Section

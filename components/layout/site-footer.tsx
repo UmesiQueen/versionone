@@ -1,7 +1,8 @@
-import { AtSign, Camera, Globe, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/app/assets/VersionOne-2.png";
+import { Facebook, Instagram, X, YouTube } from "@/components/icons";
 import { Container } from "@/components/layout/section";
 import { cn } from "@/lib/utils";
 
@@ -46,10 +47,18 @@ const FOOTER_COLUMNS: FooterColumn[] = [
 ];
 
 const SOCIAL_LINKS = [
-  { label: "Twitter / X", href: "https://twitter.com", icon: Send },
-  { label: "Facebook", href: "https://facebook.com", icon: Globe },
-  { label: "Instagram", href: "https://instagram.com", icon: Camera },
-  { label: "LinkedIn", href: "https://linkedin.com", icon: AtSign },
+  { label: "Twitter / X", href: "https://x.com/version1travels", icon: X },
+  {
+    label: "Facebook",
+    href: "https://facebook.com/versiononetravels",
+    icon: Facebook,
+  },
+  {
+    label: "Instagram",
+    href: "https://instagram.com/versiononetravels",
+    icon: Instagram,
+  },
+  { label: "YouTube", href: "https://youtube.com", icon: YouTube },
 ] as const;
 
 function SiteFooter() {
@@ -60,7 +69,6 @@ function SiteFooter() {
       data-slot="site-footer"
       className="border-t border-brand-navy-foreground/10 bg-brand-navy text-brand-navy-foreground"
     >
-
       <Container className="py-10 md:py-16">
         <div className="grid grid-cols-1 justify-between gap-30 md:grid-cols-2 lg:grid-cols-10">
           <div className="flex flex-col gap-4 lg:col-span-4">
@@ -77,29 +85,38 @@ function SiteFooter() {
             </p>
             <ul className="mt-2 flex flex-col gap-3 text-sm">
               <li className="flex items-start gap-2 text-brand-navy-foreground/80">
-                <Phone aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-secondary" />
+                <Phone
+                  aria-hidden="true"
+                  className="mt-0.5 size-4 shrink-0 text-secondary"
+                />
                 <a
-                  href="tel:+18005550000"
+                  href="tel:+2348170000165"
                   className="hover:text-brand-navy-foreground focus-visible:underline"
                 >
-                  +1 (800) 555&ndash;0000
+                  +234 817&ndash;000&ndash;0165
                 </a>
               </li>
               <li className="flex items-start gap-2 text-brand-navy-foreground/80">
-                <Mail aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-secondary" />
+                <Mail
+                  aria-hidden="true"
+                  className="mt-0.5 size-4 shrink-0 text-secondary"
+                />
                 <a
-                  href="mailto:info@versionone.com"
+                  href="mailto:ph@versiononetravels.com"
                   className="hover:text-brand-navy-foreground focus-visible:underline"
                 >
-                  info@versionone.com
+                  ph@versiononetravels.com
                 </a>
               </li>
               <li className="flex items-start gap-2 text-brand-navy-foreground/80">
-                <MapPin aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-secondary" />
+                <MapPin
+                  aria-hidden="true"
+                  className="mt-0.5 size-4 shrink-0 text-secondary"
+                />
                 <span>
-                  123 Business Avenue, Suite 100
+                  129/131 Olu-Obasanjo Road,
                   <br />
-                  New York, NY 10001
+                  Port Harcourt, Nigeria 500272
                 </span>
               </li>
             </ul>
@@ -119,7 +136,7 @@ function SiteFooter() {
                     <li key={link.href}>
                       <Link
                         href={link.href}
-                        className="text-sm text-brand-navy-foreground/75 outline-none transition-colors hover:text-brand-navy-foreground focus-visible:text-brand-navy-foreground focus-visible:underline"
+                        className="block w-fit text-sm text-brand-navy-foreground/75 outline-none transition-all duration-300 ease-in-out hover:translate-x-1 hover:text-secondary/80 focus-visible:text-brand-navy-foreground focus-visible:underline"
                       >
                         {link.label}
                       </Link>
@@ -141,8 +158,8 @@ function SiteFooter() {
                 rel="noreferrer"
                 aria-label={`VersionOne on ${label}`}
                 className={cn(
-                  "inline-flex size-9 items-center justify-center rounded-full bg-brand-navy-foreground/10 text-brand-navy-foreground outline-none transition-colors",
-                  "hover:bg-brand-navy-foreground/20",
+                  "inline-flex size-9 items-center justify-center rounded-full bg-brand-navy-foreground/10 text-brand-navy-foreground outline-none transition-all duration-300 ease-in-out",
+                  "hover:bg-secondary/50 hover:-translate-y-1",
                   "focus-visible:ring-2 focus-visible:ring-primary-foreground/70",
                 )}
               >

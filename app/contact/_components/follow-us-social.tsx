@@ -1,17 +1,4 @@
-import {
-  AtSign,
-  Camera,
-  Globe,
-  type LucideIcon,
-  Play,
-  Send,
-} from "lucide-react";
-
-// Note: the project's installed lucide-react (1.14.0) doesn't ship brand icons
-// (Facebook / Instagram / Linkedin / Twitter / Youtube). We mirror the
-// generic-icon pattern used in `components/layout/site-footer.tsx` and rely on
-// the colored chip + visible network label to communicate brand.
-
+import { Facebook, Instagram, X, YouTube } from "@/components/icons";
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import { cn } from "@/lib/utils";
@@ -20,45 +7,37 @@ type SocialChannel = {
   network: string;
   handle: string;
   href: string;
-  icon: LucideIcon;
-  /** Tailwind classes for the icon chip (bg + text color). */
+  icon: React.ElementType;
   chipClass: string;
 };
 
 const SOCIALS: ReadonlyArray<SocialChannel> = [
   {
     network: "Facebook",
-    handle: "@VersionOneGlobal",
-    href: "https://facebook.com",
-    icon: Globe,
+    handle: "@VersionOne",
+    href: "https://facebook.com/versiononetravels",
+    icon: Facebook,
     chipClass: "bg-blue-100 text-blue-600",
   },
   {
     network: "Instagram",
-    handle: "@versionone.global",
-    href: "https://instagram.com",
-    icon: Camera,
+    handle: "@versiononetravels",
+    href: "https://instagram.com/versiononetravels",
+    icon: Instagram,
     chipClass: "bg-pink-100 text-pink-600",
   },
   {
     network: "Twitter / X",
-    handle: "@VersionOne",
-    href: "https://twitter.com",
-    icon: Send,
+    handle: "@version1travels",
+    href: "https://x.com/version1travels",
+    icon: X,
     chipClass: "bg-sky-100 text-sky-600",
-  },
-  {
-    network: "LinkedIn",
-    handle: "VersionOne Advisory",
-    href: "https://linkedin.com",
-    icon: AtSign,
-    chipClass: "bg-indigo-100 text-indigo-600",
   },
   {
     network: "YouTube",
     handle: "VersionOne Global",
     href: "https://youtube.com",
-    icon: Play,
+    icon: YouTube,
     chipClass: "bg-red-100 text-red-600",
   },
 ];
@@ -85,7 +64,7 @@ function FollowUsSocialSection() {
           subtitle="Stay up to date with visa news, travel tips, success stories, and updates from VersionOne."
         />
 
-        <ul className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 lg:gap-5">
+        <ul className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5">
           {SOCIALS.map(({ network, handle, href, icon: Icon, chipClass }) => (
             <li key={network} className="flex">
               <a
