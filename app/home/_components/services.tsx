@@ -17,28 +17,28 @@ const SERVICES = [
     title: "Immigration",
     description:
       "Permanent residency, skilled worker visas, and long-stay permits across Canada, UK, Germany, and 30+ other destinations.",
-    href: "/services/immigration",
+    href: "/immigration",
   },
   {
     icon: Plane,
     title: "Travel",
     description:
       "Visitor visas, tourist packages, flight booking, hotel reservations, and travel insurance — all coordinated end-to-end.",
-    href: "/services/travel",
+    href: "/visit",
   },
   {
     icon: Settings2,
     title: "Services",
     description:
       "One-on-one consultations, application processing, embassy attestations, and pre & post-landing support.",
-    href: "/services/general",
+    href: "/services",
   },
   {
     icon: TrendingUp,
     title: "Investment",
     description:
       "Golden Visas, citizenship by investment, real estate and startup visas, and wealth-residency programs.",
-    href: "/services/investment",
+    href: "/investment",
   },
 ] as const;
 

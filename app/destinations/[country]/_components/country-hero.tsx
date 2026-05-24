@@ -7,11 +7,6 @@ type CountryHeroProps = {
   headingId: string;
 };
 
-/**
- * CountryHero
- * Full-bleed hero with the country name overlaid on a darkened photo.
- * Mirrors the design's hero band — no eyebrow or body copy.
- */
 function CountryHero({ country, image, imageAlt, headingId }: CountryHeroProps) {
   return (
     <section

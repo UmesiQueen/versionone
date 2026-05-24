@@ -15,12 +15,6 @@ type CountryBiggerPictureProps = {
   headingId: string;
 };
 
-/**
- * CountryBiggerPicture
- * Two-column "More than a move" section — left column has eyebrow + heading +
- * body + brand-blue pill CTA, right column has a country-themed image. Set on
- * a soft brand tint to set it apart from the surrounding sections.
- */
 function CountryBiggerPicture({
   eyebrow,
   heading,

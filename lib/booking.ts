@@ -1,4 +1,3 @@
-import { Clock, Target, User, Video } from "lucide-react";
 import { z } from "zod";
 
 export const SERVICE_OPTIONS = [
@@ -10,13 +9,6 @@ export const SERVICE_OPTIONS = [
   "Citizenship by investment",
   "Not sure yet",
   "Other"
-] as const;
-
-export const WHAT_TO_EXPECT = [
-  { icon: Clock, title: "20–30 minute session" },
-  { icon: Video, title: "Virtual or in-person" },
-  { icon: User, title: "Led by an experienced advisor" },
-  { icon: Target, title: "Tailored to your goals" },
 ] as const;
 
 export const DESTINATION_OPTIONS = [

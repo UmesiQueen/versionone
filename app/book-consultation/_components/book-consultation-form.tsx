@@ -1,9 +1,16 @@
 "use client";
+import { Clock, Target, User, Video } from "lucide-react";
 
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
-import { WHAT_TO_EXPECT } from "@/lib/booking";
 import BookingForm from "./booking-form";
+
+export const WHAT_TO_EXPECT = [
+  { icon: Clock, title: "20–30 minute session" },
+  { icon: Video, title: "Virtual or in-person" },
+  { icon: User, title: "Led by an experienced advisor" },
+  { icon: Target, title: "Tailored to your goals" },
+] as const;
 
 function BookConsultationFormSection() {
   return (

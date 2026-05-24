@@ -8,16 +8,10 @@ type CountryOtherDestinationsProps = {
   heading: string;
   subtitle: string;
   destinations: readonly DestinationForPage[];
-  /** The current page's country name — used to compose the per-card aria-label. */
   contextLabel: string;
   headingId: string;
 };
 
-/**
- * CountryOtherDestinations
- * Grid of other destinations for the same context (e.g. "Other Migration
- * Destinations"). Reuses the unified DestinationCard in detailed variant.
- */
 function CountryOtherDestinations({
   eyebrow,
   heading,

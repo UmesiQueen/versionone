@@ -1,12 +1,5 @@
 import { Container, Section } from "@/components/layout/section";
 
-/**
- * MigrationOverview
- * Intro/explainer section sitting directly under the page hero on the
- * Migrate page. Pure-prose layout — no eyebrow, no CTA — modeled after
- * the "Migration Made Clear, Strategic, and Achievable" frame in the
- * Figma.
- */
 function MigrationOverview() {
   return (
     <Section

@@ -10,12 +10,6 @@ type CountryPathwaysProps = {
   headingId: string;
 };
 
-/**
- * CountryPathways
- * Ordered list of numbered pathway tiles. Mirrors the design (large blue step
- * number + title only — no description). Rendered as <ol>/<li> so the order is
- * exposed to assistive tech, with sr-only "Step N:" prefixes.
- */
 function CountryPathways({
   eyebrow,
   heading,

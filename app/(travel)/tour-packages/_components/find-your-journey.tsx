@@ -39,7 +39,6 @@ const LEISURE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Dubai skyline at sunset",
-    href: "/tour-packages/dubai-luxury-escape",
   },
   {
     title: "Santorini Island Retreat",
@@ -51,7 +50,6 @@ const LEISURE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
     imageAlt: "White-washed buildings on Santorini cliffside",
-    href: "/tour-packages/santorini-island-retreat",
   },
   {
     title: "Bali Tropical Retreat",
@@ -63,7 +61,6 @@ const LEISURE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Tropical Bali rice terraces and palms",
-    href: "/tour-packages/bali-tropical-retreat",
   },
   {
     title: "Tokyo Cultural Journey",
@@ -75,7 +72,6 @@ const LEISURE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Tokyo temple with cherry blossoms",
-    href: "/tour-packages/tokyo-cultural-journey",
   },
 ];
 
@@ -94,7 +90,6 @@ const HONEYMOON_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Maldives overwater bungalows at sunrise",
-    href: "/tour-packages/maldives-overwater-romance",
   },
   {
     title: "Paris & Loire Valley",
@@ -110,7 +105,6 @@ const HONEYMOON_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Paris skyline at sunset with the Eiffel Tower",
-    href: "/tour-packages/paris-loire-valley",
   },
   {
     title: "Bora Bora Lagoon",
@@ -126,7 +120,6 @@ const HONEYMOON_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Bora Bora lagoon and Mount Otemanu",
-    href: "/tour-packages/bora-bora-lagoon",
   },
   {
     title: "Tuscan Vineyards",
@@ -142,7 +135,6 @@ const HONEYMOON_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1505765050516-f72dcac9c60a?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Rolling Tuscan vineyards at golden hour",
-    href: "/tour-packages/tuscan-vineyards",
   },
 ];
 
@@ -161,7 +153,6 @@ const FAMILY_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1551649001-7a2482d98d05?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Theme park castle and fireworks",
-    href: "/tour-packages/orlando-theme-park",
   },
   {
     title: "Kenya Family Safari",
@@ -177,7 +168,6 @@ const FAMILY_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Giraffes on the African savannah at sunset",
-    href: "/tour-packages/kenya-family-safari",
   },
   {
     title: "Iceland Northern Lights",
@@ -193,7 +183,6 @@ const FAMILY_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Northern lights over an Icelandic landscape",
-    href: "/tour-packages/iceland-northern-lights",
   },
   {
     title: "Costa Rica Eco-Adventure",
@@ -209,7 +198,6 @@ const FAMILY_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Costa Rican rainforest with morning mist",
-    href: "/tour-packages/costa-rica-eco-adventure",
   },
 ];
 
@@ -228,7 +216,6 @@ const CORPORATE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Singapore's Marina Bay Sands at twilight",
-    href: "/tour-packages/singapore-business-retreat",
   },
   {
     title: "London Executive Trip",
@@ -244,7 +231,6 @@ const CORPORATE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Westminster and the London Eye at dusk",
-    href: "/tour-packages/london-executive-trip",
   },
   {
     title: "New York Conference Stay",
@@ -260,7 +246,6 @@ const CORPORATE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Manhattan skyline at sunset",
-    href: "/tour-packages/new-york-conference-stay",
   },
   {
     title: "Cape Town Strategy Offsite",
@@ -276,7 +261,6 @@ const CORPORATE_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Cape Town and Table Mountain at sunset",
-    href: "/tour-packages/cape-town-strategy-offsite",
   },
 ];
 
@@ -295,7 +279,6 @@ const HAJJ_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80",
     imageAlt: "The Kaaba in Makkah's Grand Mosque",
-    href: "/tour-packages/hajj-premium",
   },
   {
     title: "Umrah Standard Package",
@@ -311,7 +294,6 @@ const HAJJ_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Pilgrims at the Grand Mosque in Makkah",
-    href: "/tour-packages/umrah-standard",
   },
   {
     title: "Umrah Family Package",
@@ -327,7 +309,6 @@ const HAJJ_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Prophet's Mosque in Madinah",
-    href: "/tour-packages/umrah-family",
   },
   {
     title: "Umrah Express Package",
@@ -343,7 +324,6 @@ const HAJJ_PACKAGES: TourPackageCardProps[] = [
     image:
       "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=800&q=80",
     imageAlt: "Worshippers around the Kaaba",
-    href: "/tour-packages/umrah-express",
   },
 ];
 
@@ -381,7 +361,9 @@ function FindYourJourneySection() {
         <SectionHeading
           eyebrow="Our Packages"
           heading={
-            <span id="find-your-journey-heading">Find Your Perfect Journey</span>
+            <span id="find-your-journey-heading">
+              Find Your Perfect Journey
+            </span>
           }
           subtitle="Browse our full range of curated travel experiences — from island honeymoons to spiritual pilgrimages."
         />

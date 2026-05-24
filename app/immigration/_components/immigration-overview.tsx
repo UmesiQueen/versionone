@@ -1,16 +1,10 @@
 import { Container, Section } from "@/components/layout/section";
 
-/**
- * ImmigrationOverview
- * Brief intro section sitting directly under the page hero on the
- * Immigration landing page. Sets the context before guiding visitors
- * into the four pathway cards below.
- */
 function ImmigrationOverview() {
   return (
     <Section
       surface="muted"
-      padding="default"
+      padding="sm"
       aria-labelledby="immigration-overview-heading"
     >
       <Container>
@@ -27,12 +21,6 @@ function ImmigrationOverview() {
               relocating their family, others are advancing a career, pursuing
               an international education, or deploying capital in exchange for
               residency or citizenship.
-            </p>
-            <p>
-              Whatever your goal, VersionOne pairs you with the right pathway
-              and shepherds the entire process — from eligibility assessment
-              and documentation to embassy submission and post-landing
-              support.
             </p>
           </div>
         </div>

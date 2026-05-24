@@ -19,11 +19,8 @@ type FaqItem = {
 };
 
 type FaqCategory = {
-  /** Stable id used for the tab + panel pair. */
   id: string;
-  /** Visible label on the tab trigger. */
   label: string;
-  /** FAQ entries shown when this tab is active. */
   items: ReadonlyArray<FaqItem>;
 };
 
@@ -177,13 +174,6 @@ const FAQ_CATEGORIES: ReadonlyArray<FaqCategory> = [
   },
 ];
 
-/**
- * FaqTabsSection
- * Tabbed FAQ surface with one accordion per category. Built on the shared
- * `Tabs` + `Accordion` primitives so each category has its own independent
- * collapse/expand state. The first item of the active tab opens by default to
- * match the design.
- */
 function FaqTabsSection() {
   return (
     <Tabs defaultValue={FAQ_CATEGORIES[0]?.id} className="gap-8">

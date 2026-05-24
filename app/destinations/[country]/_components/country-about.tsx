@@ -11,12 +11,6 @@ type CountryAboutProps = {
   headingId: string;
 };
 
-/**
- * CountryAbout
- * Two-column "Why {Country}?" section — left column has eyebrow + heading +
- * prose, right column has a country-themed image. Stacks on mobile with the
- * image first to mirror the Figma rhythm.
- */
 function CountryAbout({
   eyebrow,
   heading,

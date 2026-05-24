@@ -106,7 +106,7 @@ function PathwayCard({
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-linear-to-t from-brand-navy via-brand-navy/50 to-brand-navy/10 group-hover:via-brand-navy/20 transition-colors duration-500 ease-in-out"
+        className="absolute inset-0 -z-10 bg-linear-125 from-[#0B1F3A]/50 via-[#0B1F3A]/30 to-[#0B1F3A]/15 group-hover:via-brand-navy/20 transition-colors duration-500 ease-in-out"
       />
 
       <span

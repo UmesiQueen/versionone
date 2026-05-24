@@ -10,12 +10,6 @@ type CountryAdvantagesProps = {
   headingId: string;
 };
 
-/**
- * CountryAdvantages
- * 3×2 grid of key-advantage cards. Each card uses a thin accent bar at the top
- * (matching the design) to signal a distinct feature without an icon. The list
- * is rendered as <ul>/<li> for assistive tech.
- */
 function CountryAdvantages({
   eyebrow,
   heading,

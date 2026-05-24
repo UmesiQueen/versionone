@@ -125,8 +125,9 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
     } catch (error) {
       toast.error("Request failed. Please try again", {
         style: {
-          background: "#f66d6fa4",
+          background: "#f66d6f",
           color: "#7d0507",
+          borderColor: "#f66d6f"
         },
       });
       console.error("Form submission error:", error);
@@ -380,7 +381,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
             placeholder="Tell us more about your situation — employment, family circumstances, previous visa history, or anything else relevant to your case…"
             rows={4}
             aria-invalid={!!errors.additionalInformation}
-            className={cn("min-h-28", { "text-white/80": tone === "invert" })}
+            className="min-h-28"
             {...register("additionalInformation")}
           />
           {errors.additionalInformation && (
