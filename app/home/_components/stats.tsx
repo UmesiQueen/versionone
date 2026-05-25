@@ -1,10 +1,13 @@
+"use client";
+import CountUp from "@/components/CountUp";
 import { Container, Section } from "@/components/layout/section";
 
 const STATS = [
-  { value: "30", suffix: "+", label: "Years of experience" },
-  { value: "40", suffix: "+", label: "Countries covered" },
-  { value: "5,000", suffix: "+", label: "Successful applications" },
-  { value: "98", suffix: "%", label: "Client satisfaction rate" },
+  { value: 18, suffix: "+", label: "Years of experience" },
+  { value: 114, suffix: "+", label: "Countries covered" },
+  { value: 22248, suffix: "+", label: "Successful applications" },
+  // { value: 93, suffix: "%", label: "Client satisfaction rate" },
+  { value: 95, suffix: "%", label: "Approval rate" },
 ] as const;
 
 function StatsSection() {
@@ -16,7 +19,13 @@ function StatsSection() {
             <li key={label}>
               <div className="flex flex-col items-center gap-1 text-center text-primary-foreground">
                 <span className="text-4xl font-bold leading-none sm:text-5xl lg:text-6xl">
-                  {value}
+                  <CountUp
+                    from={value - 20}
+                    to={value}
+                    separator=","
+                    direction="up"
+                    duration={0.8}
+                  />
                   <span className="text-blue-300">{suffix}</span>
                 </span>
                 <span className="text-sm font-medium text-primary-foreground/80 sm:text-base">
