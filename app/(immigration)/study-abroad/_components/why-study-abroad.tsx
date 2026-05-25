@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CampusImage from "@/app/assets/study-campus.jpg";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 
@@ -19,15 +20,15 @@ function WhyStudyAbroadSection() {
             <div className="mt-2 flex flex-col gap-4 text-base text-muted-foreground sm:text-[0.975rem]">
               <p>
                 Studying abroad is more than earning a degree — it&rsquo;s
-                gaining a global perspective, building an international
-                network, and unlocking career opportunities that simply
-                aren&rsquo;t available at home. The world&rsquo;s top
-                institutions offer not just education, but transformation.
+                gaining a global perspective, building an international network,
+                and unlocking career opportunities that simply aren&rsquo;t
+                available at home. The world&rsquo;s top institutions offer not
+                just education, but transformation.
               </p>
               <p>
-                At VersionOne, we guide students from the very first question
-                — &ldquo;Where should I apply?&rdquo; — through to the moment
-                they walk onto their campus. We handle every detail: school
+                At VersionOne, we guide students from the very first question —
+                &ldquo;Where should I apply?&rdquo; — through to the moment they
+                walk onto their campus. We handle every detail: school
                 selection, application essays, offer management, student visa
                 processing, and pre-departure preparation.
               </p>
@@ -40,10 +41,10 @@ function WhyStudyAbroadSection() {
 
           <div className="relative aspect-5/4 w-full overflow-hidden rounded-2xl bg-muted lg:aspect-4/3">
             <Image
-              src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&w=1200&q=80"
+              src={CampusImage}
               alt="A historic university building framed by trees on a sunny day"
               fill
-              sizes="(min-width: 1024px) 560px, 100vw"
+              sizes="100vw"
               className="object-cover"
             />
           </div>

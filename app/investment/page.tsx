@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import HeroImage from "@/app/assets/hero-img.jpg";
+import HeroImage from "@/app/assets/investment-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
 import { GlobalAccessOverviewSection } from "./_components/global-access-overview";

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FamilyImage from "@/app/assets/visit-family.jpg";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 
@@ -21,29 +22,28 @@ function RightVisaIntroSection() {
                 A visitor visa is the first essential stop for any short-stay
                 travel — whether you&rsquo;re going for tourism, a business
                 meeting, or visiting family. The wrong document, a missed
-                requirement, or a poorly written cover letter can mean weeks
-                of delay or an outright refusal.
+                requirement, or a poorly written cover letter can mean weeks of
+                delay or an outright refusal.
               </p>
               <p>
                 VersionOne removes that risk entirely. Our travel advisors
-                manage every aspect of your application: document
-                preparation, embassy scheduling, flight and hotel proof, and
-                travel insurance — all handled with precision and care.
+                manage every aspect of your application: document preparation,
+                embassy scheduling, flight and hotel proof, and travel insurance
+                — all handled with precision and care.
               </p>
               <p>
-                We&rsquo;re not just a visa agency. We&rsquo;re your
-                end-to-end travel preparation partner, from application to
-                departure gate.
+                We&rsquo;re not just a visa agency. We&rsquo;re your end-to-end
+                travel preparation partner, from application to departure gate.
               </p>
             </div>
           </div>
 
           <div className="relative aspect-5/4 w-full overflow-hidden rounded-2xl bg-muted lg:aspect-4/3">
             <Image
-              src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80"
+              src={FamilyImage}
               alt="A family in a convertible car celebrating the start of a holiday"
               fill
-              sizes="(min-width: 1024px) 560px, 100vw"
+              sizes="100vw"
               className="object-cover"
             />
           </div>

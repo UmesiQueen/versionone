@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HandshakeImage from "@/app/assets/about-handshake.jpg";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 
@@ -21,14 +22,14 @@ function WhoWeAreSection() {
                 VersionOne Advisory was founded on a singular belief: that the
                 world should be more accessible to those who aspire to live,
                 invest, and grow beyond borders. What began as a boutique
-                consultancy has evolved into a globally recognized advisory
-                firm with deep expertise across three pillars — travel,
-                immigration, and investment.
+                consultancy has evolved into a globally recognized advisory firm
+                with deep expertise across three pillars — travel, immigration,
+                and investment.
               </p>
               <p>
                 Our team comprises immigration lawyers, financial strategists,
-                visa specialists, and regional experts who understand that
-                every client&rsquo;s journey is unique. We don&rsquo;t offer
+                visa specialists, and regional experts who understand that every
+                client&rsquo;s journey is unique. We don&rsquo;t offer
                 templates. We craft bespoke pathways.
               </p>
             </div>
@@ -36,11 +37,11 @@ function WhoWeAreSection() {
 
           <div className="relative aspect-5/4 w-full overflow-hidden rounded-2xl bg-muted lg:aspect-4/3">
             <Image
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
+              src={HandshakeImage}
               alt="Two professionals shaking hands to mark a partnership agreement"
               fill
-              sizes="(min-width: 1024px) 560px, 100vw"
-              className="object-cover"
+              sizes="100vw"
+              className="object-cover object-[0_70%]"
             />
           </div>
         </div>

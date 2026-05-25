@@ -1,6 +1,13 @@
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
+import {
+  InvestImage,
+  MigrateImage,
+  StudyImage,
+  TravelImage,
+  WorkImage,
+} from "@/app/assets/pathways";
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import { Badge } from "@/components/ui/badge";
@@ -9,36 +16,33 @@ import { cn } from "@/lib/utils";
 const PATHWAYS = [
   {
     index: 1,
-    eyebrow: "Pathway Highlight",
+    eyebrow: "Permanent Residency",
     title: "Migrate",
     description:
-      "Relocate permanently to a new country. Build a future you can live in.",
-    tags: ["Canada Skilled Migration", "PR & Citizenship"],
+      "Relocate permanently to a new country. Build a future, gain full rights, and put down roots — for yourself and your family.",
+    tags: ["Canada PR", "Australia Skilled Migration", "UK ILR"],
     href: "/migrate",
-    image:
-      "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=1200&q=80",
+    image: MigrateImage,
   },
   {
     index: 2,
     eyebrow: "Work Visa",
     title: "Work Abroad",
     description:
-      "Build an international career. Find global opportunities and open doors to fresh experiences.",
-    tags: ["UK Skilled Worker", "EU Blue Card", "US Work Permit"],
+      "Build an international career. From skilled worker visas to employer sponsorship, we open doors to 50+ countries.",
+    tags: ["UK Skilled Worker", "US H-1B", "UAE Work Permit"],
     href: "/work-abroad",
-    image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+    image: WorkImage,
   },
   {
     index: 3,
     eyebrow: "Student Visa",
     title: "Study Abroad",
     description:
-      "Access world-class education from leading universities. We make the application process simple — for yourself and your family.",
-    tags: ["UK Student Route", "US F-1", "Canada Study Permit"],
+      "Access world-class education at top universities overseas. We handle every step from admission support to student visa approval.",
+    tags: ["UK Student Route", "Canada Study Permit", "Australia Student Visa"],
     href: "/study-abroad",
-    image:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
+    image: StudyImage,
   },
   {
     index: 4,
@@ -46,21 +50,19 @@ const PATHWAYS = [
     title: "Visit & Travel",
     description:
       "Explore the world hassle-free. Short-stay visas, expedited support for tourism, business travel, family visits, and more.",
-    tags: ["Schengen", "ETIAS", "UK Visit Visa"],
+    tags: ["Schengen", "US B-1/B-2", "UK Visit Visa"],
     href: "/visit",
-    image:
-      "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80",
+    image: TravelImage,
   },
   {
     index: 5,
     eyebrow: "Investor Visa",
     title: "Invest",
     description:
-      "Access exclusive global mobility through high-net-worth investment routes. Visas & residencies in your chosen country.",
+      "Gain residency or citizenship through qualifying investment in property, funds, or businesses in your chosen country.",
     tags: ["Golden Visa", "Citizenship by Investment"],
     href: "/investment",
-    image:
-      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+    image: InvestImage,
   },
 ];
 
@@ -70,7 +72,7 @@ type PathwayCardProps = {
   title: string;
   description: string;
   tags: string[];
-  image: string;
+  image: StaticImageData;
   imageAlt?: string;
   href: string;
   className?: string;
@@ -93,7 +95,7 @@ function PathwayCard({
     <Link
       href={href}
       className={cn(
-        "group relative isolate flex min-h-70 flex-col justify-end overflow-hidden rounded-2xl bg-brand-navy text-brand-navy-foreground shadow-sm border hover:border-secondary transition-all duration-300 ease-in-out",
+        "group relative isolate flex min-h-70 flex-col justify-end overflow-hidden rounded-2xl bg-brand-navy text-brand-navy-foreground shadow-sm border",
         className,
       )}
     >
@@ -111,7 +113,7 @@ function PathwayCard({
 
       <span
         className={cn(
-          "absolute top-4 right-5 text-6xl font-bold text-brand-navy-foreground/30 group-hover:text-brand-navy-foreground/50 transition-colors duration-500 ease-in-out",
+          "absolute top-4 right-5 text-7xl font-bold text-brand-navy-foreground/30 group-hover:text-brand-navy-foreground/50 transition-colors duration-500 ease-in-out",
           {
             "lg:text-9xl": index <= 2,
           },
@@ -139,7 +141,7 @@ function PathwayCard({
                 <li key={tag}>
                   <Badge
                     variant="outline"
-                    className="py-1 border-brand-navy-foreground/30 bg-white/10 text-brand-navy-foreground/90"
+                    className="py-1 border-brand-navy-foreground/30 bg-white/10 text-brand-navy-foreground/90 backdrop-blur-xs"
                   >
                     {tag}
                   </Badge>
@@ -147,22 +149,17 @@ function PathwayCard({
               ))}
             </ul>
           ) : null}
-          <div className="mt-3 relative">
+          <div className="ml-auto inline-flex w-fit items-center gap-1.5 text-sm font-medium text-white/70 group-hover:text-secondary transition-colors duration-500 ease-in-out">
+            Explore
+            <ArrowRight
+              aria-hidden="true"
+              className="size-4 group-hover:translate-x-1 transition-transform duration-500 ease-in-out"
+            />
+            <span className="sr-only">{title}</span>
+          </div>
+          <div className="relative">
             <span className="block h-px w-full bg-white/20" />
             <span className="absolute top-0 left-0 h-px w-0 bg-white/50 group-hover:w-full transition-all duration-500 ease-in-out" />
-          </div>
-          <div className="flex items-center gap-2 justify-between">
-            <p className="text-xs leading-none tracking-wide text-brand-navy-foreground/50 uppercase">
-              3 Pathways
-            </p>
-            <div className="inline-flex w-fit items-center gap-1.5 text-sm font-medium text-white/70 group-hover:text-secondary transition-colors duration-500 ease-in-out">
-              Explore
-              <ArrowRight
-                aria-hidden="true"
-                className="size-4 group-hover:translate-x-1 transition-transform duration-500 ease-in-out"
-              />
-              <span className="sr-only">{title}</span>
-            </div>
           </div>
         </div>
       </div>

@@ -56,7 +56,7 @@ function CountryBiggerPicture({
                 src={image}
                 alt={imageAlt}
                 fill
-                sizes="(min-width: 1024px) 560px, 100vw"
+                sizes="100vw"
                 className="object-cover"
               />
             </div>
