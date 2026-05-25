@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { AppPreloader } from "@/components/providers/app-preloader";
 import { Toaster } from "@/components/ui/sonner";
+import { FloatingWhatsApp } from "@/components/ui/whatsapp-btn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,6 +56,7 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <Toaster />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
