@@ -71,7 +71,7 @@
   --primary-foreground: oklch(0.985 0 0);
 
   /* Secondary = warm amber (consultation form left panel) */
-  --secondary: oklch(78% 0.16431 63.583); /* ~#F0A93C */
+  --secondary: oklch(78% 0.16431 63.583); /* ~#ff9d2b */
   --secondary-foreground: oklch(0.18 0 0);
 
   /* Muted = cream "redefining travel" band */
@@ -172,31 +172,22 @@
   }
 }
 
-/* Lenis smooth scroll  */
-html.lenis,
-html.lenis body {
-  height: auto;
+html.v1-preloading,
+html.v1-preloading body {
+  overflow: hidden !important;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* legacy Edge / IE */
 }
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
+html.v1-preloading::-webkit-scrollbar,
+html.v1-preloading body::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important; /* Chrome / Safari / modern Edge */
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 7px; 
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -207,9 +198,9 @@ html.lenis body {
 ::-webkit-scrollbar-thumb {
   background: #fb9e33ea;
   border-radius: 4px;
-  min-height: 40px; 
+  min-height: 40px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-   background: #bc6909;
+  background: #bc6909;
 }

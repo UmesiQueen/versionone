@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { LenisProvider } from "@/components/providers/lenis-provider";
+import { AppPreloader } from "@/components/providers/app-preloader";
 import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
@@ -35,15 +36,24 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans">
-        <LenisProvider>
-          <SiteHeader />
-          <main id="main" className="flex-1">
-            {children}
-          </main>
-          <SiteFooter />
-        </LenisProvider>
+        {/*
+          Bootstrap the preloader lock class on <html> before first paint.
+          next/script with strategy="beforeInteractive" inlines this into the
+          initial HTML response so it runs as the parser hits it. If JS is
+          disabled the class is never added and the page renders normally.
+        */}
+        <Script id="v1-preloader-bootstrap" strategy="beforeInteractive">
+          {`document.documentElement.classList.add('v1-preloading')`}
+        </Script>
+        <AppPreloader />
+        <SiteHeader />
+        <main id="main" className="flex-1">
+          {children}
+        </main>
+        <SiteFooter />
         <Toaster />
       </body>
     </html>
