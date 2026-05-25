@@ -1,24 +1,87 @@
+"use client";
+
 import { ArrowRight, Calendar } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import HeroImage from "@/app/assets/hero-img.jpg";
+import { useEffect, useState } from "react";
+import HeroImage from "@/app/assets/about-hero.jpg";
+import Hero2Image from "@/app/assets/hero-img.jpg";
+import Hero3Image from "@/app/assets/immigration-hero.jpg";
 import { Container } from "@/components/layout/section";
 import { Button } from "@/components/ui/button";
 
+const HERO_SLIDES = [HeroImage, Hero2Image, Hero3Image] as const;
+
+const SLIDE_INTERVAL_MS = 5000;
+const FADE_DURATION_MS = 1500;
+
 function HeroSection() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    );
+
+    if (prefersReducedMotion.matches) return;
+
+    let intervalId: ReturnType<typeof setInterval> | null = null;
+
+    const start = () => {
+      if (intervalId !== null) return;
+      intervalId = setInterval(() => {
+        setActiveIndex((prev) => (prev + 1) % HERO_SLIDES.length);
+      }, SLIDE_INTERVAL_MS);
+    };
+
+    const stop = () => {
+      if (intervalId === null) return;
+      clearInterval(intervalId);
+      intervalId = null;
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "hidden") {
+        stop();
+      } else {
+        start();
+      }
+    };
+
+    start();
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      stop();
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
   return (
     <section
       aria-labelledby="hero-heading"
       className="relative isolate overflow-hidden bg-brand-navy text-brand-navy-foreground"
     >
-      <Image
-        src={HeroImage}
-        alt="Hero"
-        fill
-        priority
-        sizes="100vw"
-        className="-z-20 object-cover"
-      />
+      <div aria-hidden="true" className="absolute inset-0 -z-20">
+        {HERO_SLIDES.map((slide, index) => {
+          const key = `hero-${index}`;
+          return (
+            <Image
+              key={key}
+              src={slide}
+              alt=""
+              fill
+              priority={index === 0}
+              loading={index === 0 ? undefined : "lazy"}
+              sizes="100vw"
+              className={`object-cover transition-opacity ease-in-out ${
+                index === activeIndex ? "opacity-100" : "opacity-0"
+              }`}
+              style={{ transitionDuration: `${FADE_DURATION_MS}ms` }}
+            />
+          );
+        })}
+      </div>
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-linear-125 from-[#0B1F3A]/75 via-[#0B1F3A]/60 to-[#0B1F3A]/35"
@@ -31,7 +94,7 @@ function HeroSection() {
               aria-hidden="true"
               className="size-2 rounded-full bg-secondary"
             />
-            Trusted by 5,000+ clients globally
+            Served over 22,248+ clients globally
           </span>
 
           <h1
