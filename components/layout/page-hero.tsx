@@ -5,6 +5,13 @@ import { Container } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 import { cn } from "@/lib/utils";
 
+type PageHeroHeight = "full" | "part";
+
+const HEIGHT_CLASSES: Record<PageHeroHeight, string> = {
+  full: "min-h-160 lg:h-screen",
+  part: "min-h-112 sm:min-h-128 lg:min-h-144",
+};
+
 type PageHeroProps = {
   /** Background image — accepts an imported static asset or a remote URL string. */
   image: StaticImageData | string;
@@ -20,6 +27,12 @@ type PageHeroProps = {
   headingId?: string;
   /** Optional content rendered after the description (e.g. CTA buttons). */
   actions?: ReactNode;
+  /**
+   * Vertical size of the hero.
+   * - "full" (default): fills the viewport on desktop (lg:h-screen) with a ~640px floor on smaller screens.
+   * - "part": banner-style hero, ~448–576px tall, never fills the viewport.
+   */
+  height?: PageHeroHeight;
   /** Additional classes for the outer <section>. */
   className?: string;
   /** Additional classes for the inner <Container> — tune min-height/padding per page. */
@@ -34,6 +47,7 @@ function PageHero({
   description,
   headingId = "page-hero-heading",
   actions,
+  height = "full",
   className,
   containerClassName,
 }: PageHeroProps) {
@@ -60,7 +74,8 @@ function PageHero({
 
       <Container
         className={cn(
-          "relative min-h-160 lg:h-screen flex flex-col justify-center py-20 sm:py-24 lg:py-28",
+          "relative flex flex-col justify-center py-20 sm:py-24 lg:py-28",
+          HEIGHT_CLASSES[height],
           containerClassName,
         )}
       >

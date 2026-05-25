@@ -22,6 +22,7 @@ export default function FaqPage() {
         heading="Help Center"
         description="Everything you need to know about VersionOne."
         headingId="faq-hero-heading"
+        height="part"
       />
 
       <Section

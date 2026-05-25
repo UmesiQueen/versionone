@@ -44,6 +44,7 @@ export default function BookConsultationPage() {
         heading={<>Let&rsquo;s Find the Right Path for You</>}
         description="Speak with a VersionOne advisor to get clarity on your options and the best next steps."
         headingId="book-consultation-hero-heading"
+        height="part"
       />
       <BookConsultationFormSection />
       <JourneyProcessSection

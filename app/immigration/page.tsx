@@ -27,6 +27,7 @@ export default function ImmigrationPage() {
         }
         description="Whether you're relocating your family, advancing a career, pursuing an education, or investing for residency — VersionOne guides you to the pathway that fits, and walks it with you end to end."
         headingId="immigration-hero-heading"
+        height="part"
       />
       <ImmigrationOverview />
       <ImmigrationPathwaysSection />

@@ -22,6 +22,7 @@ export default function ContactPage() {
         heading="Get in Touch"
         description="Have a question, feedback, or just want to know more? We're here to help. Reach out — our team typically responds within one business day."
         headingId="contact-hero-heading"
+        height="part"
       />
       <ContactFormSection />
       <ReachUsDirectlySection />
