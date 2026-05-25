@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import { cn } from "@/lib/utils";
@@ -10,7 +9,6 @@ const TESTIMONIALS = [
     authorName: "Adaeze Okereke",
     authorRole: "Skilled worker",
     authorLocation: "United Kingdom",
-    avatarSrc: "https://i.pravatar.cc/120?img=47",
   },
   {
     quote:
@@ -18,7 +16,6 @@ const TESTIMONIALS = [
     authorName: "Kola Iya",
     authorRole: "Software lead",
     authorLocation: "United Kingdom",
-    avatarSrc: "https://i.pravatar.cc/120?img=12",
   },
   {
     quote:
@@ -26,7 +23,6 @@ const TESTIMONIALS = [
     authorName: "Funke Martins",
     authorRole: "Parent",
     authorLocation: "Nigeria",
-    avatarSrc: "https://i.pravatar.cc/120?img=32",
   },
 ] as const;
 
@@ -35,7 +31,6 @@ type TestimonialCardProps = {
   authorName: string;
   authorRole: string;
   authorLocation: string;
-  avatarSrc: string;
   className?: string;
 };
 
@@ -44,7 +39,6 @@ function TestimonialCard({
   authorName,
   authorRole,
   authorLocation,
-  avatarSrc,
   className,
 }: TestimonialCardProps) {
   return (
@@ -58,14 +52,14 @@ function TestimonialCard({
         <p>&ldquo;{quote}&rdquo;</p>
       </blockquote>
       <figcaption className="flex items-center gap-3">
-        <Image
-          src={avatarSrc}
-          alt={`Photo of ${authorName}`}
-          width={40}
-          height={40}
-          className="size-10 rounded-full object-cover"
+        <div
+          className="size-10 bg-primary rounded-full inline-flex items-center justify-center"
           aria-hidden="true"
-        />
+        >
+          <span className="text-base font-semibold uppercase text-white tracking-wider">
+            {authorName.split(" ").map((c) => c.slice(0, 1))}
+          </span>
+        </div>
         <div className="flex flex-col">
           <span className="text-sm font-semibold text-foreground">
             {authorName}

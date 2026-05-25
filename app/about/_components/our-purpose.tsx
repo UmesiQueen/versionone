@@ -1,33 +1,31 @@
-import { Crosshair, Eye, type LucideIcon } from "lucide-react";
+import { Crosshair, Eye, Flame, type LucideIcon } from "lucide-react";
 import { Container, Section } from "@/components/layout/section";
-import {
-  SectionEyebrow,
-  SectionHeading,
-} from "@/components/layout/section-heading";
+import { SectionHeading } from "@/components/layout/section-heading";
 
 type Pillar = {
   icon: LucideIcon;
-  eyebrow: string;
   title: string;
   description: string;
 };
 
 const PILLARS: Pillar[] = [
   {
-    icon: Crosshair,
-    eyebrow: "Our Mission",
-    title:
-      "To make global mobility accessible, dignified, and stress-free for every client we serve.",
+    icon: Eye,
+    title: "Our Vision",
     description:
-      "We exist to remove complexity from international movement — delivering expert guidance, transparent processes, and human-centered service to every person who walks through our doors, regardless of their background or budget.",
+      "To become the most successful, most admired, most trusted, most innovative and most sought after Travel Agency in the region.",
   },
   {
-    icon: Eye,
-    eyebrow: "Our Vision",
-    title:
-      "To be Africa's most trusted gateway to global immigration and investment opportunities.",
+    icon: Crosshair,
+    title: "Our Mission",
     description:
-      "We envision a future where every Nigerian — and every African — has access to the same global opportunities that exist for anyone else in the world. VersionOne is committed to being the bridge that makes that future a reality.",
+      "To be our customer's only choice in helping them feel the world.",
+  },
+  {
+    icon: Flame,
+    title: "Our Inspiration",
+    description:
+      "We draw our inspiration from the bird called The Arctic Tern, who makes the longest migration in the world without resting. The bird is powered by its own life and motivation — its emotive and meditative style is what inspires us.",
   },
 ];
 
@@ -46,9 +44,9 @@ function OurPurposeSection() {
           }
           tone="inverse"
         />
-        <ul className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6">
-          {PILLARS.map(({ icon: Icon, eyebrow, title, description }) => (
-            <li key={eyebrow} className="flex">
+        <ul className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-6">
+          {PILLARS.map(({ icon: Icon, title, description }) => (
+            <li key={title} className="flex">
               <article className="flex w-full flex-col gap-5 rounded-2xl border border-white/15 bg-white/6 p-7 backdrop-blur-sm sm:p-8">
                 <span
                   aria-hidden="true"
@@ -57,11 +55,10 @@ function OurPurposeSection() {
                   <Icon className="size-5" />
                 </span>
                 <div className="flex flex-col gap-3">
-                  <SectionEyebrow>{eyebrow}</SectionEyebrow>
-                  <h3 className="text-lg font-semibold leading-snug text-primary-foreground sm:text-xl">
+                  <h3 className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-secondary">
                     {title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-primary-foreground/80 sm:text-[0.9375rem]">
+                  <p className="text-base font-medium leading-snug text-primary-foreground sm:text-lg">
                     {description}
                   </p>
                 </div>

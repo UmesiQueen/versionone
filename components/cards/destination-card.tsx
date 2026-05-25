@@ -65,6 +65,13 @@ function OverlayCard({
         aria-hidden="true"
         className="absolute inset-0 bg-linear-to-t from-foreground via-foreground/20 to-transparent"
       />
+      <span
+        aria-hidden="true"
+        className="absolute bg-secondary/25 text-white font-semibold w-full h-full inline-flex items-center justify-center gap-1 z-10 transition-opacity delay-75 duration-300 ease-out opacity-0 group-hover:opacity-100"
+      >
+        Learn more
+        <ArrowRight className="size-3.5" />
+      </span>
       <div className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white">
         <Image
           src={`https://flagcdn.com/${flagCode.toLowerCase()}.svg`}
@@ -72,6 +79,7 @@ function OverlayCard({
           height={23}
           alt=""
           aria-hidden="true"
+          className="h-auto aspect-4/3"
         />
         <span>{country}</span>
       </div>
@@ -94,11 +102,11 @@ function DetailedCard({
       href={href}
       aria-label={ariaLabel ?? `Learn more about ${country}`}
       className={cn(
-        "group flex flex-col gap-3 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-muted shadow-none transition-shadow duration-500 hover:shadow-sm",
+        "group flex flex-col gap-3 rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-muted shadow-sm transition-shadow duration-500 hover:shadow-md",
         className,
       )}
     >
-      <div className="relative aspect-5/3 w-full overflow-hidden rounded-xl bg-muted">
+      <div className="relative aspect-5/3 w-full overflow-hidden rounded-t-xl bg-muted">
         <Image
           src={image}
           alt={imageAlt ?? ""}
@@ -113,11 +121,11 @@ function DetailedCard({
         <span className="absolute bottom-3 left-3 flex items-center gap-2 text-sm font-medium text-white">
           <Image
             src={`https://flagcdn.com/${flagCode.toLowerCase()}.svg`}
-            width={22}
-            height={16}
+            width={30}
+            height={23}
             alt=""
             aria-hidden="true"
-            className="h-4 w-auto rounded-xs shadow-sm"
+            className="h-auto aspect-4/3"
           />
           <span>{country}</span>
         </span>
