@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   },
   description:
     "VersionOne helps individuals, families, professionals, corporate organizations, and investors navigate immigration, travel, study, and investment migration — with expert guidance at every step.",
+  robots:
+    process.env.NEXT_PUBLIC_APP_ENV === "staging"
+      ? { index: false, follow: false }
+      : undefined,
 };
 
 export default function RootLayout({
