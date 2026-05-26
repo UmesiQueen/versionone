@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
@@ -11,11 +11,6 @@ import { FloatingWhatsApp } from "@/components/ui/whatsapp-btn";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -36,16 +31,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans">
-        {/*
-          Bootstrap the preloader lock class on <html> before first paint.
-          next/script with strategy="beforeInteractive" inlines this into the
-          initial HTML response so it runs as the parser hits it. If JS is
-          disabled the class is never added and the page renders normally.
-        */}
         <Script id="v1-preloader-bootstrap" strategy="beforeInteractive">
           {`document.documentElement.classList.add('v1-preloading')`}
         </Script>
