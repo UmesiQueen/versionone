@@ -3,39 +3,21 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 type FeatureRowChip = {
-  /** Small label above the chip value (lowercase, e.g. "duration"). */
   tag: string;
-  /** Primary chip value, e.g. "6–12 months". */
   value: string;
 };
 
 type FeatureRowProps = {
-  /** Stable id used as the anchor target for scroll-spy / hash links. */
   id?: string;
-  /** Eyebrow chip, e.g. "Service 01 • Consultation" or "Route 01 • Investor Visa". */
   eyebrow: string;
   title: string;
   description: string;
-  /** Three short meta-info chips rendered above the bullet list. */
   chips: FeatureRowChip[];
-  /** Short, scannable highlight bullets. */
   bullets: string[];
-  /** Optional "who it's for" callout. Renders the bordered primary card. */
   whoItsFor?: string;
-  /** id used by aria-labelledby on the row. The heading carries the same id. */
   headingId: string;
 };
 
-/**
- * FeatureRow
- * Long-form content card used in stacked feature lists (Services, Investment,
- * etc.). Each row is an <article> labelled by its own heading id so screen
- * readers can navigate between rows.
- *
- * Used alongside SectionSideNav (scrollspy nav) to give users a way to skim
- * the list and jump to a specific row. Add `id` so SectionSideNav can target
- * it for both hash-anchor jumps and IntersectionObserver tracking.
- */
 function FeatureRow({
   id,
   eyebrow,

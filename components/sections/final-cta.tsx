@@ -21,7 +21,7 @@ function FinalCtaSection({
   return (
     <section
       aria-labelledby="final-cta-heading"
-      className="py-16 sm:py-20 px-4 sm:px-0 bg-background"
+      className="py-16 sm:py-20 px-4 bg-background"
     >
       <Container className="relative isolate w-full overflow-hidden py-20 rounded-2xl">
         <Image

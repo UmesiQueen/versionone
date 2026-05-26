@@ -72,7 +72,7 @@ function OverlayCard({
         Learn more
         <ArrowRight className="size-3.5" />
       </span>
-      <div className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 text-sm font-medium text-white">
+      <div className="absolute bottom-3 left-3 flex items-end gap-2 p-1.5 sm:px-3 text-sm font-medium text-white">
         <Image
           src={`https://flagcdn.com/${flagCode.toLowerCase()}.svg`}
           width={30}
@@ -118,7 +118,7 @@ function DetailedCard({
           aria-hidden="true"
           className="absolute inset-0 bg-linear-to-t from-foreground/60 via-foreground/10 to-transparent"
         />
-        <span className="absolute bottom-3 left-3 flex items-center gap-2 text-sm font-medium text-white">
+        <span className="absolute bottom-3 left-3 flex items-end gap-2 text-sm font-medium text-white">
           <Image
             src={`https://flagcdn.com/${flagCode.toLowerCase()}.svg`}
             width={30}

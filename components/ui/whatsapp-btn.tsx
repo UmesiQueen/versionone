@@ -10,7 +10,7 @@ function FloatingWhatsApp() {
       </span>
       <Button
         size="icon-lg"
-        className="bg-green-600 shadow-xs shadow-green-500/50 transition-colors duration-300 ease-in-out hover:shadow-lg hover:bg-green-500/80! p-6 rounded-full border-none"
+        className="bg-green-600 shadow-sm shadow-green-500/50 transition-colors duration-300 ease-in-out hover:shadow-lg hover:bg-green-500/80! p-6 rounded-full border-none"
         asChild
       >
         <Link

@@ -87,7 +87,7 @@ function HeroSection() {
         className="absolute inset-0 -z-10 bg-linear-125 from-[#0B1F3A]/75 via-[#0B1F3A]/60 to-[#0B1F3A]/35"
       />
 
-      <Container className="relative flex min-h-160 h-screen flex-col justify-center py-20 sm:py-24 lg:py-32">
+      <Container className="relative flex min-h-160 lg:h-screen flex-col justify-center py-20 sm:py-24 lg:py-32">
         <div className="flex flex-col gap-6 max-w-2xl">
           <span className="inline-flex w-fit items-center gap-2 rounded-full bg-brand-navy-foreground/10 px-3 py-2 text-xs font-medium text-brand-navy-foreground backdrop-blur-sm">
             <span
@@ -108,7 +108,7 @@ function HeroSection() {
             </span>
           </h1>
 
-          <p className="max-w-xl text-base text-brand-navy-foreground/80 sm:text-lg">
+          <p className="max-w-xl text-base text-brand-navy-foreground/90 sm:text-lg">
             VersionOne helps individuals, families, corporate organizations and
             investors navigate immigration, travel, study, and investment
             migration — with expert guidance at every step.

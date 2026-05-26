@@ -70,7 +70,7 @@ function SiteFooter() {
       className="border-t border-brand-navy-foreground/10 bg-brand-navy text-brand-navy-foreground"
     >
       <Container className="py-10 md:py-16">
-        <div className="grid grid-cols-1 justify-between gap-30 md:grid-cols-2 lg:grid-cols-10">
+        <div className="grid grid-cols-1 justify-between gap-y-20 gap-x-30 md:grid-cols-2 lg:grid-cols-10">
           <div className="flex flex-col gap-4 lg:col-span-4">
             <Link href="/" className="flex items-center h-14 md:h-20">
               <Image
@@ -148,7 +148,7 @@ function SiteFooter() {
           </nav>
         </div>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-brand-navy-foreground/10 pt-6 sm:flex-row sm:items-center">
+        <div className="mt-12 flex flex-col items-start justify-between gap-5 border-t border-brand-navy-foreground/10 pt-6 sm:flex-row sm:items-center">
           <div className="flex items-center gap-3">
             {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
               <a
@@ -167,7 +167,7 @@ function SiteFooter() {
               </a>
             ))}
           </div>
-          <div className="flex flex-col gap-2 text-xs text-brand-navy-foreground/60 sm:flex-row sm:items-center sm:gap-6">
+          <div className="flex flex-col gap-2 text-sm sm:text-xs text-brand-navy-foreground/60 sm:flex-row sm:items-center sm:gap-6">
             <span>&copy; {year} VersionOne. All rights reserved.</span>
             <Link
               href="/privacy-policy"

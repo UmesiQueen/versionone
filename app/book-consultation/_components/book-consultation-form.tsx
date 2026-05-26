@@ -20,9 +20,9 @@ function BookConsultationFormSection() {
       surface="default"
       padding="default"
     >
-      <Container className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-16">
+      <Container className="px-0 sm:px-4 grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-16">
         {/* Left — intro + "What to Expect" card */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 px-4 sm:px-0">
           <SectionHeading
             eyebrow="Free Consultation"
             heading={

@@ -48,11 +48,8 @@ type SectionHeadingProps = React.ComponentProps<"div"> & {
   eyebrow?: string;
   heading: ReactNode;
   subtitle?: ReactNode;
-  /** Alignment — defaults to center, which matches the Figma. */
   align?: "left" | "center";
-  /** Surface tone — inverse for dark-background sections. */
   tone?: "default" | "inverse";
-  /** Heading level — default h2; use h1 for the page's main hero only. */
   as?: "h1" | "h2" | "h3";
 };
 

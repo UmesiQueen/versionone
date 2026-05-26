@@ -13,29 +13,15 @@ const HEIGHT_CLASSES: Record<PageHeroHeight, string> = {
 };
 
 type PageHeroProps = {
-  /** Background image — accepts an imported static asset or a remote URL string. */
   image: StaticImageData | string;
-  /** Alt text. Leave empty (default) when the image is purely decorative. */
   imageAlt?: string;
-  /** Small uppercase label rendered above the heading. */
   eyebrow?: string;
-  /** Heading content. Pass <br /> for explicit line breaks. */
   heading: ReactNode;
-  /** Supporting paragraph rendered below the heading. */
   description?: ReactNode;
-  /** Stable id used for aria-labelledby. Defaults to "page-hero-heading". */
   headingId?: string;
-  /** Optional content rendered after the description (e.g. CTA buttons). */
   actions?: ReactNode;
-  /**
-   * Vertical size of the hero.
-   * - "full" (default): fills the viewport on desktop (lg:h-screen) with a ~640px floor on smaller screens.
-   * - "part": banner-style hero, ~448–576px tall, never fills the viewport.
-   */
   height?: PageHeroHeight;
-  /** Additional classes for the outer <section>. */
   className?: string;
-  /** Additional classes for the inner <Container> — tune min-height/padding per page. */
   containerClassName?: string;
 };
 
@@ -88,7 +74,7 @@ function PageHero({
             {heading}
           </h1>
           {description ? (
-            <p className="max-w-xl text-base text-brand-navy-foreground/80 sm:text-lg">
+            <p className="max-w-xl text-base text-brand-navy-foreground/90 sm:text-lg">
               {description}
             </p>
           ) : null}

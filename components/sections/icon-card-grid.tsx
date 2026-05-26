@@ -10,33 +10,16 @@ type IconCardItem = {
 };
 
 type IconCardGridProps = {
-  /** Eyebrow chip above the heading. */
   eyebrow: string;
-  /** Section heading (string or pre-rendered node, e.g. <span> carrying the id). */
   heading: React.ReactNode;
-  /** Optional subtitle. */
   subtitle?: React.ReactNode;
-  /** id used by aria-labelledby. The heading should carry the same id. */
   headingId: string;
-  /** Cards to render. */
   items: ReadonlyArray<IconCardItem>;
-  /** Surface variant — controls section background. */
   surface?: "default" | "muted";
-  /** Max columns at the lg breakpoint. Cards always collapse to 1 col on mobile. */
   columns?: 3 | 4;
-  /** Card surface variant — set to "card" when section surface is "muted" for contrast. */
   cardSurface?: "muted" | "card";
 };
 
-/**
- * IconCardGrid
- * Reusable grid of icon + title + description cards. Used to surface
- * service offerings, visa categories, partnership types, and other
- * compact taxonomies on landing pages.
- *
- * Does NOT support per-card bulleted lists — for that pattern use a
- * page-local component (e.g. study-abroad's WhatsIncludedSection).
- */
 function IconCardGrid({
   eyebrow,
   heading,
@@ -81,7 +64,7 @@ function IconCardGrid({
             <li key={title} className="flex">
               <article
                 className={cn(
-                  "flex w-full flex-col gap-4 rounded-2xl border border-border p-6 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-primary/20 hover:shadow-md sm:p-7",
+                  "flex w-full flex-col gap-4 rounded-2xl border border-border p-6 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-primary/20 shadow-sm hover:shadow-md sm:p-7",
                   cardBackground,
                 )}
               >

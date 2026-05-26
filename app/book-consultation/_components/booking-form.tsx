@@ -118,7 +118,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
           name: data.fullName,
           calendlyUrl: fullCalendlyUrl,
         });
-         reset();
+        reset();
       } else {
         throw new Error("Failed to send message");
       }
@@ -127,7 +127,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
         style: {
           background: "#f66d6f",
           color: "#7d0507",
-          borderColor: "#f66d6f"
+          borderColor: "#f66d6f",
         },
       });
       console.error("Form submission error:", error);
@@ -146,7 +146,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
       <form
         aria-label="Book a free consultation"
         className={cn(
-          "flex flex-col gap-6 rounded-2xl border border-border bg-primary/5 p-6 sm:p-10 [&_input,textarea]:placeholder:text-muted-foreground/60",
+          "flex flex-col gap-6 sm:rounded-2xl border border-border bg-primary/5 px-6 py-14 sm:p-10 [&_input,textarea]:placeholder:text-muted-foreground/60",
           { "bg-secondary border-none": tone === "invert" },
         )}
         onSubmit={handleSubmit(onSubmit)}
@@ -303,12 +303,17 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                     <SelectTrigger
                       id="bc-destination"
                       aria-invalid={!!errors.destination}
+                      className="text-base"
                     >
                       <SelectValue placeholder="Select" />
                     </SelectTrigger>
                     <SelectContent>
                       {DESTINATION_OPTIONS.map((option) => (
-                        <SelectItem key={option} value={option}>
+                        <SelectItem
+                          key={option}
+                          value={option}
+                          className="text-base"
+                        >
                           {option}
                         </SelectItem>
                       ))}
@@ -342,12 +347,17 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                     <SelectTrigger
                       id="bc-service"
                       aria-invalid={!!errors.service}
+                      className="text-base"
                     >
                       <SelectValue placeholder="Select" />
                     </SelectTrigger>
                     <SelectContent>
                       {SERVICE_OPTIONS.map((option) => (
-                        <SelectItem key={option} value={option}>
+                        <SelectItem
+                          key={option}
+                          value={option}
+                          className="text-base"
+                        >
                           {option}
                         </SelectItem>
                       ))}
@@ -395,7 +405,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
           type="submit"
           size="xl"
           disabled={isSubmitting}
-          className="mt-2 w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
+          className="mt-2 h-12 w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
         >
           {isSubmitting ? (
             "Submitting..."

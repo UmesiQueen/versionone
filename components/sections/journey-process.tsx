@@ -3,36 +3,20 @@ import { SectionHeading } from "@/components/layout/section-heading";
 import { cn } from "@/lib/utils";
 
 type JourneyStep = {
-  /** Display label, e.g. "01". Also used as a key — must be unique. */
   step: string;
   title: string;
   description: string;
 };
 
 type JourneyProcessSectionProps = {
-  /** Eyebrow chip above the heading. */
   eyebrow: string;
-  /** Section heading (string or pre-rendered node, e.g. a <span> with an id). */
   heading: React.ReactNode;
-  /** Optional subtitle below the heading. */
   subtitle?: React.ReactNode;
-  /** id used by aria-labelledby on the section. The heading should carry the same id. */
   headingId: string;
-  /** Ordered list of steps. Typically 4–6 items. */
   steps: ReadonlyArray<JourneyStep>;
   className?: string;
 };
 
-/**
- * JourneyProcessSection
- * Reusable numbered process / journey section. Used on flow pages
- * (Migrate, Study Abroad, etc.) to show a 4–6 step path with large
- * numbered tiles in a responsive grid.
- *
- * Semantics:
- * - The container renders as <ol> so that ordering is exposed to assistive tech.
- * - Each tile prefixes its title with an sr-only "Step N:" string.
- */
 function JourneyProcessSection({
   eyebrow,
   heading,

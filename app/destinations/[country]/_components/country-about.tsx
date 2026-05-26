@@ -23,7 +23,7 @@ function CountryAbout({
     <Section padding="default" aria-labelledby={headingId}>
       <Container>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16 lg:items-center">
-          <div className="flex flex-col gap-5 order-2 lg:order-1">
+          <div className="flex flex-col gap-5">
             <SectionEyebrow>{eyebrow}</SectionEyebrow>
             <h2
               id={headingId}
@@ -37,7 +37,7 @@ function CountryAbout({
               ))}
             </div>
           </div>
-          <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl bg-muted order-1 lg:order-2">
+          <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl bg-muted">
             <Image
               src={image}
               alt={imageAlt}

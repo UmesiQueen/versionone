@@ -6,34 +6,18 @@ import { cn } from "@/lib/utils";
 type SectionNavItem = {
   id: string;
   title: string;
-  /** Display index, e.g. "01". */
   index: string;
 };
 
 type SectionSideNavProps = {
   items: ReadonlyArray<SectionNavItem>;
-  /** Render style — vertical for desktop sidebar, horizontal for mobile tab strip. */
   layout: "vertical" | "horizontal";
-  /** Optional eyebrow above the vertical list (e.g. "Our Services", "Investment Routes"). */
   eyebrow?: string;
-  /** Accessible label for the <nav>. Defaults to "On this page". */
   ariaLabel?: string;
 };
 
-/**
- * useSectionSpy
- * Watches the DOM nodes whose ids match `ids` and reports the topmost
- * intersecting one as "active". Used to drive scroll-spy highlight in the
- * section side nav.
- *
- * The rootMargin shape (-25% top, -60% bottom) means a row becomes
- * "active" when it enters the upper-middle band of the viewport, which
- * feels right while scrolling and avoids jumpy switching.
- */
 function useSectionSpy(ids: ReadonlyArray<string>) {
   const [activeId, setActiveId] = useState<string | null>(ids[0] ?? null);
-  // Join ids into a stable string so the effect deps don't re-fire on
-  // every render even if the parent recreates the array.
   const key = ids.join(",");
 
   useEffect(() => {
@@ -168,5 +152,4 @@ function SectionSideNav({
   );
 }
 
-export { SectionSideNav };
-export type { SectionNavItem };
+export { type SectionNavItem, SectionSideNav };

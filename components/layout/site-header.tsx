@@ -115,17 +115,17 @@ function SiteHeader() {
       <div
         aria-hidden={isHidden}
         className={cn(
-          "absolute top-0 w-full shadow-md flex items-end backdrop-blur-sm transform-gpu transition-transform duration-300 ease-out will-change-transform",
+          "absolute top-0 w-full h-16 shadow-md flex items-end backdrop-blur-sm transform-gpu transition-transform duration-300 ease-out will-change-transform",
           isHidden ? "-translate-y-full" : "translate-y-0",
-          isAtTop ? "h-22" : "h-18",
+          isAtTop ? "sm:h-22" : "sm:h-18",
         )}
       >
-        <div className="bg-white mx-auto h-18 w-full flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <Link href="/" className="h-14 w-fit">
+        <div className="bg-white mx-auto h-16 sm:h-18 w-full flex items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
+          <Link href="/" className="h-12 sm:h-14">
             <Image
               src={Logo}
               alt="VersionOne logo"
-              className="h-full w-full object-contain"
+              className="h-full w-fit object-contain"
             />
           </Link>
           {/* Desktop nav */}
@@ -211,7 +211,7 @@ function SiteHeader() {
                 <Menu className="size-5" aria-hidden="true" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-80">
+            <SheetContent side="right" className="w-full">
               <SheetHeader>
                 <SheetTitle className="sr-only">Menu</SheetTitle>
                 <SheetDescription className="sr-only">
@@ -226,7 +226,7 @@ function SiteHeader() {
                         <Link
                           href={link.href}
                           data-status={link.href === pathname && "active"}
-                          className="rounded-md px-3 py-3 text-base font-medium text-foreground outline-none hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
+                          className="rounded-md py-3 text-base font-medium text-foreground outline-none hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
                         >
                           {link.label}
                         </Link>
@@ -249,7 +249,7 @@ function SiteHeader() {
                             (child) => child.href === pathname,
                           ) && "active"
                         }
-                        className="flex items-center justify-between rounded-md px-3 py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
+                        className="flex items-center justify-between rounded-md py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
                       >
                         <span>{link.label}</span>
                         <ChevronDown
@@ -272,7 +272,7 @@ function SiteHeader() {
                                   data-status={
                                     child.href === pathname && "active"
                                   }
-                                  className="block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground outline-none transition-colors hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
+                                  className="block rounded-md px-3 py-2 text-[15px] font-medium text-muted-foreground outline-none transition-colors hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
                                 >
                                   {child.label}
                                 </Link>

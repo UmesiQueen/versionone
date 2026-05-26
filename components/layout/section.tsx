@@ -8,9 +8,7 @@ import { cn } from "@/lib/utils";
  */
 type SectionProps<T extends React.ElementType = "section"> = {
   as?: T;
-  /** Surface variant — controls background + text color. */
   surface?: "default" | "muted" | "navy" | "primary";
-  /** Vertical padding scale. */
   padding?: "default" | "sm" | "lg" | "none";
 } & React.ComponentPropsWithoutRef<T>;
 
