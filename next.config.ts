@@ -25,14 +25,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async rewrites() {
-    return [
-      {
-        source: "/",
-        destination: "/home",
-      },
-    ];
-  },
   async headers() {
     if (process.env.VERCEL_ENV !== 'production') return [];
     // Only apply on the staging production deployment

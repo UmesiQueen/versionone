@@ -303,7 +303,6 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                     <SelectTrigger
                       id="bc-destination"
                       aria-invalid={!!errors.destination}
-                      className="text-base"
                     >
                       <SelectValue placeholder="Select" />
                     </SelectTrigger>
@@ -347,7 +346,6 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                     <SelectTrigger
                       id="bc-service"
                       aria-invalid={!!errors.service}
-                      className="text-base"
                     >
                       <SelectValue placeholder="Select" />
                     </SelectTrigger>
