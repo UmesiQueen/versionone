@@ -32,7 +32,7 @@ function FeatureRow({
     <article
       id={id}
       aria-labelledby={headingId}
-      className="scroll-mt-28 w-full lg:max-w-4xl py-8 sm:p-10 lg:px-10 lg:pt-0 lg:py-26"
+      className="scroll-mt-20 lg:scroll-mt-28 w-full lg:max-w-4xl py-8 sm:p-10 lg:px-10 lg:pt-0 lg:py-26"
     >
       <div className="flex flex-col gap-5">
         <span className="inline-flex w-fit items-center gap-2 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-secondary">
@@ -50,7 +50,7 @@ function FeatureRow({
           {description}
         </p>
 
-        <ul className="w-full grid grid-cols-3 items-end p-5 gap-2 bg-primary/10 rounded-xl border border-primary/20">
+        <ul className="w-full grid grid-cols-3 items-center p-5 gap-2 bg-primary/10 rounded-xl border border-primary/20">
           {chips.map(({ tag, value }) => (
             <li key={tag}>
               <p className="text-primary text-sm sm:text-base font-semibold">

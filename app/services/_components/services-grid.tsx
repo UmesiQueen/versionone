@@ -191,13 +191,17 @@ function ServicesGridSection() {
       aria-labelledby="services-grid-heading"
     >
       <Container>
-
         {/*
-          Mobile-only sticky tab strip. Sits below the site header so users
-          can pivot between services while scrolling without a sidebar.
+          Mobile-only table of contents. Renders as a static list at the top
+          of the section, followed by a subtle divider, so users can scan
+          available services before reading the body content.
         */}
-        <div className="sticky top-20 z-30 -mx-4 mt-10 sm:-mx-6 lg:hidden shadow-sm bg-foreground">
-          <SectionSideNav items={NAV_ITEMS} layout="horizontal" />
+        <div className="lg:hidden">
+          <SectionSideNav items={NAV_ITEMS} eyebrow="Services" />
+          <div
+            aria-hidden="true"
+            className="mt-8 border-t border-border"
+          />
         </div>
 
         {/*
@@ -208,7 +212,7 @@ function ServicesGridSection() {
         <div className="mt-8 lg:mt-12 lg:grid lg:grid-cols-12 lg:gap-10">
           <aside className="hidden lg:col-span-3 lg:block">
             <div className="sticky top-28">
-              <SectionSideNav items={NAV_ITEMS} layout="vertical" />
+              <SectionSideNav items={NAV_ITEMS} />
             </div>
           </aside>
 

@@ -11,7 +11,6 @@ type SectionNavItem = {
 
 type SectionSideNavProps = {
   items: ReadonlyArray<SectionNavItem>;
-  layout: "vertical" | "horizontal";
   eyebrow?: string;
   ariaLabel?: string;
 };
@@ -67,46 +66,10 @@ function handleNavClick(
 
 function SectionSideNav({
   items,
-  layout,
   eyebrow = "On this page",
   ariaLabel = "On this page",
 }: SectionSideNavProps) {
   const activeId = useSectionSpy(items.map((item) => item.id));
-
-  if (layout === "horizontal") {
-    return (
-      <nav
-        aria-label={ariaLabel}
-        className="border-y border-border bg-background/90 backdrop-blur-md"
-      >
-        <ul className="mx-auto flex max-w-350 gap-2 overflow-x-auto px-4 py-3 sm:px-6 scrollbar-none [&::-webkit-scrollbar]:hidden">
-          {items.map((item) => {
-            const isActive = item.id === activeId;
-            return (
-              <li key={item.id} className="shrink-0">
-                <a
-                  href={`#${item.id}`}
-                  onClick={(event) => handleNavClick(event, item.id)}
-                  aria-current={isActive ? "true" : undefined}
-                  className={cn(
-                    "inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
-                    isActive
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted text-muted-foreground hover:bg-muted/70 hover:text-foreground",
-                  )}
-                >
-                  <span className="text-[0.65rem] font-semibold tabular-nums opacity-80">
-                    {item.index}
-                  </span>
-                  <span>{item.title}</span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-    );
-  }
 
   return (
     <nav aria-label={ariaLabel}>

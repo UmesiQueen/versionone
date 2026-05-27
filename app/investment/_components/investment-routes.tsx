@@ -190,14 +190,19 @@ function InvestmentRoutesSection() {
     >
       <Container>
         {/*
-          Mobile-only sticky tab strip. Sits below the site header so users
-          can pivot between routes while scrolling without a sidebar.
+          Mobile-only table of contents. Renders as a static list at the top
+          of the section, followed by a subtle divider, so users can scan
+          available routes before reading the body content.
         */}
-        <div className="sticky top-24 z-30 -mx-4 mt-10 sm:-mx-6 lg:hidden">
+        <div className="lg:hidden">
           <SectionSideNav
             items={NAV_ITEMS}
-            layout="horizontal"
+            eyebrow="Investment Routes"
             ariaLabel="Investment routes on this page"
+          />
+          <div
+            aria-hidden="true"
+            className="mt-8 border-t border-border"
           />
         </div>
 
@@ -211,7 +216,6 @@ function InvestmentRoutesSection() {
             <div className="sticky top-28">
               <SectionSideNav
                 items={NAV_ITEMS}
-                layout="vertical"
                 eyebrow="Investment Routes"
                 ariaLabel="Investment routes on this page"
               />
