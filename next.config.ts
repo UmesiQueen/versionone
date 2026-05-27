@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "plus.unsplash.com",
+        hostname: "i.ibb.co",
         pathname: "/**",
       },
       {
