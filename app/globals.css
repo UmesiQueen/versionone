@@ -172,6 +172,20 @@
   }
 }
 
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  20%       { transform: rotate(-15deg); }
+  40%       { transform: rotate(12deg); }
+  60%       { transform: rotate(-10deg); }
+  80%       { transform: rotate(8deg); }
+}
+
+.animate-wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 1.5s ease-in-out infinite;
+}
+
 html.v1-preloading,
 html.v1-preloading body {
   overflow: hidden !important;
