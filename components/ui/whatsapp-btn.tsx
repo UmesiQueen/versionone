@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { WhatsApp } from "../icons";
 import { Button } from "./button";
 
-const TOOLTIP_DELAY_MS = 120_000; // 2 minute
+const TOOLTIP_DELAY_MS = 60_000; // 1 minute
 const TOOLTIP_DURATION_MS = 15_000; // 15 seconds
 const WHATS_APP_URL =
   "https://wa.me/2348170000169?text=Hello%20VersionOne!%20I%27d%20like%20to%20enquire%20about%20your%20visa%20and%20immigration%20services.%20Please%20help%20me%20get%20started.";
