@@ -211,7 +211,7 @@ function SiteHeader() {
                 <Menu className="size-5" aria-hidden="true" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full">
+            <SheetContent side="right" className="w-full px-3">
               <SheetHeader>
                 <SheetTitle className="sr-only">Menu</SheetTitle>
                 <SheetDescription className="sr-only">
@@ -226,7 +226,7 @@ function SiteHeader() {
                         <Link
                           href={link.href}
                           data-status={link.href === pathname && "active"}
-                          className="rounded-md py-3 text-base font-medium text-foreground outline-none hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
+                          className="rounded-md p-3 text-base font-medium text-foreground outline-none hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
                         >
                           {link.label}
                         </Link>
@@ -249,7 +249,7 @@ function SiteHeader() {
                             (child) => child.href === pathname,
                           ) && "active"
                         }
-                        className="flex items-center justify-between rounded-md py-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
+                        className="flex items-center justify-between rounded-md p-3 text-base font-medium text-foreground outline-none transition-colors hover:bg-muted focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:text-secondary"
                       >
                         <span>{link.label}</span>
                         <ChevronDown
@@ -285,14 +285,24 @@ function SiteHeader() {
                   );
                 })}
               </nav>
-              <div className="mt-4">
+              <div className="mt-4 space-y-3">
                 <SheetClose asChild>
                   <Button
                     asChild
                     size="xl"
                     className="rounded-full px-5 w-full border border-blue-900/60 bg-linear-to-b from-blue-400 via-blue-500/70 to-blue-950/40 text-white/90 hover:text-white hover:border-blue-900 hover:via-blue-600 hover:to-blue-950 hover:shadow-lg transition-colors duration-300 ease-in-out"
                   >
-                    <Link href="#">Get in Touch</Link>
+                    <Link href="/contact">Get in Touch</Link>
+                  </Button>
+                </SheetClose>
+                <SheetClose asChild>
+                  <Button
+                    asChild
+                    size="xl"
+                    variant="outline"
+                    className="rounded-full px-5 w-full border-primary/10 shadow-sm"
+                  >
+                    <Link href="/book-consultation">Book a Consultation</Link>
                   </Button>
                 </SheetClose>
               </div>
