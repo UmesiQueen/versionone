@@ -6,8 +6,24 @@ import { useState } from "react";
 import { Controller, type SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import {
+  Combobox,
+  ComboboxContent,
+  ComboboxEmpty,
+  ComboboxInput,
+  ComboboxItem,
+  ComboboxList,
+} from "@/components/ui/combobox";
+import {
+  Field,
+  FieldError,
+  FieldGroup,
+  FieldLabel,
+  FieldLegend,
+  FieldSeparator,
+  FieldSet,
+} from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import PhoneInput from "@/components/ui/phone-input";
 import {
   Select,
@@ -21,14 +37,54 @@ import { Textarea } from "@/components/ui/textarea";
 import {
   type BookingFormData,
   bookingSchema,
+  COUNTRY_LIST,
   DESTINATION_OPTIONS,
   SERVICE_OPTIONS,
 } from "@/lib/booking";
 import { cn } from "@/lib/utils";
 
 const FORM_SPREE_ID = process.env.NEXT_PUBLIC_CONTACT_FORMSPREE_ID;
-const CALENDLY_URL = "https://calendly.com/aguhenrychuks/30min";
+const CALENDLY_URL = "https://calendly.com/queenumesi01/30min";
 
+const buildCalendlyUrl = (data: BookingFormData) => {
+  const url = new URL(CALENDLY_URL);
+
+  url.searchParams.set("name", data.fullName);
+  url.searchParams.set("email", data.email);
+
+  const parts = [
+    data.nationality && `I am from ${data.nationality.toUpperCase()}`,
+    data.destination &&
+      `looking to travel to ${data.destination.toUpperCase()}`,
+    data.service && `I need ${data.service.toUpperCase()} assistance`,
+    data.phone && `Phone: ${data.phone}`,
+  ]
+    .filter(Boolean)
+    .join(", ");
+
+  const summary = parts ? `${parts}.` : "";
+  const withNotes = data.additionalInformation
+    ? `${summary} Additional info: ${data.additionalInformation}`
+    : summary;
+
+  if (withNotes) url.searchParams.set("a1", withNotes);
+
+  return url.toString();
+};
+
+const formatData = (data: BookingFormData) => {
+  return {
+    Client_Name: data.fullName,
+    Client_Nationality: data.nationality,
+    Client_Email: data.email,
+    Client_Phone: data.phone,
+    Destination: data.destination,
+    Service_Type: data.service,
+    ...(data.additionalInformation && {
+      More_Information: data.additionalInformation,
+    }),
+  };
+};
 interface BookingFormProps {
   tone?: "default" | "invert";
 }
@@ -41,11 +97,10 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
   }>({ open: false });
 
   const {
-    register,
     handleSubmit,
     reset,
     control,
-    formState: { errors, isSubmitting },
+    formState: { isSubmitting },
   } = useForm<BookingFormData>({
     resolver: zodResolver(bookingSchema),
     defaultValues: {
@@ -57,46 +112,6 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
       service: "",
     },
   });
-
-  const buildCalendlyUrl = (data: BookingFormData) => {
-    const url = new URL(CALENDLY_URL);
-
-    url.searchParams.set("name", data.fullName);
-    url.searchParams.set("email", data.email);
-
-    const parts = [
-      data.nationality && `I am from ${data.nationality.toUpperCase()}`,
-      data.destination &&
-        `looking to travel to ${data.destination.toUpperCase()}`,
-      data.service && `I need ${data.service.toUpperCase()} assistance`,
-      data.phone && `Reach me on: ${data.phone}`,
-    ]
-      .filter(Boolean)
-      .join(", ");
-
-    const summary = parts ? `${parts}.` : "";
-    const withNotes = data.additionalInformation
-      ? `${summary} Additional info: ${data.additionalInformation}`
-      : summary;
-
-    if (withNotes) url.searchParams.set("a1", withNotes);
-
-    return url.toString();
-  };
-
-  const formatData = (data: BookingFormData) => {
-    return {
-      Client_Name: data.fullName,
-      Client_Nationality: data.nationality,
-      Client_Email: data.email,
-      Client_Phone: data.phone,
-      Destination: data.destination,
-      Service_Type: data.service,
-      ...(data.additionalInformation && {
-        More_Information: data.additionalInformation,
-      }),
-    };
-  };
 
   const onSubmit: SubmitHandler<BookingFormData> = async (data) => {
     const formattedData = formatData(data);
@@ -152,157 +167,192 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
         onSubmit={handleSubmit(onSubmit)}
       >
         {/* Personal Details */}
-        <fieldset className="flex flex-col gap-4">
-          <legend
+        <FieldSet className="flex flex-col gap-4">
+          <FieldLegend
             className={cn(
               "text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground/60 mb-5",
               { "text-white/80": tone === "invert" },
             )}
           >
             Personal Details
-          </legend>
+          </FieldLegend>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div className="flex flex-col gap-1.5">
-              <Label
-                htmlFor="bc-full-name"
-                className={cn(
-                  "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
-                  { "text-muted": tone === "invert" },
-                )}
-              >
-                Full Name <span aria-hidden="true">*</span>
-                <span className="sr-only">(required)</span>
-              </Label>
-              <Input
-                id="bc-full-name"
-                placeholder="Jane Doe"
-                autoComplete="name"
-                aria-invalid={!!errors.fullName}
-                {...register("fullName")}
-              />
-              {errors.fullName && (
-                <p className="text-xs text-destructive">
-                  {errors.fullName.message}
-                </p>
-              )}
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <Label
-                htmlFor="bc-nationality"
-                className={cn(
-                  "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
-                  { "text-muted": tone === "invert" },
-                )}
-              >
-                Nationality <span aria-hidden="true">*</span>
-                <span className="sr-only">(required)</span>
-              </Label>
-              <Input
-                id="bc-nationality"
-                placeholder="e.g. Nigerian, Ghanaian"
-                autoComplete="country-name"
-                aria-invalid={!!errors.nationality}
-                {...register("nationality")}
-              />
-              {errors.nationality && (
-                <p className="text-xs text-destructive">
-                  {errors.nationality.message}
-                </p>
-              )}
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <Label
-                htmlFor="bc-email"
-                className={cn(
-                  "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
-                  { "text-muted": tone === "invert" },
-                )}
-              >
-                Email Address <span aria-hidden="true">*</span>
-                <span className="sr-only">(required)</span>
-              </Label>
-              <Input
-                id="bc-email"
-                type="email"
-                placeholder="your@email.com"
-                autoComplete="email"
-                aria-invalid={!!errors.email}
-                {...register("email")}
-              />
-              {errors.email && (
-                <p className="text-xs text-destructive">
-                  {errors.email.message}
-                </p>
-              )}
-            </div>
-
-            <div className="flex flex-col gap-1.5">
-              <Label
-                htmlFor="bc-phone"
-                className={cn(
-                  "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
-                  { "text-muted": tone === "invert" },
-                )}
-              >
-                Phone / WhatsApp <span aria-hidden="true">*</span>
-                <span className="sr-only">(required)</span>
-              </Label>
-              <Controller
-                control={control}
-                name="phone"
-                render={({ field }) => (
-                  <PhoneInput
-                    value={field.value}
-                    onChange={field.onChange}
-                    aria-invalid={!!errors.phone}
+          <FieldGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <Controller
+              name="fullName"
+              control={control}
+              render={({ field, fieldState }) => (
+                <Field className="flex flex-col gap-1.5">
+                  <FieldLabel
+                    htmlFor="bc-full-name"
+                    className={cn(
+                      "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+                      { "text-muted": tone === "invert" },
+                    )}
+                  >
+                    Full Name <span aria-hidden="true">*</span>
+                    <span className="sr-only">(required)</span>
+                  </FieldLabel>
+                  <Input
+                    id="bc-full-name"
+                    placeholder="Jane Doe"
+                    aria-invalid={fieldState.invalid}
+                    {...field}
                   />
-                )}
-              />
-              {errors.phone && (
-                <p className="text-xs text-destructive">
-                  {errors.phone.message}
-                </p>
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
               )}
-            </div>
-          </div>
-        </fieldset>
+            />
 
-        <hr className="border-primary/10" />
+            <Controller
+              name="nationality"
+              control={control}
+              render={({ field, fieldState }) => {
+                const selectedCountry = COUNTRY_LIST.find(
+                  (lang) => lang === field.value,
+                );
+                return (
+                  <Field className="flex flex-col gap-1.5">
+                    <FieldLabel
+                      htmlFor="bc-nationality"
+                      className={cn(
+                        "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+                        { "text-muted": tone === "invert" },
+                      )}
+                    >
+                      Nationality <span aria-hidden="true">*</span>
+                      <span className="sr-only">(required)</span>
+                    </FieldLabel>
+                    <Combobox
+                      items={COUNTRY_LIST}
+                      itemToStringValue={(country) => country}
+                      value={selectedCountry ?? null}
+                      onValueChange={(item) => {
+                        field.onChange(item ?? "");
+                      }}
+                    >
+                      <ComboboxInput
+                        id="bc-nationality"
+                        placeholder="Select nationality..."
+                        aria-invalid={fieldState.invalid}
+                        className="overflow-hidden h-10 bg-white"
+                        showClear
+                        {...field}
+                      />
+                      <ComboboxContent>
+                        <ComboboxEmpty>Country not found.</ComboboxEmpty>
+                        <ComboboxList>
+                          {(item) => (
+                            <ComboboxItem key={item} value={item}>
+                              {item}
+                            </ComboboxItem>
+                          )}
+                        </ComboboxList>
+                      </ComboboxContent>
+                    </Combobox>
+                    {fieldState.invalid && (
+                      <FieldError errors={[fieldState.error]} />
+                    )}
+                  </Field>
+                );
+              }}
+            />
+
+            <Controller
+              name="email"
+              control={control}
+              render={({ field, fieldState }) => (
+                <Field className="flex flex-col gap-1.5">
+                  <FieldLabel
+                    htmlFor="bc-email"
+                    className={cn(
+                      "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+                      { "text-muted": tone === "invert" },
+                    )}
+                  >
+                    Email Address <span aria-hidden="true">*</span>
+                    <span className="sr-only">(required)</span>
+                  </FieldLabel>
+                  <Input
+                    id="bc-email"
+                    type="email"
+                    placeholder="your@email.com"
+                    aria-invalid={fieldState.invalid}
+                    {...field}
+                  />
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
+              )}
+            />
+
+            <Controller
+              name="phone"
+              control={control}
+              render={({ field, fieldState }) => (
+                <Field className="flex flex-col gap-1.5">
+                  <FieldLabel
+                    htmlFor="bc-phone"
+                    className={cn(
+                      "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+                      { "text-muted": tone === "invert" },
+                    )}
+                  >
+                    Phone / WhatsApp <span aria-hidden="true">*</span>
+                    <span className="sr-only">(required)</span>
+                  </FieldLabel>
+                  <PhoneInput
+                    id="bc-phone"
+                    aria-invalid={fieldState.invalid}
+                    {...field}
+                  />
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
+              )}
+            />
+          </FieldGroup>
+        </FieldSet>
+
+        <FieldSeparator />
 
         {/* Immigration Needs */}
-        <fieldset className="flex flex-col gap-4">
-          <legend
+        <FieldSet className="flex flex-col gap-4">
+          <FieldLegend
             className={cn(
               "text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground/60 mb-5",
               { "text-white/80": tone === "invert" },
             )}
           >
             Your Immigration Needs
-          </legend>
+          </FieldLegend>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div className="flex flex-col gap-1.5">
-              <Label
-                htmlFor="bc-destination"
-                className={cn(
-                  "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
-                  { "text-muted": tone === "invert" },
-                )}
-              >
-                Destination Country <span aria-hidden="true">*</span>
-                <span className="sr-only">(required)</span>
-              </Label>
-              <Controller
-                control={control}
-                name="destination"
-                render={({ field }) => (
+          <FieldGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <Controller
+              name="destination"
+              control={control}
+              render={({ field, fieldState }) => (
+                <Field className="flex flex-col gap-1.5">
+                  <FieldLabel
+                    htmlFor="bc-destination"
+                    className={cn(
+                      "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+                      { "text-muted": tone === "invert" },
+                    )}
+                  >
+                    Destination Country <span aria-hidden="true">*</span>
+                    <span className="sr-only">(required)</span>
+                  </FieldLabel>
+
                   <Select onValueChange={field.onChange} value={field.value}>
                     <SelectTrigger
                       id="bc-destination"
-                      aria-invalid={!!errors.destination}
+                      aria-invalid={fieldState.invalid}
+                      {...field}
                     >
                       <SelectValue placeholder="Select" />
                     </SelectTrigger>
@@ -318,34 +368,34 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                       ))}
                     </SelectContent>
                   </Select>
-                )}
-              />
-              {errors.destination && (
-                <p className="text-xs text-destructive">
-                  {errors.destination.message}
-                </p>
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
               )}
-            </div>
+            />
 
-            <div className="flex flex-col gap-1.5">
-              <Label
-                htmlFor="bc-service"
-                className={cn(
-                  "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
-                  { "text-muted": tone === "invert" },
-                )}
-              >
-                Visa / Service Type <span aria-hidden="true">*</span>
-                <span className="sr-only">(required)</span>
-              </Label>
-              <Controller
-                control={control}
-                name="service"
-                render={({ field }) => (
+            <Controller
+              name="service"
+              control={control}
+              render={({ field, fieldState }) => (
+                <Field className="flex flex-col gap-1.5">
+                  <FieldLabel
+                    htmlFor="bc-service"
+                    className={cn(
+                      "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+                      { "text-muted": tone === "invert" },
+                    )}
+                  >
+                    Visa / Service Type <span aria-hidden="true">*</span>
+                    <span className="sr-only">(required)</span>
+                  </FieldLabel>
+
                   <Select onValueChange={field.onChange} value={field.value}>
                     <SelectTrigger
                       id="bc-service"
-                      aria-invalid={!!errors.service}
+                      aria-invalid={fieldState.invalid}
+                      {...field}
                     >
                       <SelectValue placeholder="Select" />
                     </SelectTrigger>
@@ -361,43 +411,43 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                       ))}
                     </SelectContent>
                   </Select>
-                )}
-              />
-              {errors.service && (
-                <p className="text-xs text-destructive">
-                  {errors.service.message}
-                </p>
+                  {fieldState.invalid && (
+                    <FieldError errors={[fieldState.error]} />
+                  )}
+                </Field>
               )}
-            </div>
-          </div>
-        </fieldset>
+            />
+          </FieldGroup>
+        </FieldSet>
 
-        <hr className="border-primary/10" />
+        <FieldSeparator />
 
-        <div className="flex flex-col gap-1.5">
-          <Label
-            htmlFor="bc-additional"
-            className={cn(
-              "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
-              { "text-muted": tone === "invert" },
-            )}
-          >
-            Additional Information
-          </Label>
-          <Textarea
-            id="bc-additional"
-            placeholder="Tell us more about your situation — employment, family circumstances, previous visa history, or anything else relevant to your case…"
-            rows={4}
-            aria-invalid={!!errors.additionalInformation}
-            className="min-h-28"
-            {...register("additionalInformation")}
-          />
-          {errors.additionalInformation && (
-            <p className="text-xs text-destructive">
-              {errors.additionalInformation.message}
-            </p>
+        <Controller
+          name="additionalInformation"
+          control={control}
+          render={({ field, fieldState }) => (
+            <Field className="flex flex-col gap-1.5">
+              <FieldLabel
+                htmlFor="bc-additional"
+                className={cn(
+                  "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
+                  { "text-muted": tone === "invert" },
+                )}
+              >
+                Additional Information
+              </FieldLabel>
+              <Textarea
+                id="bc-additional"
+                placeholder="Tell us more about your situation — employment, family circumstances, previous visa history, or anything else relevant to your case…"
+                aria-invalid={fieldState.invalid}
+                {...field}
+                rows={4}
+                className="min-h-28"
+              />
+              {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+            </Field>
           )}
-        </div>
+        />
 
         <Button
           type="submit"

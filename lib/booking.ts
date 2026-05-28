@@ -1,4 +1,7 @@
+import { getNames } from "country-list";
 import { z } from "zod";
+
+export const COUNTRY_LIST = getNames();
 
 export const SERVICE_OPTIONS = [
   "Work visa",
@@ -23,13 +26,16 @@ export const DESTINATION_OPTIONS = [
 
 export const bookingSchema = z.object({
   fullName: z.string().min(2, "Full name is required"),
-  nationality: z.string().min(2, "Nationality is required"),
+  nationality: z.string()
+    .refine((val) => COUNTRY_LIST.includes(val as typeof DESTINATION_OPTIONS[number]), {
+      message: "Please select a destination country",
+    }),
   email: z.email("Invalid email address"),
   phone: z.string().min(5, "Phone number is required"),
   destination: z
     .string()
     .refine((val) => DESTINATION_OPTIONS.includes(val as typeof DESTINATION_OPTIONS[number]), {
-      message: "Please select a destination country",
+      message: "Please select your nationality",
     }),
   service: z
     .string()
