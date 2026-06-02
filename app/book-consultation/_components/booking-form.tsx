@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Controller, type SubmitHandler, useForm } from "react-hook-form";
-import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import {
   Combobox,
@@ -24,6 +23,7 @@ import {
   FieldSet,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import Modal from "@/components/ui/modal";
 import PhoneInput from "@/components/ui/phone-input";
 import {
   Select,
@@ -32,7 +32,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import SuccessModal from "@/components/ui/success-modal";
 import { Textarea } from "@/components/ui/textarea";
 import {
   type BookingFormData,
@@ -91,10 +90,10 @@ interface BookingFormProps {
 
 const BookingForm = ({ tone = "default" }: BookingFormProps) => {
   const [modal, setModal] = useState<{
-    open: boolean;
+    variant: "success" | "error";
     name?: string;
     calendlyUrl?: string;
-  }>({ open: false });
+  } | null>(null);
 
   const {
     handleSubmit,
@@ -126,39 +125,33 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
         body: JSON.stringify(formattedData),
       });
 
-      if (response.ok) {
-        const fullCalendlyUrl = buildCalendlyUrl(data);
-        setModal({
-          open: true,
-          name: data.fullName,
-          calendlyUrl: fullCalendlyUrl,
-        });
-        reset();
-      } else {
-        throw new Error("Failed to send message");
-      }
-    } catch (error) {
-      toast.error("Request failed. Please try again", {
-        style: {
-          background: "#f66d6f",
-          color: "#7d0507",
-          borderColor: "#f66d6f",
-        },
+      if (!response.ok) throw new Error("Failed to send message");
+
+      setModal({
+        variant: "success",
+        name: data.fullName,
+        calendlyUrl: buildCalendlyUrl(data),
       });
+      reset();
+    } catch (error) {
       console.error("Form submission error:", error);
+      setModal({ variant: "error", name: data.fullName });
     }
   };
 
   return (
     <>
-      <SuccessModal
-        open={modal.open}
-        name={modal.name}
-        calendlyUrl={modal.calendlyUrl}
-        onClose={() => setModal({ open: false })}
-      />
+      {modal && (
+        <Modal
+          variant={modal.variant}
+          name={modal.name}
+          calendlyUrl={modal.calendlyUrl}
+          onClose={() => setModal(null)}
+        />
+      )}
 
       <form
+        id="form-bc"
         aria-label="Book a free consultation"
         className={cn(
           "flex flex-col gap-6 sm:rounded-2xl border border-border bg-primary/5 px-6 py-14 sm:p-10 [&_input,textarea]:placeholder:text-muted-foreground/60",
@@ -184,7 +177,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
               render={({ field, fieldState }) => (
                 <Field className="flex flex-col gap-1.5">
                   <FieldLabel
-                    htmlFor="bc-full-name"
+                    htmlFor="form-bc-full-name"
                     className={cn(
                       "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
                       { "text-muted": tone === "invert" },
@@ -194,7 +187,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                     <span className="sr-only">(required)</span>
                   </FieldLabel>
                   <Input
-                    id="bc-full-name"
+                    id="form-bc-full-name"
                     placeholder="Jane Doe"
                     aria-invalid={fieldState.invalid}
                     {...field}
@@ -216,7 +209,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                 return (
                   <Field className="flex flex-col gap-1.5">
                     <FieldLabel
-                      htmlFor="bc-nationality"
+                      htmlFor="form-bc-nationality"
                       className={cn(
                         "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
                         { "text-muted": tone === "invert" },
@@ -234,7 +227,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                       }}
                     >
                       <ComboboxInput
-                        id="bc-nationality"
+                        id="form-bc-nationality"
                         placeholder="Select nationality..."
                         aria-invalid={fieldState.invalid}
                         className="overflow-hidden h-10 bg-white"
@@ -266,7 +259,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
               render={({ field, fieldState }) => (
                 <Field className="flex flex-col gap-1.5">
                   <FieldLabel
-                    htmlFor="bc-email"
+                    htmlFor="form-bc-email"
                     className={cn(
                       "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
                       { "text-muted": tone === "invert" },
@@ -276,7 +269,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                     <span className="sr-only">(required)</span>
                   </FieldLabel>
                   <Input
-                    id="bc-email"
+                    id="form-bc-email"
                     type="email"
                     placeholder="your@email.com"
                     aria-invalid={fieldState.invalid}
@@ -295,7 +288,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
               render={({ field, fieldState }) => (
                 <Field className="flex flex-col gap-1.5">
                   <FieldLabel
-                    htmlFor="bc-phone"
+                    htmlFor="form-bc-phone"
                     className={cn(
                       "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
                       { "text-muted": tone === "invert" },
@@ -305,7 +298,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                     <span className="sr-only">(required)</span>
                   </FieldLabel>
                   <PhoneInput
-                    id="bc-phone"
+                    id="form-bc-phone"
                     aria-invalid={fieldState.invalid}
                     {...field}
                   />
@@ -338,7 +331,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
               render={({ field, fieldState }) => (
                 <Field className="flex flex-col gap-1.5">
                   <FieldLabel
-                    htmlFor="bc-destination"
+                    htmlFor="form-bc-destination"
                     className={cn(
                       "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
                       { "text-muted": tone === "invert" },
@@ -350,7 +343,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
 
                   <Select onValueChange={field.onChange} value={field.value}>
                     <SelectTrigger
-                      id="bc-destination"
+                      id="form-bc-destination"
                       aria-invalid={fieldState.invalid}
                       {...field}
                     >
@@ -381,7 +374,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
               render={({ field, fieldState }) => (
                 <Field className="flex flex-col gap-1.5">
                   <FieldLabel
-                    htmlFor="bc-service"
+                    htmlFor="form-bc-service"
                     className={cn(
                       "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
                       { "text-muted": tone === "invert" },
@@ -393,7 +386,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
 
                   <Select onValueChange={field.onChange} value={field.value}>
                     <SelectTrigger
-                      id="bc-service"
+                      id="form-bc-service"
                       aria-invalid={fieldState.invalid}
                       {...field}
                     >
@@ -428,7 +421,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
           render={({ field, fieldState }) => (
             <Field className="flex flex-col gap-1.5">
               <FieldLabel
-                htmlFor="bc-additional"
+                htmlFor="form-bc-additional"
                 className={cn(
                   "text-xs font-semibold uppercase tracking-[0.08em] text-muted-foreground",
                   { "text-muted": tone === "invert" },
@@ -437,7 +430,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
                 Additional Information
               </FieldLabel>
               <Textarea
-                id="bc-additional"
+                id="form-bc-additional"
                 placeholder="Tell us more about your situation — employment, family circumstances, previous visa history, or anything else relevant to your case…"
                 aria-invalid={fieldState.invalid}
                 {...field}

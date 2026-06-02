@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import { Controller, type SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -16,16 +17,17 @@ import {
   FieldLabel,
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
+import Modal from "@/components/ui/modal";
 import PhoneInput from "@/components/ui/phone-input";
 import { Textarea } from "@/components/ui/textarea";
 import { OfficeCardAside } from "./office-card";
 
 const contactSchema = z.object({
-  fullName: z.string().min(2, "Full name is required"),
+  fullName: z.string().min(1, "Full name is required"),
   email: z.email("Invalid email address"),
   phone: z.string().min(5, "Phone number is required"),
   subject: z.string(),
-  message: z.string().min(5, "Message is required"),
+  message: z.string().min(1, "Message is required"),
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
@@ -39,6 +41,11 @@ const defaultValues = {
 };
 
 function ContactFormSection() {
+  const [modal, setModal] = useState<{
+    variant: "success" | "error";
+    name?: string;
+  } | null>(null);
+
   const {
     handleSubmit,
     control,
@@ -49,13 +56,18 @@ function ContactFormSection() {
   });
 
   const onSubmit: SubmitHandler<ContactForm> = async (data) => {
-    console.log(data);
+    try {
+      setModal({ variant: "success", name: data.fullName });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setModal({ variant: "error", name: data.fullName });
+    }
   };
 
   return (
     <Section
-      id="contact-form"
-      aria-labelledby="contact-form-heading"
+      id="form-c-form"
+      aria-labelledby="form-c-form-heading"
       surface="default"
       padding="default"
     >
@@ -66,7 +78,7 @@ function ContactFormSection() {
             eyebrow="Send a Message"
             heading={
               <span
-                id="contact-form-heading"
+                id="form-c-form-heading"
                 className="font-semibold lg:text-4xl"
               >
                 We&rsquo;d Love to Hear From You
@@ -90,6 +102,7 @@ function ContactFormSection() {
           />
 
           <form
+            id="form-c"
             aria-label="Contact VersionOne"
             className="flex flex-col gap-5"
             onSubmit={handleSubmit(onSubmit)}
@@ -100,12 +113,12 @@ function ContactFormSection() {
                 control={control}
                 render={({ field, fieldState }) => (
                   <Field className="flex flex-col gap-1.5">
-                    <FieldLabel htmlFor="contact-name">
+                    <FieldLabel htmlFor="form-c-name">
                       Full Name <span aria-hidden="true">*</span>
                       <span className="sr-only">(required)</span>
                     </FieldLabel>
                     <Input
-                      id="contact-name"
+                      id="form-c-name"
                       placeholder="e.g. Jane Doe"
                       aria-invalid={fieldState.invalid}
                       {...field}
@@ -122,12 +135,12 @@ function ContactFormSection() {
                 control={control}
                 render={({ field, fieldState }) => (
                   <Field className="flex flex-col gap-1.5">
-                    <FieldLabel htmlFor="contact-email">
+                    <FieldLabel htmlFor="form-c-email">
                       Email Address <span aria-hidden="true">*</span>
                       <span className="sr-only">(required)</span>
                     </FieldLabel>
                     <Input
-                      id="contact-email"
+                      id="form-c-email"
                       placeholder="you@example.com"
                       aria-invalid={fieldState.invalid}
                       {...field}
@@ -144,12 +157,12 @@ function ContactFormSection() {
                 control={control}
                 render={({ field, fieldState }) => (
                   <Field className="flex flex-col gap-1.5">
-                    <FieldLabel htmlFor="contact-phone">
+                    <FieldLabel htmlFor="form-c-phone">
                       Phone<span aria-hidden="true">*</span>
                       <span className="sr-only">(required)</span>
                     </FieldLabel>
                     <PhoneInput
-                      id="contact-phone"
+                      id="form-c-phone"
                       aria-invalid={fieldState.invalid}
                       {...field}
                     />
@@ -165,9 +178,9 @@ function ContactFormSection() {
                 control={control}
                 render={({ field, fieldState }) => (
                   <Field className="flex flex-col gap-1.5">
-                    <FieldLabel htmlFor="contact-subject">Subject</FieldLabel>
+                    <FieldLabel htmlFor="form-c-subject">Subject</FieldLabel>
                     <Input
-                      id="contact-subject"
+                      id="form-c-subject"
                       placeholder="How can we help?"
                       aria-invalid={fieldState.invalid}
                       {...field}
@@ -185,12 +198,12 @@ function ContactFormSection() {
               control={control}
               render={({ field, fieldState }) => (
                 <Field className="flex flex-col gap-1.5">
-                  <FieldLabel htmlFor="contact-message">
+                  <FieldLabel htmlFor="form-c-message">
                     Message <span aria-hidden="true">*</span>
                     <span className="sr-only">(required)</span>
                   </FieldLabel>
                   <Textarea
-                    id="contact-message"
+                    id="form-c-message"
                     placeholder="Tell us how we can help you…"
                     rows={5}
                     className="min-h-32"
@@ -220,6 +233,15 @@ function ContactFormSection() {
               )}
             </Button>
           </form>
+
+          {modal && (
+            <Modal
+              variant={modal.variant}
+              name={modal.name}
+              onClose={() => setModal(null)}
+              duration={2500}
+            />
+          )}
         </div>
 
         {/* Right — office card */}

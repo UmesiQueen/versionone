@@ -218,3 +218,12 @@ html.v1-preloading body::-webkit-scrollbar {
 ::-webkit-scrollbar-thumb:hover {
   background: #bc6909;
 }
+
+/* modal keyframe */
+@keyframes countdown-shrink {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+.countdown-shrink {
+  animation: countdown-shrink linear forwards;
+}
