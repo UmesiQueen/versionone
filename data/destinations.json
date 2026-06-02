@@ -1,74 +1,4 @@
 {
-  "contextLabels": {
-    "migrate": {
-      "aboutEyebrowTemplate": "About {country}",
-      "aboutHeadingTemplate": "Why {country}?",
-      "advantagesEyebrow": "Key Advantages",
-      "advantagesHeadingTemplate": "Why {country} Stands Out",
-      "advantagesSubtitleTemplate": "Here's what makes {country} one of the world's most sought-after migration destinations.",
-      "pathwaysEyebrow": "Migration Pathways",
-      "pathwaysHeadingTemplate": "Your Pathway to {country}",
-      "pathwaysSubtitleTemplate": "{country} offers multiple structured routes to help you achieve your goals:",
-      "biggerPictureEyebrow": "The Bigger Picture",
-      "biggerPictureHeading": "More Than a Move — A Transformation",
-      "biggerPictureCtaLabel": "Start your Journey",
-      "biggerPictureCtaHref": "/book-consultation",
-      "otherEyebrow": "Explore More",
-      "otherHeading": "Other Migration Destinations",
-      "otherSubtitleTemplate": "Not set on {country}? Explore your other options below."
-    },
-    "study": {
-      "aboutEyebrowTemplate": "Studying in {country}",
-      "aboutHeadingTemplate": "Why Study in {country}?",
-      "advantagesEyebrow": "Academic Strengths",
-      "advantagesHeadingTemplate": "Why {country} Stands Out for Students",
-      "advantagesSubtitleTemplate": "Here's what makes {country} one of the world's most rewarding places to earn a degree.",
-      "pathwaysEyebrow": "Study Pathways",
-      "pathwaysHeadingTemplate": "Your Pathway to Studying in {country}",
-      "pathwaysSubtitleTemplate": "{country} offers structured academic routes to suit every stage of your education:",
-      "biggerPictureEyebrow": "The Bigger Picture",
-      "biggerPictureHeading": "An Education That Opens Doors",
-      "biggerPictureCtaLabel": "Plan Your Studies",
-      "biggerPictureCtaHref": "/book-consultation",
-      "otherEyebrow": "Explore More",
-      "otherHeading": "Other Study Destinations",
-      "otherSubtitleTemplate": "Open to other options? Explore more study destinations below."
-    },
-    "work": {
-      "aboutEyebrowTemplate": "Working in {country}",
-      "aboutHeadingTemplate": "Why Work in {country}?",
-      "advantagesEyebrow": "Career Advantages",
-      "advantagesHeadingTemplate": "Why {country} Stands Out for Professionals",
-      "advantagesSubtitleTemplate": "Here's what makes {country} one of the world's most attractive career destinations.",
-      "pathwaysEyebrow": "Work Visa Pathways",
-      "pathwaysHeadingTemplate": "Your Pathway to Working in {country}",
-      "pathwaysSubtitleTemplate": "{country} offers multiple visa routes tailored to skilled professionals:",
-      "biggerPictureEyebrow": "The Bigger Picture",
-      "biggerPictureHeading": "A Career on the World Stage",
-      "biggerPictureCtaLabel": "Start your Journey",
-      "biggerPictureCtaHref": "/book-consultation",
-      "otherEyebrow": "Explore More",
-      "otherHeading": "Other Work Destinations",
-      "otherSubtitleTemplate": "Considering other markets? Explore more work destinations below."
-    },
-    "visit": {
-      "aboutEyebrowTemplate": "Visiting {country}",
-      "aboutHeadingTemplate": "Why Visit {country}?",
-      "advantagesEyebrow": "Travel Highlights",
-      "advantagesHeadingTemplate": "Why {country} Belongs on Your Bucket List",
-      "advantagesSubtitleTemplate": "Here's what makes {country} an unforgettable destination for travellers.",
-      "pathwaysEyebrow": "Visa Options",
-      "pathwaysHeadingTemplate": "Your Pathway to Visiting {country}",
-      "pathwaysSubtitleTemplate": "{country} offers several visa options depending on your purpose of travel:",
-      "biggerPictureEyebrow": "The Bigger Picture",
-      "biggerPictureHeading": "Travel With Confidence",
-      "biggerPictureCtaLabel": "Plan Your Trip",
-      "biggerPictureCtaHref": "/book-consultation",
-      "otherEyebrow": "Explore More",
-      "otherHeading": "Other Travel Destinations",
-      "otherSubtitleTemplate": "Looking for somewhere else? Explore more travel destinations below."
-    }
-  },
   "destinations": [
     {
       "id": "canada",
@@ -78,11 +8,7 @@
       "image": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Toronto skyline featuring the CN Tower at dusk",
       "featured": true,
-      "descriptions": {
-        "migrate": "Permanent Residency through Express Entry.",
-        "study": "Post-graduate work permits & pathways to permanent residency.",
-        "work": "Express Entry & Provincial Nominee Program for skilled workers."
-      },
+      "description": "Permanent Residency through Express Entry.",
       "content": {
         "about": {
           "paragraphs": [
@@ -91,161 +17,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Canada opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Canada is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
           },
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to U15 research universities including Toronto, McGill and UBC."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work for up to three years after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Canadian study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from over 180 countries."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Vancouver, Toronto and Montreal consistently rank among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Designated Learning Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application (IRCC)"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in Canada is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time in Canada becomes the launchpad for everything that comes next."
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Express Entry & PNP Routes",
-                "description": "Multiple federal and provincial programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Open Work Permit Options",
-                "description": "Flexibility for spouses of skilled workers and post-graduation permit holders."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working in Canada counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Canadian Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Express Entry Profile & CRS Score"
-              },
-              {
-                "step": "03",
-                "title": "Provincial Nominee Program (PNP) Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in Canada means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Canada is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -256,11 +76,7 @@
       "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Red double-decker buses passing the London Eye",
       "featured": true,
-      "descriptions": {
-        "study": "Oxford, Cambridge & Russell Group universities with prestige.",
-        "work": "Skilled Worker Visa with route to indefinite leave to remain and work.",
-        "visit": "UK Standard Visitor Visa — embassy required."
-      },
+      "description": "Oxford, Cambridge & Russell Group universities with prestige.",
       "content": {
         "about": {
           "paragraphs": [
@@ -269,161 +85,55 @@
             "Whether you're chasing a world-class education, a senior professional role, or an unforgettable visit, the UK rewards ambition and openness with opportunity at every turn."
           ]
         },
-        "contexts": {
-          "study": {
-            "advantages": [
-              {
-                "title": "World-Renowned Universities",
-                "description": "Oxford, Cambridge, Imperial, UCL and 24 Russell Group institutions."
-              },
-              {
-                "title": "Shorter, Intensive Programs",
-                "description": "Most bachelor's degrees take 3 years; master's take just 1."
-              },
-              {
-                "title": "Graduate Route Visa",
-                "description": "Stay and work in the UK for 2 years after graduation (3 for PhDs)."
-              },
-              {
-                "title": "English-Speaking Environment",
-                "description": "Build fluency in the global language of business and academia."
-              },
-              {
-                "title": "Diverse Student Community",
-                "description": "Over 600,000 international students from across the world."
-              },
-              {
-                "title": "Cultural & Travel Access",
-                "description": "On the doorstep of Europe with rich history and cultural life."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Shortlist Universities & Courses"
-              },
-              {
-                "step": "02",
-                "title": "UCAS or Direct University Application"
-              },
-              {
-                "step": "03",
-                "title": "CAS Letter from Your Chosen Institution"
-              },
-              {
-                "step": "04",
-                "title": "Student Visa Application (UKVI)"
-              },
-              {
-                "step": "05",
-                "title": "Arrival, Studies & Graduate Route"
-              }
-            ],
-            "biggerPictureBody": "A UK degree carries weight everywhere. Beyond the qualification, you graduate into a network of alumni, employers and post-study work rights that open doors anywhere in the world."
+        "advantages": [
+          {
+            "title": "World-Renowned Universities",
+            "description": "Oxford, Cambridge, Imperial, UCL and 24 Russell Group institutions."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Skilled Worker Visa",
-                "description": "Up to 5 years of sponsored work, with a route to indefinite leave to remain."
-              },
-              {
-                "title": "Global Talent Visa",
-                "description": "Fast-track route for leaders in tech, science, research and the arts."
-              },
-              {
-                "title": "Strong Financial Centre",
-                "description": "London anchors finance, fintech, legal services and professional industries."
-              },
-              {
-                "title": "Tech Nation & Innovation",
-                "description": "Europe's leading hub for tech startups and scaleups."
-              },
-              {
-                "title": "Settlement After 5 Years",
-                "description": "Most skilled workers qualify for permanent settlement after five years of continuous residence."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your dependants on the Skilled Worker and Global Talent routes."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Job Offer from a Licensed UK Sponsor"
-              },
-              {
-                "step": "02",
-                "title": "Certificate of Sponsorship (CoS)"
-              },
-              {
-                "step": "03",
-                "title": "Skilled Worker or Global Talent Visa Application"
-              },
-              {
-                "step": "04",
-                "title": "Relocation & Right to Work in the UK"
-              },
-              {
-                "step": "05",
-                "title": "Indefinite Leave to Remain (ILR) After 5 Years"
-              }
-            ],
-            "biggerPictureBody": "Working in the UK puts you in one of the world's most connected economies — with clear visa routes, strong worker protections, and a transparent path from skilled worker to permanent resident."
+          {
+            "title": "Shorter, Intensive Programs",
+            "description": "Most bachelor's degrees take 3 years; master's take just 1."
           },
-          "visit": {
-            "advantages": [
-              {
-                "title": "World Heritage in Every Corner",
-                "description": "From the Tower of London to Edinburgh Castle and Stonehenge."
-              },
-              {
-                "title": "Cultural Capital",
-                "description": "Iconic museums, West End theatre, music venues and historic landmarks."
-              },
-              {
-                "title": "Easy English-Speaking Travel",
-                "description": "Navigate visa, accommodation and travel in your own language."
-              },
-              {
-                "title": "Excellent Transport Links",
-                "description": "High-speed rail, the Underground, and great access to Europe."
-              },
-              {
-                "title": "Diverse Regions",
-                "description": "Beaches, highlands, countryside, and cosmopolitan cities all in one trip."
-              },
-              {
-                "title": "Year-Round Events",
-                "description": "Wimbledon, Edinburgh Fringe, Premier League, and major exhibitions."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Standard Visitor Visa Application Online"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics Appointment at a Visa Centre"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to the UK is more than sightseeing — it's an immersion in history, culture and a way of life that has shaped the modern world. We make the visa side simple so you can focus on the experience."
+          {
+            "title": "Graduate Route Visa",
+            "description": "Stay and work in the UK for 2 years after graduation (3 for PhDs)."
+          },
+          {
+            "title": "English-Speaking Environment",
+            "description": "Build fluency in the global language of business and academia."
+          },
+          {
+            "title": "Diverse Student Community",
+            "description": "Over 600,000 international students from across the world."
+          },
+          {
+            "title": "Cultural & Travel Access",
+            "description": "On the doorstep of Europe with rich history and cultural life."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Shortlist Universities & Courses"
+          },
+          {
+            "step": "02",
+            "title": "UCAS or Direct University Application"
+          },
+          {
+            "step": "03",
+            "title": "CAS Letter from Your Chosen Institution"
+          },
+          {
+            "step": "04",
+            "title": "Student Visa Application (UKVI)"
+          },
+          {
+            "step": "05",
+            "title": "Arrival, Studies & Graduate Route"
+          }
+        ],
+        "biggerPictureBody": "A UK degree carries weight everywhere. Beyond the qualification, you graduate into a network of alumni, employers and post-study work rights that open doors anywhere in the world."
       }
     },
     {
@@ -434,11 +144,7 @@
       "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Dubai skyline with the Burj Khalifa",
       "featured": true,
-      "descriptions": {
-        "migrate": "Long-term residency options for professionals & investors.",
-        "work": "Golden Visa & employment sponsorship in a tax-free economy.",
-        "visit": "Visa on arrival — Dubai, Abu Dhabi, Sharjah."
-      },
+      "description": "Long-term residency options for professionals & investors.",
       "content": {
         "about": {
           "paragraphs": [
@@ -447,161 +153,55 @@
             "Whether you're an investor, a senior professional, a family or a traveller, the UAE offers a uniquely safe, modern and opportunity-rich base in the Middle East."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "10-Year Golden Visa",
-                "description": "Long-term residency for investors, entrepreneurs, top talent and their families."
-              },
-              {
-                "title": "Zero Personal Income Tax",
-                "description": "Keep more of what you earn under one of the world's most attractive tax regimes."
-              },
-              {
-                "title": "Family Sponsorship",
-                "description": "Sponsor your spouse, children and parents under multiple residency programs."
-              },
-              {
-                "title": "World-Class Infrastructure",
-                "description": "Modern transport, healthcare, schools and digital services."
-              },
-              {
-                "title": "Safe & Stable Environment",
-                "description": "Consistently ranked among the safest countries in the world."
-              },
-              {
-                "title": "Global Hub for Business",
-                "description": "Strategic location between Europe, Africa and Asia with strong air connectivity."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Residency Route (Golden, Investor, Employment)"
-              },
-              {
-                "step": "02",
-                "title": "Initial Approval & Document Preparation"
-              },
-              {
-                "step": "03",
-                "title": "Medical, Emirates ID & Biometrics"
-              },
-              {
-                "step": "04",
-                "title": "Residency Visa Stamping"
-              },
-              {
-                "step": "05",
-                "title": "Family Sponsorship & Long-Term Renewal"
-              }
-            ],
-            "biggerPictureBody": "Relocating to the UAE means stepping into one of the world's most ambitious economies — backed by a tax-free environment, modern infrastructure and long-term residency programs designed to keep talent and capital for the long haul."
+        "advantages": [
+          {
+            "title": "10-Year Golden Visa",
+            "description": "Long-term residency for investors, entrepreneurs, top talent and their families."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Tax-Free Salaries",
-                "description": "No personal income tax means a meaningful uplift in take-home pay."
-              },
-              {
-                "title": "Employment & Golden Visas",
-                "description": "Multiple visa types tailored to skilled professionals, executives and specialists."
-              },
-              {
-                "title": "Global Talent Magnet",
-                "description": "Multinationals across finance, tech, energy, logistics and hospitality."
-              },
-              {
-                "title": "Strategic Time Zone",
-                "description": "Work across European, African and Asian markets in a single business day."
-              },
-              {
-                "title": "Family-Friendly Lifestyle",
-                "description": "International schools, modern healthcare and a strong expat community."
-              },
-              {
-                "title": "Pathway to Long-Term Residency",
-                "description": "Skilled professionals can transition to Golden Visa eligibility."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Job Offer in the UAE"
-              },
-              {
-                "step": "02",
-                "title": "Employment Entry Permit Issued by Your Employer"
-              },
-              {
-                "step": "03",
-                "title": "Medical Examination & Emirates ID"
-              },
-              {
-                "step": "04",
-                "title": "Residency Visa Stamping"
-              },
-              {
-                "step": "05",
-                "title": "Long-Term Renewal or Golden Visa Upgrade"
-              }
-            ],
-            "biggerPictureBody": "A career in the UAE is fast, ambitious and globally connected. With the right plan, your role here becomes a springboard for the next ten years of your professional life."
+          {
+            "title": "Zero Personal Income Tax",
+            "description": "Keep more of what you earn under one of the world's most attractive tax regimes."
           },
-          "visit": {
-            "advantages": [
-              {
-                "title": "Visa on Arrival or eVisa",
-                "description": "Simple entry for most nationalities, with eVisa options for the rest."
-              },
-              {
-                "title": "Iconic Cities",
-                "description": "From the Burj Khalifa to Sheikh Zayed Grand Mosque and Abu Dhabi's cultural district."
-              },
-              {
-                "title": "Year-Round Sunshine",
-                "description": "Beach, desert and city experiences in one trip."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, restaurants and experiences at every price point."
-              },
-              {
-                "title": "Family-Friendly Attractions",
-                "description": "Theme parks, water parks, museums and aquariums for all ages."
-              },
-              {
-                "title": "Effortless Connectivity",
-                "description": "A global aviation hub with direct flights almost everywhere."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Check Visa-Free Eligibility or eVisa Requirement"
-              },
-              {
-                "step": "02",
-                "title": "Online Visa Application (where required)"
-              },
-              {
-                "step": "03",
-                "title": "Approval & Entry Permit Issuance"
-              },
-              {
-                "step": "04",
-                "title": "Travel & Entry through Dubai, Abu Dhabi or Sharjah"
-              },
-              {
-                "step": "05",
-                "title": "Stay Within Validity & Optional Extensions"
-              }
-            ],
-            "biggerPictureBody": "A UAE visit is effortless to plan and unforgettable in person. We help you cut through the paperwork so you can focus on the trip itself."
+          {
+            "title": "Family Sponsorship",
+            "description": "Sponsor your spouse, children and parents under multiple residency programs."
+          },
+          {
+            "title": "World-Class Infrastructure",
+            "description": "Modern transport, healthcare, schools and digital services."
+          },
+          {
+            "title": "Safe & Stable Environment",
+            "description": "Consistently ranked among the safest countries in the world."
+          },
+          {
+            "title": "Global Hub for Business",
+            "description": "Strategic location between Europe, Africa and Asia with strong air connectivity."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Choose Your Residency Route (Golden, Investor, Employment)"
+          },
+          {
+            "step": "02",
+            "title": "Initial Approval & Document Preparation"
+          },
+          {
+            "step": "03",
+            "title": "Medical, Emirates ID & Biometrics"
+          },
+          {
+            "step": "04",
+            "title": "Residency Visa Stamping"
+          },
+          {
+            "step": "05",
+            "title": "Family Sponsorship & Long-Term Renewal"
+          }
+        ],
+        "biggerPictureBody": "Relocating to the UAE means stepping into one of the world's most ambitious economies — backed by a tax-free environment, modern infrastructure and long-term residency programs designed to keep talent and capital for the long haul."
       }
     },
     {
@@ -612,12 +212,7 @@
       "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Aerial view of central Berlin",
       "featured": true,
-      "descriptions": {
-        "migrate": "Strong opportunities for skilled professionals.",
-        "study": "Tuition-free public universities with world-class STEM programs.",
-        "work": "EU Blue Card for qualified professionals with job offers on the go.",
-        "visit": "Schengen visa — tourism & business."
-      },
+      "description": "Strong opportunities for skilled professionals.",
       "content": {
         "about": {
           "paragraphs": [
@@ -626,212 +221,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Germany opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Germany is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
           },
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in Germany is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Multiple Visa Routes",
-                "description": "Federal and regional programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Flexible Work Permits",
-                "description": "Open work permit options for partners and graduates."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Qualifying Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Skilled Worker Profile & Scoring"
-              },
-              {
-                "step": "03",
-                "title": "Sponsorship or Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in Germany means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
           },
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to Germany is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Germany is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -842,12 +280,7 @@
       "image": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Manhattan skyline at sunset",
       "featured": true,
-      "descriptions": {
-        "migrate": "Employment, family-sponsored routes.",
-        "study": "Ivy League & top-ranked programs across every discipline.",
-        "work": "H-1B, O-1, and L-1 visas for professionals, executives and managers.",
-        "visit": "B-1/B-2 tourist & business visa required."
-      },
+      "description": "Employment, family-sponsored routes.",
       "content": {
         "about": {
           "paragraphs": [
@@ -856,212 +289,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, United States opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to United States is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
           },
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in United States is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Multiple Visa Routes",
-                "description": "Federal and regional programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Flexible Work Permits",
-                "description": "Open work permit options for partners and graduates."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Qualifying Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Skilled Worker Profile & Scoring"
-              },
-              {
-                "step": "03",
-                "title": "Sponsorship or Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in United States means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
           },
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to United States is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to United States is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -1072,9 +348,7 @@
       "image": "https://images.unsplash.com/photo-1519197924294-4ba991a11128?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Historic Old Town square in Warsaw, Poland",
       "featured": true,
-      "descriptions": {
-        "migrate": "EU residency pathways with one of Europe's fastest-growing economies."
-      },
+      "description": "EU residency pathways with one of Europe's fastest-growing economies.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1083,59 +357,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Poland opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Poland is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
+          },
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
+          },
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Poland is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -1146,11 +416,7 @@
       "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Sydney Opera House at golden hour",
       "featured": true,
-      "descriptions": {
-        "migrate": "Skilled migration pathways for professionals and families.",
-        "study": "Group of universities with strong graduate employment outcomes.",
-        "work": "TSS & Employer Nomination Scheme across in-demand industries."
-      },
+      "description": "Skilled migration pathways for professionals and families.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1159,161 +425,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Australia opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Australia is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
           },
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in Australia is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Multiple Visa Routes",
-                "description": "Federal and regional programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Flexible Work Permits",
-                "description": "Open work permit options for partners and graduates."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Qualifying Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Skilled Worker Profile & Scoring"
-              },
-              {
-                "step": "03",
-                "title": "Sponsorship or Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in Australia means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Australia is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -1324,9 +484,7 @@
       "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Singapore's Marina Bay Sands at twilight",
       "featured": true,
-      "descriptions": {
-        "work": "Employment Pass for professionals in Asia's premier business hub."
-      },
+      "description": "Employment Pass for professionals in Asia's premier business hub.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1335,59 +493,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Singapore opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Multiple Visa Routes",
-                "description": "Federal and regional programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Flexible Work Permits",
-                "description": "Open work permit options for partners and graduates."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Qualifying Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Skilled Worker Profile & Scoring"
-              },
-              {
-                "step": "03",
-                "title": "Sponsorship or Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in Singapore means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+        "advantages": [
+          {
+            "title": "Strong Labour Market",
+            "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
+          },
+          {
+            "title": "Competitive Salaries",
+            "description": "Top-tier pay backed by robust labour protections and benefits."
+          },
+          {
+            "title": "Multiple Visa Routes",
+            "description": "Federal and regional programs prioritising skilled workers."
+          },
+          {
+            "title": "Family Inclusion",
+            "description": "Bring your spouse and dependants on most work permit programs."
+          },
+          {
+            "title": "Flexible Work Permits",
+            "description": "Open work permit options for partners and graduates."
+          },
+          {
+            "title": "Pathway to Citizenship",
+            "description": "Time spent working counts toward permanent residency and citizenship."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Secure a Qualifying Job Offer or Profile"
+          },
+          {
+            "step": "02",
+            "title": "Skilled Worker Profile & Scoring"
+          },
+          {
+            "step": "03",
+            "title": "Sponsorship or Nomination"
+          },
+          {
+            "step": "04",
+            "title": "Work Permit or Permanent Residency Application"
+          },
+          {
+            "step": "05",
+            "title": "Relocation, Onboarding & Settlement Support"
+          }
+        ],
+        "biggerPictureBody": "Working in Singapore means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
       }
     },
     {
@@ -1398,10 +552,7 @@
       "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Park Güell in Barcelona, Spain",
       "featured": false,
-      "descriptions": {
-        "migrate": "Residency options for professionals and families.",
-        "visit": "Schengen visa — tourist & business visits."
-      },
+      "description": "Residency options for professionals and families.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1410,110 +561,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Spain opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Spain is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
           },
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to Spain is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
+          },
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Spain is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -1524,9 +620,7 @@
       "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Swiss Alps with a mountain village",
       "featured": false,
-      "descriptions": {
-        "migrate": "Premium relocation opportunities in Europe."
-      },
+      "description": "Premium relocation opportunities in Europe.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1535,59 +629,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Switzerland opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Switzerland is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
+          },
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
+          },
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Switzerland is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -1598,11 +688,7 @@
       "image": "https://i.ibb.co/cSZ12Mnz/ethan-hu-g-P2-PNn1f-Ci-U-unsplash.jpg",
       "imageAlt": "Canal-side buildings in Amsterdam, the Netherlands",
       "featured": false,
-      "descriptions": {
-        "migrate": "Excellent pathways for skilled workers and families.",
-        "study": "Top-ranked Dutch universities with extensive English-taught programs.",
-        "work": "Highly Skilled Migrant Programme for knowledge economy professionals."
-      },
+      "description": "Excellent pathways for skilled workers and families.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1611,161 +697,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Netherlands opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Netherlands is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
           },
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in Netherlands is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Multiple Visa Routes",
-                "description": "Federal and regional programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Flexible Work Permits",
-                "description": "Open work permit options for partners and graduates."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Qualifying Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Skilled Worker Profile & Scoring"
-              },
-              {
-                "step": "03",
-                "title": "Sponsorship or Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in Netherlands means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Netherlands is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -1776,11 +756,7 @@
       "image": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Milford Sound fjord in New Zealand",
       "featured": false,
-      "descriptions": {
-        "migrate": "A high-quality lifestyle with skilled migration programs.",
-        "study": "Welcoming study environment with post-study work rights.",
-        "work": "Accredited Employer Work Visa with strong pathways to residency."
-      },
+      "description": "A high-quality lifestyle with skilled migration programs.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1789,161 +765,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, New Zealand opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to New Zealand is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
           },
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in New Zealand is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Multiple Visa Routes",
-                "description": "Federal and regional programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Flexible Work Permits",
-                "description": "Open work permit options for partners and graduates."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Qualifying Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Skilled Worker Profile & Scoring"
-              },
-              {
-                "step": "03",
-                "title": "Sponsorship or Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in New Zealand means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to New Zealand is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -1954,9 +824,7 @@
       "image": "https://i.ibb.co/PzMnVZgw/cedric-letsch-03-O-BOsa-XGk-unsplash.jpg",
       "imageAlt": "Old town of Luxembourg City at sunset",
       "featured": false,
-      "descriptions": {
-        "migrate": "Access to Europe with attractive residency pathways."
-      },
+      "description": "Access to Europe with attractive residency pathways.",
       "content": {
         "about": {
           "paragraphs": [
@@ -1965,59 +833,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Luxembourg opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "migrate": {
-            "advantages": [
-              {
-                "title": "Stability & Security",
-                "description": "One of the world's safest and most politically stable countries."
-              },
-              {
-                "title": "Endless Career Opportunities",
-                "description": "Consistently high demand for skilled professionals across all sectors."
-              },
-              {
-                "title": "World-Class Healthcare & Education",
-                "description": "Access to universal healthcare and globally ranked institutions."
-              },
-              {
-                "title": "Multicultural & Welcoming Society",
-                "description": "A home for people from all walks of life and every corner of the world."
-              },
-              {
-                "title": "Clear Path to Permanent Residency & Citizenship",
-                "description": "Structured, transparent immigration programs with proven success rates."
-              },
-              {
-                "title": "High Standard of Living",
-                "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Skilled Migration Programs (Express Entry)"
-              },
-              {
-                "step": "02",
-                "title": "Provincial Nominee Programs (PNPs)"
-              },
-              {
-                "step": "03",
-                "title": "Family Sponsorship Opportunities"
-              },
-              {
-                "step": "04",
-                "title": "Study Pathways Leading to Residency"
-              },
-              {
-                "step": "05",
-                "title": "Work Opportunities with Long-Term Benefits"
-              }
-            ],
-            "biggerPictureBody": "Migrating to Luxembourg is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "advantages": [
+          {
+            "title": "Stability & Security",
+            "description": "One of the world's safest and most politically stable countries."
+          },
+          {
+            "title": "Endless Career Opportunities",
+            "description": "Consistently high demand for skilled professionals across all sectors."
+          },
+          {
+            "title": "World-Class Healthcare & Education",
+            "description": "Access to universal healthcare and globally ranked institutions."
+          },
+          {
+            "title": "Multicultural & Welcoming Society",
+            "description": "A home for people from all walks of life and every corner of the world."
+          },
+          {
+            "title": "Clear Path to Permanent Residency & Citizenship",
+            "description": "Structured, transparent immigration programs with proven success rates."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Skilled Migration Programs (Express Entry)"
+          },
+          {
+            "step": "02",
+            "title": "Provincial Nominee Programs (PNPs)"
+          },
+          {
+            "step": "03",
+            "title": "Family Sponsorship Opportunities"
+          },
+          {
+            "step": "04",
+            "title": "Study Pathways Leading to Residency"
+          },
+          {
+            "step": "05",
+            "title": "Work Opportunities with Long-Term Benefits"
+          }
+        ],
+        "biggerPictureBody": "Migrating to Luxembourg is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -2028,10 +892,7 @@
       "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Paris cityscape with the Eiffel Tower at sunset",
       "featured": false,
-      "descriptions": {
-        "study": "Grandes Écoles, Sorbonne & affordable EU tuition fees.",
-        "visit": "Embassy visa — Schengen zone covers 26 countries."
-      },
+      "description": "Grandes Écoles, Sorbonne & affordable EU tuition fees.",
       "content": {
         "about": {
           "paragraphs": [
@@ -2040,110 +901,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, France opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in France is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+        "advantages": [
+          {
+            "title": "Globally Ranked Universities",
+            "description": "Home to research universities with strong international reputation."
           },
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to France is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+          {
+            "title": "Post-Graduation Work Permit",
+            "description": "Stay and work after you complete your studies."
+          },
+          {
+            "title": "Pathway to Permanent Residency",
+            "description": "Local study and work experience accelerates your PR application."
+          },
+          {
+            "title": "Affordable, High-Quality Tuition",
+            "description": "Strong value compared to other top English-speaking destinations."
+          },
+          {
+            "title": "Multicultural Campuses",
+            "description": "Welcoming environment with students from around the world."
+          },
+          {
+            "title": "Safe, Liveable Cities",
+            "description": "Consistently ranked among the world's best places to live."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Choose Your Program & Institution"
+          },
+          {
+            "step": "02",
+            "title": "Letter of Acceptance from a Recognised Institution"
+          },
+          {
+            "step": "03",
+            "title": "Study Permit Application"
+          },
+          {
+            "step": "04",
+            "title": "Arrival, Orientation & Studies"
+          },
+          {
+            "step": "05",
+            "title": "Post-Graduation Work Permit & PR Pathways"
+          }
+        ],
+        "biggerPictureBody": "Studying in France is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
       }
     },
     {
@@ -2154,10 +960,7 @@
       "image": "https://images.unsplash.com/photo-1590089415225-401ed6f9db8e?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Trinity College Dublin's Long Room library",
       "featured": false,
-      "descriptions": {
-        "study": "English-language education with strong tech industry links.",
-        "work": "Critical Skills Employment Permit for people in the tech and healthcare sectors."
-      },
+      "description": "English-language education with strong tech industry links.",
       "content": {
         "about": {
           "paragraphs": [
@@ -2166,110 +969,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Ireland opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in Ireland is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+        "advantages": [
+          {
+            "title": "Globally Ranked Universities",
+            "description": "Home to research universities with strong international reputation."
           },
-          "work": {
-            "advantages": [
-              {
-                "title": "Strong Labour Market",
-                "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
-              },
-              {
-                "title": "Competitive Salaries",
-                "description": "Top-tier pay backed by robust labour protections and benefits."
-              },
-              {
-                "title": "Multiple Visa Routes",
-                "description": "Federal and regional programs prioritising skilled workers."
-              },
-              {
-                "title": "Family Inclusion",
-                "description": "Bring your spouse and dependants on most work permit programs."
-              },
-              {
-                "title": "Flexible Work Permits",
-                "description": "Open work permit options for partners and graduates."
-              },
-              {
-                "title": "Pathway to Citizenship",
-                "description": "Time spent working counts toward permanent residency and citizenship."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Secure a Qualifying Job Offer or Profile"
-              },
-              {
-                "step": "02",
-                "title": "Skilled Worker Profile & Scoring"
-              },
-              {
-                "step": "03",
-                "title": "Sponsorship or Nomination"
-              },
-              {
-                "step": "04",
-                "title": "Work Permit or Permanent Residency Application"
-              },
-              {
-                "step": "05",
-                "title": "Relocation, Onboarding & Settlement Support"
-              }
-            ],
-            "biggerPictureBody": "Working in Ireland means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
+          {
+            "title": "Post-Graduation Work Permit",
+            "description": "Stay and work after you complete your studies."
+          },
+          {
+            "title": "Pathway to Permanent Residency",
+            "description": "Local study and work experience accelerates your PR application."
+          },
+          {
+            "title": "Affordable, High-Quality Tuition",
+            "description": "Strong value compared to other top English-speaking destinations."
+          },
+          {
+            "title": "Multicultural Campuses",
+            "description": "Welcoming environment with students from around the world."
+          },
+          {
+            "title": "Safe, Liveable Cities",
+            "description": "Consistently ranked among the world's best places to live."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Choose Your Program & Institution"
+          },
+          {
+            "step": "02",
+            "title": "Letter of Acceptance from a Recognised Institution"
+          },
+          {
+            "step": "03",
+            "title": "Study Permit Application"
+          },
+          {
+            "step": "04",
+            "title": "Arrival, Orientation & Studies"
+          },
+          {
+            "step": "05",
+            "title": "Post-Graduation Work Permit & PR Pathways"
+          }
+        ],
+        "biggerPictureBody": "Studying in Ireland is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
       }
     },
     {
@@ -2280,9 +1028,7 @@
       "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Cherry blossoms framing a Japanese temple",
       "featured": false,
-      "descriptions": {
-        "study": "World-renowned institutions with government scholarship programs."
-      },
+      "description": "World-renowned institutions with government scholarship programs.",
       "content": {
         "about": {
           "paragraphs": [
@@ -2291,59 +1037,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Japan opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "study": {
-            "advantages": [
-              {
-                "title": "Globally Ranked Universities",
-                "description": "Home to research universities with strong international reputation."
-              },
-              {
-                "title": "Post-Graduation Work Permit",
-                "description": "Stay and work after you complete your studies."
-              },
-              {
-                "title": "Pathway to Permanent Residency",
-                "description": "Local study and work experience accelerates your PR application."
-              },
-              {
-                "title": "Affordable, High-Quality Tuition",
-                "description": "Strong value compared to other top English-speaking destinations."
-              },
-              {
-                "title": "Multicultural Campuses",
-                "description": "Welcoming environment with students from around the world."
-              },
-              {
-                "title": "Safe, Liveable Cities",
-                "description": "Consistently ranked among the world's best places to live."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Choose Your Program & Institution"
-              },
-              {
-                "step": "02",
-                "title": "Letter of Acceptance from a Recognised Institution"
-              },
-              {
-                "step": "03",
-                "title": "Study Permit Application"
-              },
-              {
-                "step": "04",
-                "title": "Arrival, Orientation & Studies"
-              },
-              {
-                "step": "05",
-                "title": "Post-Graduation Work Permit & PR Pathways"
-              }
-            ],
-            "biggerPictureBody": "Studying in Japan is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+        "advantages": [
+          {
+            "title": "Globally Ranked Universities",
+            "description": "Home to research universities with strong international reputation."
+          },
+          {
+            "title": "Post-Graduation Work Permit",
+            "description": "Stay and work after you complete your studies."
+          },
+          {
+            "title": "Pathway to Permanent Residency",
+            "description": "Local study and work experience accelerates your PR application."
+          },
+          {
+            "title": "Affordable, High-Quality Tuition",
+            "description": "Strong value compared to other top English-speaking destinations."
+          },
+          {
+            "title": "Multicultural Campuses",
+            "description": "Welcoming environment with students from around the world."
+          },
+          {
+            "title": "Safe, Liveable Cities",
+            "description": "Consistently ranked among the world's best places to live."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Choose Your Program & Institution"
+          },
+          {
+            "step": "02",
+            "title": "Letter of Acceptance from a Recognised Institution"
+          },
+          {
+            "step": "03",
+            "title": "Study Permit Application"
+          },
+          {
+            "step": "04",
+            "title": "Arrival, Orientation & Studies"
+          },
+          {
+            "step": "05",
+            "title": "Post-Graduation Work Permit & PR Pathways"
+          }
+        ],
+        "biggerPictureBody": "Studying in Japan is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
       }
     },
     {
@@ -2354,9 +1096,7 @@
       "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Blue Mosque domes in Istanbul, Turkey",
       "featured": false,
-      "descriptions": {
-        "visit": "e-visa available — fast online approval."
-      },
+      "description": "e-visa available — fast online approval.",
       "content": {
         "about": {
           "paragraphs": [
@@ -2365,59 +1105,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Turkey opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to Turkey is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+        "advantages": [
+          {
+            "title": "Iconic Travel Experiences",
+            "description": "From historic landmarks to natural wonders, all in one country."
+          },
+          {
+            "title": "World-Class Hospitality",
+            "description": "Hotels, dining and experiences at every price point."
+          },
+          {
+            "title": "Easy Visa Process",
+            "description": "Streamlined application with clear documentation requirements."
+          },
+          {
+            "title": "Excellent Connectivity",
+            "description": "Direct flights and modern in-country travel infrastructure."
+          },
+          {
+            "title": "Year-Round Travel",
+            "description": "Diverse climates and experiences across the calendar."
+          },
+          {
+            "title": "Safe & Welcoming",
+            "description": "Among the most welcoming destinations for international travellers."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Confirm Visa Requirements for Your Nationality"
+          },
+          {
+            "step": "02",
+            "title": "Online Application & Documentation"
+          },
+          {
+            "step": "03",
+            "title": "Biometrics or Interview (where required)"
+          },
+          {
+            "step": "04",
+            "title": "Decision & Passport Return"
+          },
+          {
+            "step": "05",
+            "title": "Travel, Explore & Re-Entry Within Validity"
+          }
+        ],
+        "biggerPictureBody": "A trip to Turkey is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
       }
     },
     {
@@ -2428,9 +1164,7 @@
       "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "The Colosseum in Rome on a sunny day",
       "featured": false,
-      "descriptions": {
-        "visit": "Schengen visa for tourism and culture."
-      },
+      "description": "Schengen visa for tourism and culture.",
       "content": {
         "about": {
           "paragraphs": [
@@ -2439,59 +1173,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Italy opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to Italy is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+        "advantages": [
+          {
+            "title": "Iconic Travel Experiences",
+            "description": "From historic landmarks to natural wonders, all in one country."
+          },
+          {
+            "title": "World-Class Hospitality",
+            "description": "Hotels, dining and experiences at every price point."
+          },
+          {
+            "title": "Easy Visa Process",
+            "description": "Streamlined application with clear documentation requirements."
+          },
+          {
+            "title": "Excellent Connectivity",
+            "description": "Direct flights and modern in-country travel infrastructure."
+          },
+          {
+            "title": "Year-Round Travel",
+            "description": "Diverse climates and experiences across the calendar."
+          },
+          {
+            "title": "Safe & Welcoming",
+            "description": "Among the most welcoming destinations for international travellers."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Confirm Visa Requirements for Your Nationality"
+          },
+          {
+            "step": "02",
+            "title": "Online Application & Documentation"
+          },
+          {
+            "step": "03",
+            "title": "Biometrics or Interview (where required)"
+          },
+          {
+            "step": "04",
+            "title": "Decision & Passport Return"
+          },
+          {
+            "step": "05",
+            "title": "Travel, Explore & Re-Entry Within Validity"
+          }
+        ],
+        "biggerPictureBody": "A trip to Italy is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
       }
     },
     {
@@ -2502,9 +1232,7 @@
       "image": "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Tulum beach with palm trees and turquoise sea",
       "featured": false,
-      "descriptions": {
-        "visit": "No visa required for most nationalities."
-      },
+      "description": "No visa required for most nationalities.",
       "content": {
         "about": {
           "paragraphs": [
@@ -2513,59 +1241,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Mexico opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to Mexico is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+        "advantages": [
+          {
+            "title": "Iconic Travel Experiences",
+            "description": "From historic landmarks to natural wonders, all in one country."
+          },
+          {
+            "title": "World-Class Hospitality",
+            "description": "Hotels, dining and experiences at every price point."
+          },
+          {
+            "title": "Easy Visa Process",
+            "description": "Streamlined application with clear documentation requirements."
+          },
+          {
+            "title": "Excellent Connectivity",
+            "description": "Direct flights and modern in-country travel infrastructure."
+          },
+          {
+            "title": "Year-Round Travel",
+            "description": "Diverse climates and experiences across the calendar."
+          },
+          {
+            "title": "Safe & Welcoming",
+            "description": "Among the most welcoming destinations for international travellers."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Confirm Visa Requirements for Your Nationality"
+          },
+          {
+            "step": "02",
+            "title": "Online Application & Documentation"
+          },
+          {
+            "step": "03",
+            "title": "Biometrics or Interview (where required)"
+          },
+          {
+            "step": "04",
+            "title": "Decision & Passport Return"
+          },
+          {
+            "step": "05",
+            "title": "Travel, Explore & Re-Entry Within Validity"
+          }
+        ],
+        "biggerPictureBody": "A trip to Mexico is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
       }
     },
     {
@@ -2576,9 +1300,7 @@
       "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1600&q=80",
       "imageAlt": "Doha skyline along the Corniche at dusk",
       "featured": false,
-      "descriptions": {
-        "visit": "Visa on arrival for eligible passport holders."
-      },
+      "description": "Visa on arrival for eligible passport holders.",
       "content": {
         "about": {
           "paragraphs": [
@@ -2587,59 +1309,55 @@
             "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Qatar opens the door to a life filled with possibilities."
           ]
         },
-        "contexts": {
-          "visit": {
-            "advantages": [
-              {
-                "title": "Iconic Travel Experiences",
-                "description": "From historic landmarks to natural wonders, all in one country."
-              },
-              {
-                "title": "World-Class Hospitality",
-                "description": "Hotels, dining and experiences at every price point."
-              },
-              {
-                "title": "Easy Visa Process",
-                "description": "Streamlined application with clear documentation requirements."
-              },
-              {
-                "title": "Excellent Connectivity",
-                "description": "Direct flights and modern in-country travel infrastructure."
-              },
-              {
-                "title": "Year-Round Travel",
-                "description": "Diverse climates and experiences across the calendar."
-              },
-              {
-                "title": "Safe & Welcoming",
-                "description": "Among the most welcoming destinations for international travellers."
-              }
-            ],
-            "pathways": [
-              {
-                "step": "01",
-                "title": "Confirm Visa Requirements for Your Nationality"
-              },
-              {
-                "step": "02",
-                "title": "Online Application & Documentation"
-              },
-              {
-                "step": "03",
-                "title": "Biometrics or Interview (where required)"
-              },
-              {
-                "step": "04",
-                "title": "Decision & Passport Return"
-              },
-              {
-                "step": "05",
-                "title": "Travel, Explore & Re-Entry Within Validity"
-              }
-            ],
-            "biggerPictureBody": "A trip to Qatar is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+        "advantages": [
+          {
+            "title": "Iconic Travel Experiences",
+            "description": "From historic landmarks to natural wonders, all in one country."
+          },
+          {
+            "title": "World-Class Hospitality",
+            "description": "Hotels, dining and experiences at every price point."
+          },
+          {
+            "title": "Easy Visa Process",
+            "description": "Streamlined application with clear documentation requirements."
+          },
+          {
+            "title": "Excellent Connectivity",
+            "description": "Direct flights and modern in-country travel infrastructure."
+          },
+          {
+            "title": "Year-Round Travel",
+            "description": "Diverse climates and experiences across the calendar."
+          },
+          {
+            "title": "Safe & Welcoming",
+            "description": "Among the most welcoming destinations for international travellers."
           }
-        }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Confirm Visa Requirements for Your Nationality"
+          },
+          {
+            "step": "02",
+            "title": "Online Application & Documentation"
+          },
+          {
+            "step": "03",
+            "title": "Biometrics or Interview (where required)"
+          },
+          {
+            "step": "04",
+            "title": "Decision & Passport Return"
+          },
+          {
+            "step": "05",
+            "title": "Travel, Explore & Re-Entry Within Validity"
+          }
+        ],
+        "biggerPictureBody": "A trip to Qatar is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
       }
     }
   ]

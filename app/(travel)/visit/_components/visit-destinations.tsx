@@ -5,7 +5,7 @@ import { getDestinationsForPage } from "@/lib/destinations";
 
 /**
  * Curated ordering for the Visit page. Countries are sourced from
- * `data/destinations.json` and must have a "visit" description.
+ * `data/destinations.json`.
  */
 const VISIT_DESTINATION_IDS = [
   "france",
@@ -21,7 +21,7 @@ const VISIT_DESTINATION_IDS = [
 ] as const;
 
 function VisitDestinationsSection() {
-  const destinations = getDestinationsForPage(VISIT_DESTINATION_IDS, "visit");
+  const destinations = getDestinationsForPage(VISIT_DESTINATION_IDS);
 
   return (
     <Section padding="default" aria-labelledby="visit-destinations-heading">

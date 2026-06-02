@@ -8,7 +8,6 @@ type CountryOtherDestinationsProps = {
   heading: string;
   subtitle: string;
   destinations: readonly DestinationForPage[];
-  contextLabel: string;
   headingId: string;
 };
 
@@ -17,7 +16,6 @@ function CountryOtherDestinations({
   heading,
   subtitle,
   destinations,
-  contextLabel,
   headingId,
 }: CountryOtherDestinationsProps) {
   if (destinations.length === 0) return null;
@@ -41,7 +39,7 @@ function CountryOtherDestinations({
                 image={destination.image}
                 imageAlt={destination.imageAlt}
                 href={destination.href}
-                ariaLabel={`Learn more about ${contextLabel} in ${destination.country}`}
+                ariaLabel={`Learn more about ${destination.country}`}
                 className="w-full"
               />
             </li>

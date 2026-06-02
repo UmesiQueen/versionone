@@ -5,7 +5,7 @@ import { getDestinationsForPage } from "@/lib/destinations";
 
 /**
  * Curated ordering for the Study Abroad page. Countries are sourced from
- * `data/destinations.json` and must have a "study" description.
+ * `data/destinations.json`.
  */
 const STUDY_DESTINATION_IDS = [
   "united-states",
@@ -21,7 +21,7 @@ const STUDY_DESTINATION_IDS = [
 ] as const;
 
 function StudyDestinationsSection() {
-  const destinations = getDestinationsForPage(STUDY_DESTINATION_IDS, "study");
+  const destinations = getDestinationsForPage(STUDY_DESTINATION_IDS);
 
   return (
     <Section padding="default" aria-labelledby="study-destinations-heading">

@@ -5,7 +5,7 @@ import { getDestinationsForPage } from "@/lib/destinations";
 
 /**
  * Curated ordering for the Migrate page. Countries are sourced from
- * `data/destinations.json` and must have a "migrate" description.
+ * `data/destinations.json`.
  */
 const MIGRATE_DESTINATION_IDS = [
   "canada",
@@ -21,7 +21,7 @@ const MIGRATE_DESTINATION_IDS = [
 ] as const;
 
 function MigrationDestinationsSection() {
-  const destinations = getDestinationsForPage(MIGRATE_DESTINATION_IDS, "migrate");
+  const destinations = getDestinationsForPage(MIGRATE_DESTINATION_IDS);
 
   return (
     <Section padding="default" aria-labelledby="migration-destinations-heading">

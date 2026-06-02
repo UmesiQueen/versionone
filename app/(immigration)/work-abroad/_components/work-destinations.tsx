@@ -5,7 +5,7 @@ import { getDestinationsForPage } from "@/lib/destinations";
 
 /**
  * Curated ordering for the Work Abroad page. Countries are sourced from
- * `data/destinations.json` and must have a "work" description.
+ * `data/destinations.json`.
  */
 const WORK_DESTINATION_IDS = [
   "canada",
@@ -21,7 +21,7 @@ const WORK_DESTINATION_IDS = [
 ] as const;
 
 function WorkDestinationsSection() {
-  const destinations = getDestinationsForPage(WORK_DESTINATION_IDS, "work");
+  const destinations = getDestinationsForPage(WORK_DESTINATION_IDS);
 
   return (
     <Section padding="default" aria-labelledby="work-destinations-heading">

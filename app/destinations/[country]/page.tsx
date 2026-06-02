@@ -3,14 +3,10 @@ import { notFound } from "next/navigation";
 
 import { FinalCtaSection } from "@/components/sections/final-cta";
 import {
-  DESTINATION_CONTEXTS,
-  type DestinationContext,
   formatLabel,
   getAllDestinations,
-  getAvailableContexts,
-  getContextLabels,
   getDestinationById,
-  getOtherDestinationsForContext,
+  getOtherDestinations,
 } from "@/lib/destinations";
 
 import { CountryAbout } from "./_components/country-about";
@@ -24,51 +20,43 @@ import { CountryPathways } from "./_components/country-pathways";
  * Dynamic destination page.
  *
  * Route: /destinations/[country]
- * Optional search param: ?ctx=migrate|study|work|visit
  *
  * - Content is read from `data/destinations.json` via `lib/destinations`.
- * - The `ctx` param selects which copy variant to render. If omitted or
- *   invalid, the page falls back to the first available context for the
- *   country (in canonical order migrate → study → work → visit).
- * - Returns notFound() for an unknown country slug or a country with no
- *   authored content for any context.
+ * - One general copy variant per country (no context switching).
+ * - Returns notFound() for an unknown country slug.
  * - Generates static params for every country so the page is fully prerendered.
  */
 
-/** Friendly per-context label used in CTAs and aria-labels (e.g. "studying"). */
-const CONTEXT_GERUND: Record<DestinationContext, string> = {
-  migrate: "migrating",
-  study: "studying",
-  work: "working",
-  visit: "visiting",
-};
+/**
+ * General copy templates used across every country page. `{country}` is
+ * substituted via `formatLabel`.
+ */
+const LABELS = {
+  aboutEyebrowTemplate: "About {country}",
+  aboutHeadingTemplate: "Why {country}?",
+  advantagesEyebrow: "Key Advantages",
+  advantagesHeadingTemplate: "Why {country} Stands Out",
+  advantagesSubtitleTemplate:
+    "Here's what makes {country} one of the world's most rewarding destinations.",
+  pathwaysEyebrow: "Pathways",
+  pathwaysHeadingTemplate: "Your Pathway to {country}",
+  pathwaysSubtitleTemplate:
+    "{country} offers multiple structured routes to help you achieve your goals:",
+  biggerPictureEyebrow: "The Bigger Picture",
+  biggerPictureHeading: "More Than a Move — A Transformation",
+  biggerPictureCtaLabel: "Start your Journey",
+  biggerPictureCtaHref: "/book-consultation",
+  otherEyebrow: "Explore More",
+  otherHeading: "Other Destinations",
+  otherSubtitleTemplate:
+    "Not set on {country}? Explore your other options below.",
+} as const;
 
 type RouteParams = { country: string };
-type SearchParams = { ctx?: string };
 
 type PageProps = {
   params: Promise<RouteParams>;
-  searchParams: Promise<SearchParams>;
 };
-
-function isContext(value: string | undefined): value is DestinationContext {
-  return (
-    typeof value === "string" &&
-    (DESTINATION_CONTEXTS as readonly string[]).includes(value)
-  );
-}
-
-function resolveContext(
-  countryId: string,
-  requested: string | undefined,
-): DestinationContext | null {
-  const available = getAvailableContexts(countryId);
-  if (available.length === 0) return null;
-  if (isContext(requested) && available.includes(requested)) {
-    return requested;
-  }
-  return available[0];
-}
 
 export function generateStaticParams(): RouteParams[] {
   return getAllDestinations().map((destination) => ({
@@ -78,52 +66,33 @@ export function generateStaticParams(): RouteParams[] {
 
 export async function generateMetadata({
   params,
-  searchParams,
 }: PageProps): Promise<Metadata> {
   const { country: countryId } = await params;
-  const { ctx } = await searchParams;
   const destination = getDestinationById(countryId);
 
   if (!destination) return { title: "Destination not found" };
 
-  const context = resolveContext(countryId, ctx);
-  const description = context
-    ? destination.descriptions[context]
-    : undefined;
-
   return {
     title: destination.country,
     description:
-      description ??
+      destination.description ||
       `Explore travel and immigration options for ${destination.country}.`,
   };
 }
 
-export default async function CountryDestinationPage({
-  params,
-  searchParams,
-}: PageProps) {
+export default async function CountryDestinationPage({ params }: PageProps) {
   const { country: countryId } = await params;
-  const { ctx } = await searchParams;
 
   const destination = getDestinationById(countryId);
   if (!destination) notFound();
 
-  const context = resolveContext(countryId, ctx);
-  if (!context) notFound();
-
-  const contextContent = destination.content.contexts[context];
-  // Should always exist given resolveContext, but guard for safety.
-  if (!contextContent) notFound();
-
-  const labels = getContextLabels(context);
   const { country, image, imageAlt, content } = destination;
   const aboutImage = content.about.image ?? image;
   const aboutImageAlt = content.about.imageAlt ?? imageAlt;
   const biggerPictureImage = content.biggerPicture?.image ?? image;
   const biggerPictureImageAlt = content.biggerPicture?.imageAlt ?? imageAlt;
 
-  const otherDestinations = getOtherDestinationsForContext(countryId, context);
+  const otherDestinations = getOtherDestinations(countryId);
 
   // Ids used by aria-labelledby on each section.
   const heroHeadingId = "country-hero-heading";
@@ -143,8 +112,8 @@ export default async function CountryDestinationPage({
       />
 
       <CountryAbout
-        eyebrow={formatLabel(labels.aboutEyebrowTemplate, country)}
-        heading={formatLabel(labels.aboutHeadingTemplate, country)}
+        eyebrow={formatLabel(LABELS.aboutEyebrowTemplate, country)}
+        heading={formatLabel(LABELS.aboutHeadingTemplate, country)}
         paragraphs={content.about.paragraphs}
         image={aboutImage}
         imageAlt={aboutImageAlt}
@@ -152,38 +121,37 @@ export default async function CountryDestinationPage({
       />
 
       <CountryAdvantages
-        eyebrow={labels.advantagesEyebrow}
-        heading={formatLabel(labels.advantagesHeadingTemplate, country)}
-        subtitle={formatLabel(labels.advantagesSubtitleTemplate, country)}
-        items={contextContent.advantages}
+        eyebrow={LABELS.advantagesEyebrow}
+        heading={formatLabel(LABELS.advantagesHeadingTemplate, country)}
+        subtitle={formatLabel(LABELS.advantagesSubtitleTemplate, country)}
+        items={content.advantages}
         headingId={advantagesHeadingId}
       />
 
       <CountryPathways
-        eyebrow={labels.pathwaysEyebrow}
-        heading={formatLabel(labels.pathwaysHeadingTemplate, country)}
-        subtitle={formatLabel(labels.pathwaysSubtitleTemplate, country)}
-        items={contextContent.pathways}
+        eyebrow={LABELS.pathwaysEyebrow}
+        heading={formatLabel(LABELS.pathwaysHeadingTemplate, country)}
+        subtitle={formatLabel(LABELS.pathwaysSubtitleTemplate, country)}
+        items={content.pathways}
         headingId={pathwaysHeadingId}
       />
 
       <CountryBiggerPicture
-        eyebrow={labels.biggerPictureEyebrow}
-        heading={labels.biggerPictureHeading}
-        body={contextContent.biggerPictureBody}
-        ctaLabel={labels.biggerPictureCtaLabel}
-        ctaHref={labels.biggerPictureCtaHref}
+        eyebrow={LABELS.biggerPictureEyebrow}
+        heading={LABELS.biggerPictureHeading}
+        body={content.biggerPictureBody}
+        ctaLabel={LABELS.biggerPictureCtaLabel}
+        ctaHref={LABELS.biggerPictureCtaHref}
         image={biggerPictureImage}
         imageAlt={biggerPictureImageAlt}
         headingId={biggerPictureHeadingId}
       />
 
       <CountryOtherDestinations
-        eyebrow={labels.otherEyebrow}
-        heading={labels.otherHeading}
-        subtitle={formatLabel(labels.otherSubtitleTemplate, country)}
+        eyebrow={LABELS.otherEyebrow}
+        heading={LABELS.otherHeading}
+        subtitle={formatLabel(LABELS.otherSubtitleTemplate, country)}
         destinations={otherDestinations}
-        contextLabel={CONTEXT_GERUND[context]}
         headingId={otherHeadingId}
       />
 
