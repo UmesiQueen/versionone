@@ -149,19 +149,19 @@ function SiteHeader() {
                       link.children.some((child) => child.href === pathname) &&
                       "active"
                     }
-                    className=" rounded-none bg-transparent group relative inline-flex items-center gap-1 py-1 text-base font-medium text-[#344054] outline-none transition-colors duration-400 ease-out hover:text-secondary data-[status=active]:text-secondary focus-visible:text-secondary data-[state=open]:text-secondary"
+                    className="rounded-none bg-transparent group relative inline-flex items-center gap-1 py-1 text-lg font-semibold text-[#344054] outline-none transition-colors duration-400 ease-out hover:text-secondary data-[status=active]:text-secondary focus-visible:text-secondary data-[state=open]:text-secondary"
                   >
                     <span>{link.label}</span>
                     <ChevronDown
                       aria-hidden="true"
                       className="size-4 transition-transform duration-300 ease-out group-data-[state=open]:rotate-180"
                     />
-                    <span className="absolute -bottom-0.5 left-0 h-px w-0 bg-secondary transition-all duration-500 ease-out group-hover:w-full group-data-[status=active]:w-full group-data-[state=open]:w-full" />
+                    <span className="absolute -bottom-px left-0 h-0.5 w-0 bg-secondary transition-all duration-500 ease-out group-hover:w-full group-data-[status=active]:w-full group-data-[state=open]:w-full" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent
                     align="start"
                     sideOffset={3}
-                    className="rounded-none border-none p-2"
+                    className="rounded-none border-none p-2 min-w-60"
                     onMouseEnter={() => setOpenMenu(link.href)}
                     onMouseLeave={() => setOpenMenu(null)}
                   >
@@ -169,7 +169,7 @@ function SiteHeader() {
                       <DropdownMenuItem
                         key={child.href}
                         data-status={child.href === pathname && "active"}
-                        className="data-[status=active]:text-secondary"
+                        className="data-[status=active]:text-secondary font-semibold text-base"
                         asChild
                       >
                         <Link href={child.href}>{child.label}</Link>
@@ -182,10 +182,10 @@ function SiteHeader() {
                   key={link.href}
                   href={link.href}
                   data-status={link.href === pathname && "active"}
-                  className="group relative py-1 text-base font-medium text-[#344054] transition-colors duration-400 ease-out hover:text-secondary data-[status=active]:text-secondary"
+                  className="group relative py-1 text-lg font-semibold text-[#344054] transition-colors duration-400 ease-out hover:text-secondary data-[status=active]:text-secondary"
                 >
                   {link.label}
-                  <span className="absolute -bottom-0.5 left-0 h-px w-0 group-hover:w-full group-data-[state=active]:w-full group-data-[status=active]:w-full bg-secondary transition-all duration-500 ease-out" />
+                  <span className="absolute -bottom-px left-0 h-0.5 w-0 group-hover:w-full group-data-[state=active]:w-full group-data-[status=active]:w-full bg-secondary transition-all duration-500 ease-out" />
                 </Link>
               ),
             )}
