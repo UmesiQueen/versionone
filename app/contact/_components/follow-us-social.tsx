@@ -36,7 +36,7 @@ const SOCIALS: ReadonlyArray<SocialChannel> = [
   {
     network: "YouTube",
     handle: "VersionOne Global",
-    href: "https://youtube.com",
+    href: "https://youtube.com/@versiononetravels7070",
     icon: YouTube,
     chipClass: "bg-red-100 text-red-600",
   },

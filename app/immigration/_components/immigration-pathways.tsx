@@ -1,8 +1,8 @@
 import {
   ArrowRight,
   Briefcase,
-  GraduationCap,
   Globe2,
+  GraduationCap,
   type LucideIcon,
   TrendingUp,
 } from "lucide-react";

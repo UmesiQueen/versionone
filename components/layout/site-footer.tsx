@@ -58,7 +58,11 @@ const SOCIAL_LINKS = [
     href: "https://instagram.com/versiononetravels",
     icon: Instagram,
   },
-  { label: "YouTube", href: "https://youtube.com", icon: YouTube },
+  {
+    label: "YouTube",
+    href: "https://youtube.com/@versiononetravels7070",
+    icon: YouTube,
+  },
 ] as const;
 
 function SiteFooter() {
