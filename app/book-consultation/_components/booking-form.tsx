@@ -204,7 +204,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
               control={control}
               render={({ field, fieldState }) => {
                 const selectedCountry = COUNTRY_LIST.find(
-                  (lang) => lang === field.value,
+                  (lang: string) => lang === field.value,
                 );
                 return (
                   <Field className="flex flex-col gap-1.5">
