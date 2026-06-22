@@ -17,7 +17,7 @@ const MIGRATE_DESTINATION_IDS = [
   "netherlands",
   "new-zealand",
   "uae",
-  "luxembourg",
+  "portugal",
 ] as const;
 
 function MigrationDestinationsSection() {

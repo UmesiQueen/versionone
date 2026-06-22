@@ -12,57 +12,94 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Canada.",
-            "From the vibrant energy of Toronto to the natural beauty of Vancouver, Canada offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Canada opens the door to a life filled with possibilities."
+            "Imagine a country where opportunity meets stability, where your career can flourish, your children can receive a world-class education, and your family can enjoy one of the highest standards of living in the world.",
+            "From the vibrant cities of Toronto, Vancouver, and Calgary to the breathtaking landscapes of the Rocky Mountains and Niagara Falls, Canada offers more than just a place to visit—it offers a place to belong.",
+            "Whether you are seeking better employment opportunities, quality education, business growth, or a pathway to permanent settlement, Canada continues to attract ambitious individuals and families from around the world.",
+            "For many newcomers, Canada becomes more than a destination. It becomes home."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "Canada is one of the few countries that offers clear and structured routes from temporary residence to permanent residency."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Canadian Citizenship Opportunities",
+            "description": "Many permanent residents can eventually become Canadian citizens and enjoy the benefits of one of the world's most respected passports."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Family Sponsorship Options",
+            "description": "Bring your spouse and dependent children and build your future together in Canada."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "World-Class Healthcare",
+            "description": "Access one of the most respected healthcare systems in the world."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "Globally Recognized Education",
+            "description": "Study at internationally respected colleges and universities that open doors worldwide."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "High Demand for Skilled Workers",
+            "description": "Thousands of employers actively seek qualified professionals across multiple industries."
+          },
+          {
+            "title": "Safe and Family-Friendly Communities",
+            "description": "Enjoy a secure environment with excellent infrastructure and public services."
+          },
+          {
+            "title": "Strong Economy and Career Growth",
+            "description": "Canada offers competitive salaries, stable employment, and opportunities for professional advancement."
+          },
+          {
+            "title": "Multicultural Society",
+            "description": "Join a welcoming and diverse nation where people from every background can thrive."
+          },
+          {
+            "title": "Excellent Quality of Life",
+            "description": "Consistently ranked among the best countries in the world for safety, happiness, healthcare, and overall living standards."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Express Entry Program"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Provincial Nominee Program (PNP)"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Study Permit"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Employer-Sponsored Work Permit"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Canadian Experience Class"
+          },
+          {
+            "step": "06",
+            "title": "Family Sponsorship"
+          },
+          {
+            "step": "07",
+            "title": "Start-Up Visa Program"
+          },
+          {
+            "step": "08",
+            "title": "Business & Investor Immigration"
+          },
+          {
+            "step": "09",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "10",
+            "title": "Canadian Citizenship"
           }
         ],
         "biggerPictureBody": "Migrating to Canada is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
@@ -80,57 +117,111 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Few places carry the global reputation, cultural depth and academic prestige of the United Kingdom — a country where centuries of tradition sit beside a modern, globally connected economy.",
-            "From the financial powerhouse of London to the historic university cities of Oxford, Cambridge and Edinburgh, the UK is one of the most influential destinations in the world for education, business and culture.",
-            "Whether you're chasing a world-class education, a senior professional role, or an unforgettable visit, the UK rewards ambition and openness with opportunity at every turn."
+            "Imagine living in a country where centuries of history meet world-class innovation, where global opportunities are within reach, and where your ambitions can become reality.",
+            "The United Kingdom is one of the world's most respected destinations for education, employment, business, and long-term settlement. From the iconic landmarks of London and the cultural heritage of Edinburgh to the thriving business centers of Manchester, Birmingham, and Liverpool, the UK offers a unique blend of tradition, opportunity, and modern living.",
+            "For generations, people from around the world have chosen the United Kingdom to pursue higher education, build successful careers, establish businesses, and create better futures for their families.",
+            "With a strong economy, excellent healthcare system, multicultural communities, and globally recognized institutions, the United Kingdom remains one of the most sought-after destinations for ambitious individuals and families.",
+            "The UK is not just a place to visit—it's a place where opportunities become lifelong achievements."
           ]
         },
         "advantages": [
           {
-            "title": "World-Renowned Universities",
-            "description": "Oxford, Cambridge, Imperial, UCL and 24 Russell Group institutions."
+            "title": "World-Class Education",
+            "description": "Home to some of the world's most prestigious universities and colleges, attracting students from every corner of the globe."
           },
           {
-            "title": "Shorter, Intensive Programs",
-            "description": "Most bachelor's degrees take 3 years; master's take just 1."
+            "title": "Strong Economy and Employment Opportunities",
+            "description": "The UK offers diverse career opportunities across healthcare, engineering, finance, technology, education, hospitality, and many other sectors."
           },
           {
-            "title": "Graduate Route Visa",
-            "description": "Stay and work in the UK for 2 years after graduation (3 for PhDs)."
+            "title": "Pathway to Permanent Residency",
+            "description": "Many visa routes allow eligible applicants to eventually qualify for Indefinite Leave to Remain (ILR), enabling them to live in the UK permanently."
           },
           {
-            "title": "English-Speaking Environment",
-            "description": "Build fluency in the global language of business and academia."
+            "title": "British Citizenship Opportunities",
+            "description": "After obtaining permanent residence and meeting residency requirements, many individuals become eligible to apply for British citizenship."
           },
           {
-            "title": "Diverse Student Community",
-            "description": "Over 600,000 international students from across the world."
+            "title": "Family Settlement Opportunities",
+            "description": "Many immigration routes allow spouses, partners, and dependent children to accompany or join applicants in the UK."
           },
           {
-            "title": "Cultural & Travel Access",
-            "description": "On the doorstep of Europe with rich history and cultural life."
+            "title": "National Health Service (NHS)",
+            "description": "Access one of the world's most recognized healthcare systems, providing quality medical care throughout the country."
+          },
+          {
+            "title": "Globally Recognized Qualifications",
+            "description": "Degrees and certifications earned in the UK are respected by employers and institutions worldwide."
+          },
+          {
+            "title": "International Business Hub",
+            "description": "London remains one of the world's leading financial and business centers, attracting entrepreneurs, investors, and multinational corporations."
+          },
+          {
+            "title": "Multicultural Society",
+            "description": "The UK is home to diverse communities from around the world, making it easier for newcomers to settle and integrate."
+          },
+          {
+            "title": "Gateway to Global Opportunities",
+            "description": "Living, studying, or working in the UK can open doors to international career, business, and networking opportunities."
+          },
+          {
+            "title": "Safe and Family-Friendly Environment",
+            "description": "Many cities across the UK offer excellent schools, public services, transportation systems, and quality of life for families."
+          },
+          {
+            "title": "Rich Culture and Travel Opportunities",
+            "description": "From historic castles and museums to beautiful countryside and vibrant cities, the UK offers countless experiences for residents and visitors alike."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Shortlist Universities & Courses"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "UCAS or Direct University Application"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "CAS Letter from Your Chosen Institution"
+            "title": "Graduate Route"
           },
           {
             "step": "04",
-            "title": "Student Visa Application (UKVI)"
+            "title": "Skilled Worker Visa"
           },
           {
             "step": "05",
-            "title": "Arrival, Studies & Graduate Route"
+            "title": "Health and Care Worker Visa"
+          },
+          {
+            "step": "06",
+            "title": "Scale-up Worker Visa"
+          },
+          {
+            "step": "07",
+            "title": "Innovator Founder Visa"
+          },
+          {
+            "step": "08",
+            "title": "Global Talent Visa"
+          },
+          {
+            "step": "09",
+            "title": "Family Visa"
+          },
+          {
+            "step": "10",
+            "title": "Business and Investment Routes"
+          },
+          {
+            "step": "11",
+            "title": "Indefinite Leave to Remain (ILR)"
+          },
+          {
+            "step": "12",
+            "title": "British Citizenship"
           }
         ],
         "biggerPictureBody": "A UK degree carries weight everywhere. Beyond the qualification, you graduate into a network of alumni, employers and post-study work rights that open doors anywhere in the world."
@@ -148,57 +239,127 @@
       "content": {
         "about": {
           "paragraphs": [
-            "The United Arab Emirates has emerged in just a few decades as one of the world's most ambitious, fast-moving and globally connected economies.",
-            "From the futuristic skyline of Dubai to the cultural and political weight of Abu Dhabi, the UAE blends international business, a tax-free environment and a striking quality of life.",
-            "Whether you're an investor, a senior professional, a family or a traveller, the UAE offers a uniquely safe, modern and opportunity-rich base in the Middle East."
+            "Imagine living in a country where ambition is rewarded, opportunities are endless, and success is part of everyday life.",
+            "The United Arab Emirates has transformed itself into one of the world's most dynamic destinations for tourism, business, investment, employment, and luxury living. Home to globally recognized cities such as Dubai and Abu Dhabi, the UAE attracts millions of visitors, professionals, entrepreneurs, and investors every year who are seeking a better lifestyle and greater financial opportunities.",
+            "From the world's tallest skyscrapers and ultra-modern infrastructure to thriving business districts and luxurious residential communities, the UAE offers an environment designed for growth and success.",
+            "Whether your goal is to secure a rewarding career, establish a business, invest in real estate, enjoy a tax-friendly lifestyle, or provide your family with access to world-class education and healthcare, the UAE presents opportunities that few destinations can match.",
+            "For many people, the UAE is not simply a place to work—it is a place to build wealth, expand opportunities, and enjoy an exceptional quality of life."
           ]
         },
         "advantages": [
           {
-            "title": "10-Year Golden Visa",
-            "description": "Long-term residency for investors, entrepreneurs, top talent and their families."
+            "title": "Long-Term Residency Opportunities",
+            "description": "The UAE offers multiple residency options that allow qualified individuals, professionals, entrepreneurs, investors, and their families to live in the country for extended periods through renewable residence permits and long-term visa programs."
           },
           {
-            "title": "Zero Personal Income Tax",
-            "description": "Keep more of what you earn under one of the world's most attractive tax regimes."
+            "title": "UAE Golden Visa Program",
+            "description": "The UAE's Golden Visa provides eligible investors, entrepreneurs, highly skilled professionals, scientists, exceptional talents, and outstanding students with long-term residency benefits."
           },
           {
-            "title": "Family Sponsorship",
-            "description": "Sponsor your spouse, children and parents under multiple residency programs."
+            "title": "Tax-Free Personal Income",
+            "description": "One of the UAE's biggest attractions is its tax-friendly environment, allowing residents to maximize their earnings and build wealth more efficiently."
+          },
+          {
+            "title": "Global Business Hub",
+            "description": "The UAE serves as a strategic gateway connecting Europe, Asia, Africa, and the Middle East, making it one of the world's most important commercial centers."
+          },
+          {
+            "title": "Exceptional Career Opportunities",
+            "description": "Professionals can find opportunities across aviation, tourism, healthcare, construction, engineering, technology, finance, logistics, hospitality, education, and numerous other industries."
+          },
+          {
+            "title": "Business and Investment Advantages",
+            "description": "Entrepreneurs benefit from free zones, investor-friendly policies, modern infrastructure, and access to international markets."
           },
           {
             "title": "World-Class Infrastructure",
-            "description": "Modern transport, healthcare, schools and digital services."
+            "description": "The UAE is renowned for its modern transportation systems, airports, roads, telecommunications networks, and smart city initiatives."
           },
           {
-            "title": "Safe & Stable Environment",
-            "description": "Consistently ranked among the safest countries in the world."
+            "title": "Safe and Secure Environment",
+            "description": "The country consistently ranks among the safest destinations globally, offering peace of mind for individuals and families."
           },
           {
-            "title": "Global Hub for Business",
-            "description": "Strategic location between Europe, Africa and Asia with strong air connectivity."
+            "title": "High Quality Healthcare",
+            "description": "Residents have access to internationally accredited hospitals, medical facilities, and healthcare professionals."
+          },
+          {
+            "title": "Premium Education Options",
+            "description": "The UAE is home to leading international schools, colleges, and university campuses from around the world."
+          },
+          {
+            "title": "Family-Friendly Lifestyle",
+            "description": "Modern residential communities, quality schools, recreational facilities, and excellent public services make the UAE an attractive destination for families."
+          },
+          {
+            "title": "Luxury Lifestyle and Tourism",
+            "description": "From iconic landmarks and luxury shopping to desert adventures, pristine beaches, and world-class entertainment, the UAE offers an unmatched lifestyle experience."
+          },
+          {
+            "title": "Multicultural Society",
+            "description": "People from over 200 nationalities live and work in the UAE, creating a diverse and welcoming international community."
+          },
+          {
+            "title": "Strategic Global Location",
+            "description": "Residents enjoy convenient access to major international destinations across Europe, Asia, Africa, and beyond."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Choose Your Residency Route (Golden, Investor, Employment)"
+            "title": "Tourist Visa"
           },
           {
             "step": "02",
-            "title": "Initial Approval & Document Preparation"
+            "title": "Visit Visa"
           },
           {
             "step": "03",
-            "title": "Medical, Emirates ID & Biometrics"
+            "title": "Employment Visa"
           },
           {
             "step": "04",
-            "title": "Residency Visa Stamping"
+            "title": "Freelance Visa"
           },
           {
             "step": "05",
-            "title": "Family Sponsorship & Long-Term Renewal"
+            "title": "Remote Work Visa"
+          },
+          {
+            "step": "06",
+            "title": "Student Visa"
+          },
+          {
+            "step": "07",
+            "title": "Investor Visa"
+          },
+          {
+            "step": "08",
+            "title": "Business Setup Visa"
+          },
+          {
+            "step": "09",
+            "title": "Entrepreneur Visa"
+          },
+          {
+            "step": "10",
+            "title": "Property Investor Visa"
+          },
+          {
+            "step": "11",
+            "title": "Green Visa"
+          },
+          {
+            "step": "12",
+            "title": "Golden Visa"
+          },
+          {
+            "step": "13",
+            "title": "Family Sponsorship Visa"
+          },
+          {
+            "step": "14",
+            "title": "Long-Term Residency Programs"
           }
         ],
         "biggerPictureBody": "Relocating to the UAE means stepping into one of the world's most ambitious economies — backed by a tax-free environment, modern infrastructure and long-term residency programs designed to keep talent and capital for the long haul."
@@ -216,57 +377,115 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Germany.",
-            "From its vibrant cities to its natural beauty, Germany offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Germany opens the door to a life filled with possibilities."
+            "Imagine building your future in the economic powerhouse of Europe—a country where innovation, stability, and opportunity come together to create one of the most rewarding places to live, work, study, and invest.",
+            "Germany is renowned for its strong economy, world-class engineering, advanced technology, and exceptional quality of life. Home to global brands, thriving industries, and some of Europe's most vibrant cities, Germany attracts skilled professionals, students, entrepreneurs, and families from around the world.",
+            "From the modern business districts of Frankfurt and Munich to the cultural richness of Berlin and Hamburg, Germany offers a unique blend of career opportunities, affordable education, modern infrastructure, and social security.",
+            "Whether your goal is to secure a high-paying career, obtain an internationally respected education, start a business, or establish permanent roots in Europe, Germany provides a clear and structured pathway to help you achieve your ambitions.",
+            "For many newcomers, Germany is more than a destination—it is a gateway to long-term success in Europe."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "Germany offers several routes that can lead from temporary residence to permanent settlement, allowing qualified individuals to establish long-term lives in the country."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "German Citizenship Opportunities",
+            "description": "Recent immigration reforms have made it easier for eligible long-term residents to apply for German citizenship and enjoy the benefits of being part of one of Europe's strongest economies."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Europe's Largest Economy",
+            "description": "Germany remains the economic engine of Europe, providing stability, career opportunities, and strong earning potential across multiple sectors."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "High Demand for Skilled Workers",
+            "description": "Professionals in healthcare, engineering, information technology, construction, manufacturing, logistics, and skilled trades are in high demand throughout Germany."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "Affordable World-Class Education",
+            "description": "Germany is famous for its high-quality universities and educational institutions, many of which offer low-cost or affordable tuition opportunities."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "Excellent Healthcare System",
+            "description": "Residents enjoy access to one of the world's most respected healthcare systems, known for its quality and efficiency."
+          },
+          {
+            "title": "Strong Worker Protection",
+            "description": "Germany offers excellent labor laws, employee rights, paid leave, and workplace protections that contribute to a healthy work-life balance."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "The country provides excellent public services, schools, childcare support, and family benefits that make it attractive for long-term settlement."
+          },
+          {
+            "title": "Gateway to Europe",
+            "description": "Living in Germany places you at the heart of Europe, providing easy access to numerous countries for tourism, business, and cultural experiences."
+          },
+          {
+            "title": "Safe and Modern Cities",
+            "description": "Germany consistently ranks highly for safety, infrastructure, transportation, and overall quality of life."
+          },
+          {
+            "title": "Business and Investment Opportunities",
+            "description": "Entrepreneurs and investors benefit from Germany's strong economy, access to European markets, and supportive business environment."
+          },
+          {
+            "title": "Multicultural Society",
+            "description": "Millions of international residents have successfully built careers and families in Germany, contributing to its diverse and welcoming communities."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Language Course Visa"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Job Seeker Visa"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Opportunity Card (Chancenkarte)"
+          },
+          {
+            "step": "06",
+            "title": "Skilled Worker Visa"
+          },
+          {
+            "step": "07",
+            "title": "EU Blue Card"
+          },
+          {
+            "step": "08",
+            "title": "Employer-Sponsored Work Permit"
+          },
+          {
+            "step": "09",
+            "title": "Vocational Training Visa"
+          },
+          {
+            "step": "10",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "11",
+            "title": "Business & Self-Employment Visa"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "13",
+            "title": "German Citizenship"
           }
         ],
         "biggerPictureBody": "Migrating to Germany is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
@@ -284,60 +503,98 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to United States.",
-            "From its vibrant cities to its natural beauty, United States offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, United States opens the door to a life filled with possibilities."
+            "Imagine living in a country where innovation drives the world, opportunities are limitless, and success stories are written every day.",
+            "The United States has long been a land of ambition, attracting students, professionals, entrepreneurs, investors, and families from every corner of the globe. From the skyscrapers of New York and Chicago to the technology hubs of Silicon Valley, the entertainment capital of Los Angeles, and the thriving business centers of Texas and Florida, America offers something for everyone.",
+            "Whether your goal is to study at a world-renowned university, secure a high-paying career, launch a business, or provide your family with greater opportunities, the United States remains one of the most influential and rewarding destinations in the world.",
+            "For generations, people have arrived in America with dreams and determination—and many have gone on to build successful careers, thriving businesses, and prosperous futures.",
+            "The United States is more than a destination. It is a place where possibilities become reality."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "World-Leading Universities",
+            "description": "Home to many of the world's highest-ranked universities and research institutions, attracting millions of international students every year."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Unlimited Career Opportunities",
+            "description": "The world's largest economy continues to create opportunities across technology, healthcare, engineering, finance, construction, hospitality, and countless other industries."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Strong Earning Potential",
+            "description": "Many professionals choose the United States because of its competitive salaries and opportunities for career advancement."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "Pathways to Permanent Residency",
+            "description": "Various employment, family, investment, and special immigrant programs provide routes to obtaining permanent resident status (Green Card)."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "U.S. Citizenship Opportunities",
+            "description": "Permanent residents who meet residency requirements may eventually become U.S. citizens and enjoy the full benefits of American nationality."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "Family-Based Immigration",
+            "description": "Many immigration programs allow eligible family members to join and build their future together in the United States."
+          },
+          {
+            "title": "Business and Investment Opportunities",
+            "description": "The United States remains one of the world's best destinations for entrepreneurs, investors, and business owners seeking growth and global expansion."
+          },
+          {
+            "title": "Innovation and Technology Hub",
+            "description": "Home to many of the world's largest companies, startups, and groundbreaking innovations."
+          },
+          {
+            "title": "Diverse and Multicultural Society",
+            "description": "People from virtually every country in the world call America home, creating vibrant and welcoming communities."
+          },
+          {
+            "title": "Global Influence and Mobility",
+            "description": "A U.S. Green Card or citizenship can open doors to business, education, and travel opportunities around the world."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa (B1/B2)"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa (F-1)"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Exchange Visitor Visa (J-1)"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Employment-Based Immigration"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Employer-Sponsored Work Visas"
+          },
+          {
+            "step": "06",
+            "title": "Family Sponsorship"
+          },
+          {
+            "step": "07",
+            "title": "Investor Immigration Programs"
+          },
+          {
+            "step": "08",
+            "title": "Green Card Pathways"
+          },
+          {
+            "step": "09",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "10",
+            "title": "U.S. Citizenship"
           }
         ],
-        "biggerPictureBody": "Migrating to United States is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "biggerPictureBody": "Migrating to the United States is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -352,57 +609,123 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Poland.",
-            "From its vibrant cities to its natural beauty, Poland offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Poland opens the door to a life filled with possibilities."
+            "Imagine building your future in one of Europe's fastest-growing economies—a country where opportunity, affordability, safety, and European access come together to create an ideal destination for work, study, business, and long-term settlement.",
+            "Poland has emerged as one of the most attractive destinations in Europe for skilled workers, international students, entrepreneurs, and families seeking better opportunities. Over the past two decades, the country has transformed into a major economic powerhouse, attracting global companies, international investments, and professionals from around the world.",
+            "From the modern skyline of Warsaw and the historic charm of Kraków to the thriving business centers of Wrocław, Gdańsk, and Poznań, Poland offers a unique combination of economic growth, cultural heritage, and a high quality of life.",
+            "Whether you are seeking better employment opportunities, a European education, business expansion, or a pathway to long-term residence in Europe, Poland provides a practical and affordable route to achieving your goals.",
+            "For many newcomers, Poland is not just a place to work—it is a gateway to a brighter future in Europe."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "Poland offers structured immigration routes that allow eligible individuals to move from temporary residence to permanent residency and long-term settlement."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Polish Citizenship Opportunities",
+            "description": "Long-term residents who meet eligibility requirements may eventually apply for Polish citizenship and enjoy the benefits of European Union citizenship."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Access to the European Union",
+            "description": "Living in Poland provides access to the Schengen Area and the broader European Union, creating opportunities for travel, business, and career development."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "Strong and Growing Economy",
+            "description": "Poland has one of Europe's fastest-growing economies and continues to attract international companies across technology, manufacturing, logistics, finance, and business services."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "High Demand for Skilled Workers",
+            "description": "Professionals in construction, engineering, healthcare, manufacturing, transportation, information technology, hospitality, and skilled trades remain in demand."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "Affordable Cost of Living",
+            "description": "Compared to many Western European countries, Poland offers significantly lower living costs while maintaining excellent standards of living."
+          },
+          {
+            "title": "Excellent Education Opportunities",
+            "description": "Poland is home to respected universities and educational institutions that attract students from around the world."
+          },
+          {
+            "title": "Safe and Stable Environment",
+            "description": "The country offers a secure living environment, modern infrastructure, and strong public services."
+          },
+          {
+            "title": "Family-Friendly Lifestyle",
+            "description": "Affordable housing, quality schools, healthcare services, and community-oriented living make Poland attractive for families."
+          },
+          {
+            "title": "Growing Business Opportunities",
+            "description": "Entrepreneurs benefit from Poland's strategic location, growing consumer market, and access to the European Union economy."
+          },
+          {
+            "title": "Modern Infrastructure",
+            "description": "Efficient transportation networks, modern cities, and ongoing development projects continue to improve quality of life across the country."
+          },
+          {
+            "title": "Strategic Location in Europe",
+            "description": "Located in the heart of Europe, Poland serves as a gateway connecting Western Europe, Central Europe, and Eastern Europe."
+          },
+          {
+            "title": "Multicultural Workforce",
+            "description": "International companies and growing industries continue to attract professionals from different parts of the world."
+          },
+          {
+            "title": "Excellent Value for Money",
+            "description": "Poland offers one of the best combinations of earning potential, affordability, and quality of life in Europe."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Work Visa"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "EU Blue Card"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Temporary Residence Permit"
+          },
+          {
+            "step": "06",
+            "title": "Employer-Sponsored Work Permit"
+          },
+          {
+            "step": "07",
+            "title": "Highly Skilled Worker Programs"
+          },
+          {
+            "step": "08",
+            "title": "Business Residence Permit"
+          },
+          {
+            "step": "09",
+            "title": "Entrepreneur Visa"
+          },
+          {
+            "step": "10",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "11",
+            "title": "Long-Term EU Residence Permit"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "13",
+            "title": "Polish Citizenship"
           }
         ],
         "biggerPictureBody": "Migrating to Poland is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
@@ -420,57 +743,115 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Australia.",
-            "From its vibrant cities to its natural beauty, Australia offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Australia opens the door to a life filled with possibilities."
+            "Imagine waking up to sunshine, world-class cities, breathtaking coastlines, and endless opportunities to build a better future.",
+            "Australia is consistently ranked among the best countries in the world for quality of life, safety, healthcare, education, and career opportunities. From the iconic skyline of Sydney and the cultural charm of Melbourne to the beautiful beaches of Queensland and the thriving economy of Perth, Australia offers an exceptional lifestyle that attracts millions of visitors, students, skilled professionals, and families every year.",
+            "Australia is not just a place to work or study—it's a place where people create lasting success stories. With a strong economy, high wages, excellent public services, and a welcoming multicultural society, it continues to be one of the most sought-after destinations for migration and long-term settlement.",
+            "Whether you dream of securing a rewarding career, obtaining a world-class education, raising your family in a safe environment, or eventually becoming an Australian citizen, Australia offers a clear pathway to help you achieve your goals.",
+            "For many newcomers, Australia becomes more than a destination—it becomes home."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "Australia is one of the world's leading destinations for skilled migration, offering multiple pathways from temporary residence to permanent residency for qualified applicants."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Australian Citizenship Opportunities",
+            "description": "Permanent residents who meet eligibility requirements may eventually apply for Australian citizenship and enjoy the full benefits of being an Australian national."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "High Demand for Skilled Workers",
+            "description": "Australia continues to experience strong demand for qualified professionals across healthcare, engineering, construction, information technology, education, hospitality, agriculture, and skilled trades."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "Excellent Salary Potential",
+            "description": "Australia offers some of the highest average wages globally, providing individuals and families with strong earning potential and financial security."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "World-Class Education",
+            "description": "Home to internationally respected universities, colleges, and vocational institutions that attract students from around the world."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "Family-Friendly Environment",
+            "description": "Australia is renowned for its safe neighborhoods, quality schools, modern infrastructure, and family-oriented lifestyle."
+          },
+          {
+            "title": "Outstanding Healthcare System",
+            "description": "Residents benefit from access to one of the world's most respected healthcare systems."
+          },
+          {
+            "title": "Exceptional Quality of Life",
+            "description": "Australia consistently ranks among the top countries globally for happiness, life expectancy, safety, and overall well-being."
+          },
+          {
+            "title": "Multicultural Society",
+            "description": "People from hundreds of nationalities call Australia home, creating a welcoming and inclusive environment for newcomers."
+          },
+          {
+            "title": "Beautiful Climate and Natural Attractions",
+            "description": "From stunning beaches and national parks to vibrant cities and outdoor adventures, Australia offers an unmatched lifestyle and environment."
+          },
+          {
+            "title": "Strong Economy and Political Stability",
+            "description": "Australia's stable economy and strong institutions provide confidence for workers, students, investors, and families seeking long-term opportunities."
+          },
+          {
+            "title": "Opportunities for Family Sponsorship",
+            "description": "Eligible residents and citizens may sponsor certain family members to join them and build their future together in Australia."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Graduate Visa"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Skilled Independent Visa (Subclass 189)"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Skilled Nominated Visa (Subclass 190)"
+          },
+          {
+            "step": "06",
+            "title": "Skilled Work Regional Visa (Subclass 491)"
+          },
+          {
+            "step": "07",
+            "title": "Employer Sponsored Visa"
+          },
+          {
+            "step": "08",
+            "title": "Temporary Skill Shortage Visa"
+          },
+          {
+            "step": "09",
+            "title": "Business Innovation & Investment Pathways"
+          },
+          {
+            "step": "10",
+            "title": "Partner Visa"
+          },
+          {
+            "step": "11",
+            "title": "Family Sponsorship"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "13",
+            "title": "Australian Citizenship"
           }
         ],
         "biggerPictureBody": "Migrating to Australia is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
@@ -488,57 +869,123 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Singapore.",
-            "From its vibrant cities to its natural beauty, Singapore offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Singapore opens the door to a life filled with possibilities."
+            "Imagine living in one of the world's most advanced, safest, and wealthiest countries—a place where innovation drives success, opportunities are abundant, and quality of life is among the highest on the planet.",
+            "Singapore has earned a global reputation as Asia's premier destination for business, education, technology, finance, and international trade. Despite its compact size, Singapore is one of the world's most influential economies, attracting professionals, entrepreneurs, investors, students, and multinational companies from across the globe.",
+            "From its futuristic skyline and world-class infrastructure to its efficient public services and vibrant multicultural society, Singapore offers an environment where ambition is rewarded and success is encouraged.",
+            "Whether you are looking to advance your career, launch a business, pursue a globally recognized education, relocate your family, or establish long-term residency in Asia, Singapore provides exceptional opportunities to achieve your goals.",
+            "For many newcomers, Singapore is not just a destination—it is a gateway to global success."
           ]
         },
         "advantages": [
           {
-            "title": "Strong Labour Market",
-            "description": "Skilled-worker shortages across tech, healthcare, trades and finance."
+            "title": "Pathway to Long-Term Residency",
+            "description": "Singapore offers several structured immigration and employment routes that may eventually lead to long-term residence opportunities for eligible individuals and their families."
           },
           {
-            "title": "Competitive Salaries",
-            "description": "Top-tier pay backed by robust labour protections and benefits."
+            "title": "Permanent Residency Opportunities",
+            "description": "Many skilled professionals, entrepreneurs, investors, and family members may become eligible to apply for Singapore Permanent Residence (PR), allowing them to live and work in Singapore indefinitely."
           },
           {
-            "title": "Multiple Visa Routes",
-            "description": "Federal and regional programs prioritising skilled workers."
+            "title": "Singapore Citizenship Opportunities",
+            "description": "Permanent Residents who meet eligibility requirements and integration criteria may eventually apply for Singapore citizenship, gaining access to one of the world's strongest passports."
           },
           {
-            "title": "Family Inclusion",
-            "description": "Bring your spouse and dependants on most work permit programs."
+            "title": "Global Financial and Business Hub",
+            "description": "Singapore is consistently ranked among the best countries in the world for business, innovation, entrepreneurship, and investment."
           },
           {
-            "title": "Flexible Work Permits",
-            "description": "Open work permit options for partners and graduates."
+            "title": "Exceptional Career Opportunities",
+            "description": "Professionals in finance, technology, healthcare, engineering, logistics, education, manufacturing, biotechnology, and digital industries are highly sought after."
           },
           {
-            "title": "Pathway to Citizenship",
-            "description": "Time spent working counts toward permanent residency and citizenship."
+            "title": "World-Class Education",
+            "description": "Singapore is home to internationally recognized universities, business schools, and educational institutions that attract students from around the world."
+          },
+          {
+            "title": "Outstanding Safety and Security",
+            "description": "Singapore is widely recognized as one of the safest countries globally, making it highly attractive for individuals and families."
+          },
+          {
+            "title": "High Standard of Living",
+            "description": "Residents enjoy modern infrastructure, clean cities, efficient transportation systems, and excellent public services."
+          },
+          {
+            "title": "Excellent Healthcare System",
+            "description": "Singapore's healthcare system is consistently ranked among the best in the world for quality, efficiency, and accessibility."
+          },
+          {
+            "title": "Strategic Location in Asia",
+            "description": "Situated at the heart of Southeast Asia, Singapore provides easy access to major markets and business opportunities throughout the region."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "Quality schools, modern housing, excellent healthcare, and a safe environment make Singapore an ideal destination for families."
+          },
+          {
+            "title": "Multicultural Society",
+            "description": "Singapore embraces diversity, bringing together cultures, languages, and communities from around the world."
+          },
+          {
+            "title": "Strong Economy and Political Stability",
+            "description": "The country's stable government, transparent regulations, and strong economy create confidence for professionals, businesses, and investors alike."
+          },
+          {
+            "title": "Innovation and Technology Leadership",
+            "description": "Singapore continues to lead in areas such as fintech, artificial intelligence, biotechnology, digital transformation, and smart city development."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Secure a Qualifying Job Offer or Profile"
+            "title": "Tourist Visa"
           },
           {
             "step": "02",
-            "title": "Skilled Worker Profile & Scoring"
+            "title": "Student Pass"
           },
           {
             "step": "03",
-            "title": "Sponsorship or Nomination"
+            "title": "Employment Pass (EP)"
           },
           {
             "step": "04",
-            "title": "Work Permit or Permanent Residency Application"
+            "title": "S Pass"
           },
           {
             "step": "05",
-            "title": "Relocation, Onboarding & Settlement Support"
+            "title": "Work Permit"
+          },
+          {
+            "step": "06",
+            "title": "Personalised Employment Pass"
+          },
+          {
+            "step": "07",
+            "title": "EntrePass"
+          },
+          {
+            "step": "08",
+            "title": "Tech.Pass"
+          },
+          {
+            "step": "09",
+            "title": "Overseas Networks & Expertise Pass (ONE Pass)"
+          },
+          {
+            "step": "10",
+            "title": "Investor Program (Global Investor Programme)"
+          },
+          {
+            "step": "11",
+            "title": "Family Sponsorship"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residence (PR)"
+          },
+          {
+            "step": "13",
+            "title": "Singapore Citizenship"
           }
         ],
         "biggerPictureBody": "Working in Singapore means joining one of the world's most progressive labour markets — with a clear runway from work permit to permanent residency. We help you position your profile, target the right programs, and land on your feet."
@@ -556,57 +1003,118 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Spain.",
-            "From its vibrant cities to its natural beauty, Spain offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Spain opens the door to a life filled with possibilities."
+            "Imagine living in a country where every day feels like a perfect balance between opportunity and lifestyle. A place where world-class cities, beautiful coastlines, rich culture, and a thriving economy come together to create one of the most attractive destinations in Europe.",
+            "Spain is one of the world's most visited countries and one of Europe's most sought-after destinations for tourists, students, professionals, entrepreneurs, retirees, and investors. From the vibrant streets of Madrid and Barcelona to the sunny beaches of Valencia, Malaga, and the Canary Islands, Spain offers an exceptional quality of life that attracts millions of people every year.",
+            "Whether you dream of studying in Europe, working for an international company, launching a business, investing in property, or enjoying a better work-life balance, Spain provides a welcoming environment and multiple pathways to achieve your goals.",
+            "For many newcomers, Spain is more than a destination—it is a lifestyle. A place where career growth, family life, and personal happiness can truly coexist."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "Spain offers several residency options that can eventually lead to long-term residence and permanent settlement for eligible individuals and families."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Spanish Citizenship Opportunities",
+            "description": "Long-term residents may become eligible to apply for Spanish citizenship, gaining access to one of Europe's most respected passports and the benefits of European Union citizenship."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Access to the European Union",
+            "description": "Living in Spain places you within the Schengen Area and provides convenient access to numerous European countries for travel, business, and leisure."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "Exceptional Quality of Life",
+            "description": "Spain consistently ranks among the world's best countries for lifestyle, climate, healthcare, safety, and overall well-being."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "Excellent Healthcare System",
+            "description": "Residents benefit from access to a high-quality healthcare system recognized as one of the best in Europe."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "Affordable Cost of Living",
+            "description": "Compared to many other Western European countries, Spain offers an attractive balance between income opportunities and living expenses."
+          },
+          {
+            "title": "World-Class Education",
+            "description": "Spain is home to respected universities, international schools, and educational institutions that attract students from around the world."
+          },
+          {
+            "title": "Attractive Climate",
+            "description": "Enjoy over 300 days of sunshine annually in many regions, making Spain one of Europe's most desirable destinations for outdoor living."
+          },
+          {
+            "title": "Growing Employment Opportunities",
+            "description": "Spain continues to offer opportunities in tourism, hospitality, healthcare, technology, engineering, logistics, renewable energy, and other growing sectors."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "Safe communities, excellent schools, modern infrastructure, and family-oriented lifestyles make Spain an ideal place to raise children."
+          },
+          {
+            "title": "Digital Nomad & Remote Work Opportunities",
+            "description": "Spain has become one of Europe's most popular destinations for remote workers and digital professionals seeking a better quality of life."
+          },
+          {
+            "title": "Business and Investment Potential",
+            "description": "Entrepreneurs and investors benefit from Spain's strategic location, strong tourism industry, and access to the European market."
+          },
+          {
+            "title": "Rich Culture and Tourism",
+            "description": "From historic landmarks and world-famous cuisine to beautiful beaches, festivals, and vibrant cities, Spain offers an unforgettable living experience."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Digital Nomad Visa"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Work Visa"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Highly Qualified Professional Visa"
+          },
+          {
+            "step": "06",
+            "title": "EU Blue Card"
+          },
+          {
+            "step": "07",
+            "title": "Entrepreneur Visa"
+          },
+          {
+            "step": "08",
+            "title": "Business Visa"
+          },
+          {
+            "step": "09",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "10",
+            "title": "Non-Lucrative Residence Visa"
+          },
+          {
+            "step": "11",
+            "title": "Long-Term Residence Permit"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "13",
+            "title": "Spanish Citizenship"
           }
         ],
         "biggerPictureBody": "Migrating to Spain is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
@@ -624,57 +1132,127 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Switzerland.",
-            "From its vibrant cities to its natural beauty, Switzerland offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Switzerland opens the door to a life filled with possibilities."
+            "Imagine living in a country where breathtaking mountain landscapes, economic prosperity, political stability, and exceptional quality of life come together to create one of the most desirable destinations in the world.",
+            "Switzerland is globally recognized for its stunning natural beauty, world-class financial institutions, innovative industries, and outstanding standard of living. Nestled in the heart of Europe, Switzerland attracts professionals, entrepreneurs, investors, students, and families seeking security, opportunity, and long-term success.",
+            "From the international business hubs of Zurich and Geneva to the scenic beauty of Lucerne, Lausanne, and the Swiss Alps, Switzerland offers a unique combination of career opportunities, safety, modern infrastructure, and natural wonder.",
+            "Whether your goal is to advance your career, establish a business, pursue higher education, enjoy a premium lifestyle, or create a secure future for your family, Switzerland offers opportunities that few countries can rival.",
+            "For many newcomers, Switzerland is not just a destination—it is a place where success, stability, and quality of life reach a new level."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Long-Term Residency",
+            "description": "Switzerland offers residence options for qualified professionals, entrepreneurs, students, investors, and family members seeking long-term opportunities."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Permanent Residency Opportunities",
+            "description": "Eligible residents may eventually qualify for permanent residence status, allowing them to live and work in Switzerland with greater flexibility and long-term security."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Swiss Citizenship Opportunities",
+            "description": "Long-term residents who meet eligibility and integration requirements may apply for Swiss citizenship and enjoy the benefits of one of the world's most respected nationalities."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "One of the World's Strongest Economies",
+            "description": "Switzerland consistently ranks among the world's most prosperous and economically stable countries, offering outstanding opportunities for career and business growth."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "High Salaries and Earning Potential",
+            "description": "Professionals working in Switzerland often enjoy some of the highest average salaries globally, particularly in finance, healthcare, engineering, pharmaceuticals, and technology."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "Global Financial and Business Centre",
+            "description": "Switzerland is home to leading banks, multinational corporations, research institutions, and international organizations."
+          },
+          {
+            "title": "World-Class Education",
+            "description": "Swiss universities and institutions are internationally respected for excellence in science, business, hospitality, engineering, and research."
+          },
+          {
+            "title": "Exceptional Healthcare System",
+            "description": "Residents benefit from one of the most advanced healthcare systems in the world, renowned for quality, innovation, and accessibility."
+          },
+          {
+            "title": "Outstanding Quality of Life",
+            "description": "Switzerland consistently ranks among the best countries globally for safety, healthcare, infrastructure, environmental quality, and overall well-being."
+          },
+          {
+            "title": "Safe and Secure Environment",
+            "description": "The country enjoys low crime rates, political neutrality, and strong legal protections, making it one of the safest places to live and raise a family."
+          },
+          {
+            "title": "Multilingual and International Society",
+            "description": "With German, French, Italian, and English widely spoken in business and international settings, Switzerland offers a truly global environment."
+          },
+          {
+            "title": "Family-Friendly Living",
+            "description": "Excellent schools, public services, healthcare, and clean cities make Switzerland an ideal destination for families seeking long-term stability."
+          },
+          {
+            "title": "Gateway to Europe",
+            "description": "Located in the center of Europe, Switzerland provides easy access to major European cities and international business markets."
+          },
+          {
+            "title": "Spectacular Natural Beauty",
+            "description": "From snow-capped mountains and crystal-clear lakes to world-famous ski resorts and scenic countryside, Switzerland offers one of the most beautiful living environments on earth."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Work Permit"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "EU/EFTA Residence Permit"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Skilled Worker Permit"
+          },
+          {
+            "step": "06",
+            "title": "Intra-Company Transfer Permit"
+          },
+          {
+            "step": "07",
+            "title": "Business and Entrepreneur Residence Permit"
+          },
+          {
+            "step": "08",
+            "title": "Investor Residence Programs"
+          },
+          {
+            "step": "09",
+            "title": "Researcher and Academic Residence Permit"
+          },
+          {
+            "step": "10",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "11",
+            "title": "Long-Term Residence Permit"
+          },
+          {
+            "step": "12",
+            "title": "Settlement Permit (Permit C)"
+          },
+          {
+            "step": "13",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "14",
+            "title": "Swiss Citizenship"
           }
         ],
         "biggerPictureBody": "Migrating to Switzerland is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
@@ -692,60 +1270,126 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Netherlands.",
-            "From its vibrant cities to its natural beauty, Netherlands offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Netherlands opens the door to a life filled with possibilities."
+            "Imagine living in one of Europe's most innovative and prosperous countries—a place where world-class opportunities, exceptional quality of life, and international connections come together to create an environment where individuals and families can truly thrive.",
+            "The Netherlands has become one of the most attractive destinations in Europe for students, skilled professionals, entrepreneurs, investors, and families seeking a brighter future. Known for its modern cities, strong economy, excellent infrastructure, and welcoming international community, the Netherlands consistently ranks among the best places in the world to live and work.",
+            "From the vibrant canals of Amsterdam and the international business hub of Rotterdam to the technology centers of Eindhoven and Utrecht, the Netherlands offers a unique combination of economic opportunity, cultural diversity, and lifestyle balance.",
+            "Whether your goal is to study at a globally respected university, secure a rewarding career, establish a business, relocate your family, or gain access to the European market, the Netherlands provides a clear pathway to achieve your ambitions.",
+            "For many newcomers, the Netherlands is not simply a destination—it is a place where careers flourish, businesses grow, and families build lasting futures."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "The Netherlands offers structured immigration routes that can lead from temporary residence to long-term residence and eventually permanent settlement."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Dutch Citizenship Opportunities",
+            "description": "Eligible long-term residents may apply for Dutch citizenship and gain access to one of the world's strongest passports, along with the benefits of European Union citizenship."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Strong and Stable Economy",
+            "description": "The Netherlands is one of Europe's most advanced economies, home to multinational corporations, thriving industries, and a highly skilled workforce."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "High Demand for International Talent",
+            "description": "Professionals in technology, engineering, healthcare, logistics, finance, agriculture, renewable energy, and research are highly sought after throughout the country."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "English-Friendly Environment",
+            "description": "Unlike many European countries, a large percentage of the Dutch population speaks English fluently, making integration easier for international residents."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "World-Class Education",
+            "description": "The Netherlands is home to internationally recognized universities and educational institutions that attract students from across the globe."
+          },
+          {
+            "title": "Gateway to Europe",
+            "description": "Strategically located at the heart of Europe, the Netherlands provides easy access to major European markets, cities, and business opportunities."
+          },
+          {
+            "title": "Excellent Work-Life Balance",
+            "description": "The country is renowned for promoting healthy work-life balance, employee well-being, and flexible working arrangements."
+          },
+          {
+            "title": "Outstanding Healthcare System",
+            "description": "Residents enjoy access to a highly efficient and respected healthcare system known for quality care and accessibility."
+          },
+          {
+            "title": "Safe and Family-Friendly Communities",
+            "description": "The Netherlands consistently ranks among the safest countries in Europe, making it an excellent destination for individuals and families."
+          },
+          {
+            "title": "Innovation and Technology Hub",
+            "description": "The country is a leader in innovation, sustainability, logistics, agriculture, and technology, creating exciting opportunities for entrepreneurs and professionals."
+          },
+          {
+            "title": "Business and Investment Opportunities",
+            "description": "With a favorable business climate, strong legal framework, and access to the European Union market, the Netherlands remains a top destination for investors and entrepreneurs."
+          },
+          {
+            "title": "Exceptional Quality of Life",
+            "description": "Excellent transportation systems, clean cities, cycling culture, modern infrastructure, and strong public services contribute to one of the highest standards of living in the world."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Orientation Year Visa"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Highly Skilled Migrant Visa"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "EU Blue Card"
+          },
+          {
+            "step": "06",
+            "title": "Employer-Sponsored Work Permit"
+          },
+          {
+            "step": "07",
+            "title": "Intra-Company Transfer Permit"
+          },
+          {
+            "step": "08",
+            "title": "Startup Visa"
+          },
+          {
+            "step": "09",
+            "title": "Entrepreneur Residence Permit"
+          },
+          {
+            "step": "10",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "11",
+            "title": "Self-Employment Residence Permit"
+          },
+          {
+            "step": "12",
+            "title": "Long-Term Residence Permit"
+          },
+          {
+            "step": "13",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "14",
+            "title": "Dutch Citizenship"
           }
         ],
-        "biggerPictureBody": "Migrating to Netherlands is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "biggerPictureBody": "Migrating to the Netherlands is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
@@ -760,128 +1404,260 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to New Zealand.",
-            "From its vibrant cities to its natural beauty, New Zealand offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, New Zealand opens the door to a life filled with possibilities."
+            "Imagine a life where career success, family well-being, personal safety, and breathtaking natural beauty come together in perfect harmony.",
+            "New Zealand is one of the world's most admired destinations for skilled professionals, students, entrepreneurs, investors, and families seeking a better quality of life. Known for its stunning landscapes, modern cities, strong economy, and welcoming communities, New Zealand consistently ranks among the best countries in the world for safety, happiness, work-life balance, and overall well-being.",
+            "From the vibrant city life of Auckland and Wellington to the breathtaking mountains, lakes, and coastlines that have made New Zealand famous worldwide, the country offers a unique lifestyle that many people only dream about.",
+            "Whether you are seeking better employment opportunities, a world-class education, a safe environment to raise your children, or a pathway to permanent settlement, New Zealand provides a clear and achievable route toward your goals.",
+            "For many newcomers, New Zealand is not simply a place to live—it is a place where life can truly be enjoyed."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "New Zealand offers several immigration routes that allow eligible individuals to transition from temporary residence to permanent residency and long-term settlement."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "New Zealand Citizenship Opportunities",
+            "description": "Permanent residents who meet residency requirements may eventually become eligible for New Zealand citizenship and enjoy the benefits of one of the world's most respected passports."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Exceptional Quality of Life",
+            "description": "New Zealand consistently ranks among the world's best countries for happiness, safety, healthcare, environmental quality, and work-life balance."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "High Demand for Skilled Professionals",
+            "description": "The country actively seeks qualified workers in healthcare, engineering, information technology, construction, agriculture, education, trades, and various professional sectors."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "Safe and Peaceful Environment",
+            "description": "New Zealand is recognized globally as one of the safest countries in the world, making it an ideal destination for individuals and families."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "World-Class Education",
+            "description": "The country offers internationally recognized schools, universities, and vocational institutions that attract students from around the globe."
+          },
+          {
+            "title": "Excellent Healthcare System",
+            "description": "Residents benefit from access to high-quality healthcare services and modern medical facilities."
+          },
+          {
+            "title": "Family-Friendly Lifestyle",
+            "description": "New Zealand is known for its strong family values, excellent public services, quality schools, and child-friendly communities."
+          },
+          {
+            "title": "Beautiful Natural Environment",
+            "description": "From snow-capped mountains and pristine beaches to national parks and scenic countryside, New Zealand offers one of the most beautiful living environments in the world."
+          },
+          {
+            "title": "Strong Work-Life Balance",
+            "description": "Many professionals choose New Zealand because of its relaxed lifestyle, shorter commuting times, and emphasis on personal well-being."
+          },
+          {
+            "title": "Stable Economy and Political Environment",
+            "description": "The country enjoys strong governance, economic stability, and a business-friendly environment that supports long-term growth."
+          },
+          {
+            "title": "Welcoming Multicultural Communities",
+            "description": "People from many different cultures have successfully built their lives in New Zealand, creating diverse and inclusive communities."
+          },
+          {
+            "title": "Opportunities for Families",
+            "description": "Many immigration pathways allow spouses and dependent children to accompany applicants, helping families build their future together."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Post-Study Work Visa"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Accredited Employer Work Visa"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "Skilled Migrant Category"
+          },
+          {
+            "step": "06",
+            "title": "Green List Pathway"
+          },
+          {
+            "step": "07",
+            "title": "Straight to Residence Visa"
+          },
+          {
+            "step": "08",
+            "title": "Work to Residence Visa"
+          },
+          {
+            "step": "09",
+            "title": "Partner Visa"
+          },
+          {
+            "step": "10",
+            "title": "Family Sponsorship"
+          },
+          {
+            "step": "11",
+            "title": "Entrepreneur Visa"
+          },
+          {
+            "step": "12",
+            "title": "Investor Visa"
+          },
+          {
+            "step": "13",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "14",
+            "title": "New Zealand Citizenship"
           }
         ],
         "biggerPictureBody": "Migrating to New Zealand is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
       }
     },
     {
-      "id": "luxembourg",
-      "country": "Luxembourg",
-      "flagCode": "lu",
-      "href": "/destinations/luxembourg",
-      "image": "https://i.ibb.co/PzMnVZgw/cedric-letsch-03-O-BOsa-XGk-unsplash.jpg",
-      "imageAlt": "Old town of Luxembourg City at sunset",
+      "id": "portugal",
+      "country": "Portugal",
+      "flagCode": "pt",
+      "href": "/destinations/portugal",
+      "image": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1600&q=80",
+      "imageAlt": "Lisbon cityscape with colourful trams and terracotta rooftops",
       "featured": false,
-      "description": "Access to Europe with attractive residency pathways.",
+      "description": "Golden Visa, Digital Nomad Visa and affordable EU living.",
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Luxembourg.",
-            "From its vibrant cities to its natural beauty, Luxembourg offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Luxembourg opens the door to a life filled with possibilities."
+            "Imagine living in a country where stunning coastlines, year-round sunshine, rich culture, affordable living, and European opportunities come together to create one of the most desirable destinations in the world.",
+            "Portugal has quietly become one of Europe's fastest-growing destinations for professionals, entrepreneurs, investors, digital nomads, retirees, students, and families seeking a better quality of life. Known for its welcoming people, safe communities, modern infrastructure, and breathtaking landscapes, Portugal offers an exceptional balance between opportunity and lifestyle.",
+            "From the vibrant streets of Lisbon and Porto to the golden beaches of the Algarve and the picturesque vineyards of the Douro Valley, Portugal provides an environment where people can build successful careers while enjoying a relaxed and fulfilling lifestyle.",
+            "Whether you are looking to work, study, invest, relocate your family, start a business, or establish residency in Europe, Portugal offers multiple pathways to help you achieve your goals.",
+            "For many newcomers, Portugal is not simply a destination—it is a place where life becomes more enjoyable, affordable, and rewarding."
           ]
         },
         "advantages": [
           {
-            "title": "Stability & Security",
-            "description": "One of the world's safest and most politically stable countries."
+            "title": "Pathway to Permanent Residency",
+            "description": "Portugal offers several immigration programs that allow eligible individuals and families to transition from temporary residence to long-term residency and permanent settlement."
           },
           {
-            "title": "Endless Career Opportunities",
-            "description": "Consistently high demand for skilled professionals across all sectors."
+            "title": "Portuguese Citizenship Opportunities",
+            "description": "Portugal is widely regarded as one of Europe's most attractive citizenship destinations. Eligible residents may eventually apply for Portuguese citizenship and gain access to one of the world's strongest passports and full European Union benefits."
           },
           {
-            "title": "World-Class Healthcare & Education",
-            "description": "Access to universal healthcare and globally ranked institutions."
+            "title": "Access to the European Union",
+            "description": "Living in Portugal provides access to the Schengen Area and the freedom to travel throughout much of Europe for business, leisure, and family purposes."
           },
           {
-            "title": "Multicultural & Welcoming Society",
-            "description": "A home for people from all walks of life and every corner of the world."
+            "title": "Affordable Cost of Living",
+            "description": "Compared to many Western European countries, Portugal offers a lower cost of living while maintaining a high standard of living."
           },
           {
-            "title": "Clear Path to Permanent Residency & Citizenship",
-            "description": "Structured, transparent immigration programs with proven success rates."
+            "title": "Exceptional Quality of Life",
+            "description": "Portugal consistently ranks among the world's best countries for safety, healthcare, climate, and overall life satisfaction."
           },
           {
-            "title": "High Standard of Living",
-            "description": "Clean cities, modern infrastructure, good health care system and a balanced lifestyle."
+            "title": "One of Europe's Safest Countries",
+            "description": "The country enjoys low crime rates and is frequently ranked among the safest destinations in the world."
+          },
+          {
+            "title": "Excellent Climate",
+            "description": "With over 300 days of sunshine annually in many regions, Portugal offers one of Europe's most pleasant climates."
+          },
+          {
+            "title": "Growing Employment Opportunities",
+            "description": "The country continues to attract international businesses and offers opportunities in technology, tourism, healthcare, education, engineering, renewable energy, and various professional sectors."
+          },
+          {
+            "title": "Attractive Destination for Digital Nomads",
+            "description": "Portugal has become a global hotspot for remote workers, freelancers, entrepreneurs, and online business owners seeking a better lifestyle."
+          },
+          {
+            "title": "World-Class Healthcare",
+            "description": "Residents have access to a modern healthcare system known for quality care and affordability."
+          },
+          {
+            "title": "High-Quality Education",
+            "description": "Portugal offers respected universities, international schools, and educational institutions that attract students from around the world."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "Safe communities, excellent public services, quality schools, and a relaxed lifestyle make Portugal an ideal destination for families."
+          },
+          {
+            "title": "Business and Investment Opportunities",
+            "description": "Entrepreneurs and investors benefit from Portugal's strategic location, growing economy, startup ecosystem, and access to European markets."
+          },
+          {
+            "title": "Beautiful Coastlines and Tourism Appeal",
+            "description": "Portugal is famous for its beaches, historic cities, vibrant culture, delicious cuisine, and stunning natural landscapes."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Skilled Migration Programs (Express Entry)"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Provincial Nominee Programs (PNPs)"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Family Sponsorship Opportunities"
+            "title": "Work Visa"
           },
           {
             "step": "04",
-            "title": "Study Pathways Leading to Residency"
+            "title": "Digital Nomad Visa"
           },
           {
             "step": "05",
-            "title": "Work Opportunities with Long-Term Benefits"
+            "title": "D7 Passive Income Visa"
+          },
+          {
+            "step": "06",
+            "title": "Job Seeker Visa"
+          },
+          {
+            "step": "07",
+            "title": "Entrepreneur Visa"
+          },
+          {
+            "step": "08",
+            "title": "Startup Visa"
+          },
+          {
+            "step": "09",
+            "title": "Investor Pathways"
+          },
+          {
+            "step": "10",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "11",
+            "title": "Temporary Residence Permit"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "13",
+            "title": "Portuguese Citizenship"
           }
         ],
-        "biggerPictureBody": "Migrating to Luxembourg is not just about changing your location — it's about changing your future. It's about gaining access to opportunities that elevate your career, improve your lifestyle, and secure a better tomorrow for your loved ones. Every year, thousands take this bold step and succeed. Now, it's your turn."
+        "biggerPictureBody": "Living in Portugal is more than securing a visa — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency and European citizenship. With the right plan, your time here becomes the launchpad for everything that comes next."
       }
     },
     {
@@ -896,57 +1672,115 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to France.",
-            "From its vibrant cities to its natural beauty, France offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, France opens the door to a life filled with possibilities."
+            "Imagine building your future in a country where culture, opportunity, innovation, and quality of life come together to create one of the world's most desirable places to live.",
+            "France is far more than the home of the Eiffel Tower, world-famous cuisine, and iconic landmarks. It is one of Europe's largest economies, a global leader in business, technology, education, fashion, tourism, and innovation. Every year, millions of visitors, students, skilled professionals, entrepreneurs, and families choose France as their destination for new opportunities and a better quality of life.",
+            "From the elegance of Paris and the business districts of Lyon to the coastal beauty of Nice and Marseille, France offers a lifestyle that combines professional success with personal fulfillment.",
+            "Whether you are looking to study at a prestigious university, advance your career, establish a business, invest in Europe, or create a secure future for your family, France provides a clear pathway to achieve your goals.",
+            "For many newcomers, France is not simply a destination—it is a place where dreams are transformed into lasting success."
           ]
         },
         "advantages": [
           {
-            "title": "Globally Ranked Universities",
-            "description": "Home to research universities with strong international reputation."
-          },
-          {
-            "title": "Post-Graduation Work Permit",
-            "description": "Stay and work after you complete your studies."
-          },
-          {
             "title": "Pathway to Permanent Residency",
-            "description": "Local study and work experience accelerates your PR application."
+            "description": "France offers several routes that allow eligible individuals to transition from temporary residence to long-term residence and eventually permanent settlement."
           },
           {
-            "title": "Affordable, High-Quality Tuition",
-            "description": "Strong value compared to other top English-speaking destinations."
+            "title": "French Citizenship Opportunities",
+            "description": "Individuals who meet residency and integration requirements may become eligible for French citizenship, gaining access to one of the world's most respected passports and the benefits of European citizenship."
           },
           {
-            "title": "Multicultural Campuses",
-            "description": "Welcoming environment with students from around the world."
+            "title": "Access to the European Union",
+            "description": "Living in France places you at the heart of Europe, providing convenient access to neighboring countries for business, tourism, education, and cultural experiences."
           },
           {
-            "title": "Safe, Liveable Cities",
-            "description": "Consistently ranked among the world's best places to live."
+            "title": "World-Class Education",
+            "description": "France is home to internationally respected universities, business schools, engineering institutions, and research centers that attract students from around the world."
+          },
+          {
+            "title": "Affordable Higher Education",
+            "description": "Compared to many leading study destinations, France offers excellent educational opportunities at highly competitive tuition costs."
+          },
+          {
+            "title": "Strong Economy and Career Opportunities",
+            "description": "As one of Europe's largest economies, France offers employment opportunities across healthcare, engineering, hospitality, technology, finance, manufacturing, aviation, and numerous other industries."
+          },
+          {
+            "title": "Excellent Healthcare System",
+            "description": "Residents enjoy access to one of the world's most highly regarded healthcare systems, known for its quality, accessibility, and affordability."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "France offers strong social benefits, quality education, childcare support, and public services that make it attractive for individuals and families alike."
+          },
+          {
+            "title": "Multicultural Society",
+            "description": "France welcomes people from diverse backgrounds, creating vibrant communities where international residents can thrive."
+          },
+          {
+            "title": "Exceptional Quality of Life",
+            "description": "France consistently ranks highly for healthcare, public transportation, cultural experiences, food, work-life balance, and overall well-being."
+          },
+          {
+            "title": "Business and Investment Opportunities",
+            "description": "Entrepreneurs and investors benefit from France's strategic location, strong economy, and access to one of the world's largest consumer markets."
+          },
+          {
+            "title": "Rich History, Culture, and Tourism",
+            "description": "From historic castles and museums to world-famous landmarks, vineyards, beaches, and ski resorts, France offers endless opportunities to explore and enjoy life."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Choose Your Program & Institution"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Letter of Acceptance from a Recognised Institution"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Study Permit Application"
+            "title": "Talent Passport Visa"
           },
           {
             "step": "04",
-            "title": "Arrival, Orientation & Studies"
+            "title": "Skilled Worker Visa"
           },
           {
             "step": "05",
-            "title": "Post-Graduation Work Permit & PR Pathways"
+            "title": "EU Blue Card"
+          },
+          {
+            "step": "06",
+            "title": "Employment-Based Residence Permit"
+          },
+          {
+            "step": "07",
+            "title": "Entrepreneur Visa"
+          },
+          {
+            "step": "08",
+            "title": "Investor Visa"
+          },
+          {
+            "step": "09",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "10",
+            "title": "Business Immigration Programs"
+          },
+          {
+            "step": "11",
+            "title": "Long-Term Residence Permit"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "13",
+            "title": "French Citizenship"
           }
         ],
         "biggerPictureBody": "Studying in France is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
@@ -964,57 +1798,119 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Ireland.",
-            "From its vibrant cities to its natural beauty, Ireland offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Ireland opens the door to a life filled with possibilities."
+            "Imagine building your future in one of Europe's fastest-growing economies—a country where global opportunities, world-class education, breathtaking landscapes, and a welcoming culture come together to create an exceptional place to live, work, study, and thrive.",
+            "Ireland has become one of the most sought-after destinations for international students, skilled professionals, entrepreneurs, and families looking for new opportunities. Known as the 'Emerald Isle' for its stunning green countryside, Ireland offers much more than natural beauty. It is home to some of the world's leading technology, pharmaceutical, financial, and healthcare companies, making it a powerful hub for innovation and career growth.",
+            "From the vibrant streets of Dublin and Cork to the scenic coastlines and charming towns that define Irish life, the country offers an ideal balance between professional success and personal well-being.",
+            "Whether your goal is to earn an internationally recognized qualification, advance your career with a global company, establish a business, or secure a long-term future for your family, Ireland provides a welcoming environment and clear pathways to help you achieve your ambitions.",
+            "For many newcomers, Ireland is not simply a destination—it is a place where opportunities turn into lasting success."
           ]
         },
         "advantages": [
           {
-            "title": "Globally Ranked Universities",
-            "description": "Home to research universities with strong international reputation."
-          },
-          {
-            "title": "Post-Graduation Work Permit",
-            "description": "Stay and work after you complete your studies."
-          },
-          {
             "title": "Pathway to Permanent Residency",
-            "description": "Local study and work experience accelerates your PR application."
+            "description": "Ireland offers structured immigration routes that can lead from temporary residence to long-term residency and eventually permanent settlement for eligible applicants."
           },
           {
-            "title": "Affordable, High-Quality Tuition",
-            "description": "Strong value compared to other top English-speaking destinations."
+            "title": "Irish Citizenship Opportunities",
+            "description": "Long-term residents who meet eligibility requirements may apply for Irish citizenship, gaining access to one of the world's strongest passports and the benefits associated with European Union membership."
           },
           {
-            "title": "Multicultural Campuses",
-            "description": "Welcoming environment with students from around the world."
+            "title": "English-Speaking Country",
+            "description": "As an English-speaking nation, Ireland offers an easier transition for many international students, workers, and families relocating from abroad."
           },
           {
-            "title": "Safe, Liveable Cities",
-            "description": "Consistently ranked among the world's best places to live."
+            "title": "Thriving Economy",
+            "description": "Ireland is home to many of the world's leading multinational companies in technology, pharmaceuticals, finance, medical sciences, and manufacturing."
+          },
+          {
+            "title": "Excellent Employment Opportunities",
+            "description": "Highly skilled professionals are in demand across sectors such as information technology, healthcare, engineering, finance, education, construction, and life sciences."
+          },
+          {
+            "title": "Gateway to Europe",
+            "description": "Ireland provides access to the European market while maintaining strong global business connections, making it an attractive destination for professionals and investors."
+          },
+          {
+            "title": "World-Class Education",
+            "description": "Irish universities and colleges are internationally recognized for academic excellence, research, and graduate employability."
+          },
+          {
+            "title": "Post-Study Work Opportunities",
+            "description": "International students may benefit from post-graduation opportunities that allow them to gain valuable work experience after completing their studies."
+          },
+          {
+            "title": "High Quality of Life",
+            "description": "Ireland consistently ranks highly for safety, healthcare, education, economic stability, and overall quality of life."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "The country offers excellent schools, modern infrastructure, safe communities, and a welcoming atmosphere for families."
+          },
+          {
+            "title": "Strong Healthcare System",
+            "description": "Residents have access to quality healthcare services and modern medical facilities throughout the country."
+          },
+          {
+            "title": "Welcoming and Friendly Culture",
+            "description": "Ireland is famous for its warm hospitality, community spirit, and welcoming attitude toward newcomers from around the world."
+          },
+          {
+            "title": "Business and Investment Opportunities",
+            "description": "Entrepreneurs and investors benefit from Ireland's pro-business environment, favorable corporate structures, and international market access."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Choose Your Program & Institution"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Letter of Acceptance from a Recognised Institution"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Study Permit Application"
+            "title": "Third Level Graduate Programme"
           },
           {
             "step": "04",
-            "title": "Arrival, Orientation & Studies"
+            "title": "General Employment Permit"
           },
           {
             "step": "05",
-            "title": "Post-Graduation Work Permit & PR Pathways"
+            "title": "Critical Skills Employment Permit"
+          },
+          {
+            "step": "06",
+            "title": "Intra-Company Transfer Permit"
+          },
+          {
+            "step": "07",
+            "title": "Researcher Hosting Agreement"
+          },
+          {
+            "step": "08",
+            "title": "Start-Up Entrepreneur Programme"
+          },
+          {
+            "step": "09",
+            "title": "Immigrant Investor Programme"
+          },
+          {
+            "step": "10",
+            "title": "Family Reunification"
+          },
+          {
+            "step": "11",
+            "title": "Long-Term Residency"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "13",
+            "title": "Irish Citizenship"
           }
         ],
         "biggerPictureBody": "Studying in Ireland is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
@@ -1032,60 +1928,264 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Japan.",
-            "From its vibrant cities to its natural beauty, Japan offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Japan opens the door to a life filled with possibilities."
+            "Imagine living in a country where centuries-old traditions blend seamlessly with cutting-edge innovation, where safety, discipline, and opportunity create one of the most remarkable places in the world to live, work, study, and build a future.",
+            "Japan is one of the world's most advanced and respected nations, known for its technological leadership, economic strength, world-class infrastructure, and exceptional quality of life. From the vibrant energy of Tokyo and Osaka to the cultural treasures of Kyoto and the breathtaking beauty of Mount Fuji, Japan offers experiences and opportunities unlike anywhere else.",
+            "For decades, Japan has been a global leader in technology, manufacturing, robotics, healthcare, automotive engineering, research, and innovation. As the country continues to address labor shortages and attract international talent, opportunities for skilled professionals, students, entrepreneurs, and investors continue to expand.",
+            "Whether your dream is to study at a prestigious university, advance your career with a global company, experience one of the world's safest societies, or establish long-term residency in Asia, Japan provides a pathway to achieve your ambitions.",
+            "For many newcomers, Japan becomes more than a destination—it becomes a place where professional success and personal fulfillment come together."
           ]
         },
         "advantages": [
           {
-            "title": "Globally Ranked Universities",
-            "description": "Home to research universities with strong international reputation."
+            "title": "Pathway to Long-Term Residency",
+            "description": "Japan offers various residence options that allow qualified individuals to live, work, and eventually establish long-term residency in the country."
           },
           {
-            "title": "Post-Graduation Work Permit",
-            "description": "Stay and work after you complete your studies."
+            "title": "Permanent Residency Opportunities",
+            "description": "Eligible foreign residents may apply for Permanent Residence status, allowing them to remain in Japan indefinitely and enjoy greater flexibility and stability."
           },
           {
-            "title": "Pathway to Permanent Residency",
-            "description": "Local study and work experience accelerates your PR application."
+            "title": "Japanese Citizenship Opportunities",
+            "description": "Long-term residents who meet eligibility requirements may eventually apply for Japanese citizenship and fully integrate into one of the world's most respected societies."
           },
           {
-            "title": "Affordable, High-Quality Tuition",
-            "description": "Strong value compared to other top English-speaking destinations."
+            "title": "World's Leading Economy",
+            "description": "Japan remains one of the largest and most influential economies globally, offering stability and long-term career opportunities."
           },
           {
-            "title": "Multicultural Campuses",
-            "description": "Welcoming environment with students from around the world."
+            "title": "High Demand for Skilled Professionals",
+            "description": "Opportunities continue to grow in sectors such as healthcare, information technology, engineering, education, construction, hospitality, manufacturing, and research."
           },
           {
-            "title": "Safe, Liveable Cities",
-            "description": "Consistently ranked among the world's best places to live."
+            "title": "World-Class Education",
+            "description": "Japan is home to internationally recognized universities, research institutions, and educational programs that attract students from around the world."
+          },
+          {
+            "title": "Exceptional Safety",
+            "description": "Japan is widely regarded as one of the safest countries on earth, offering peace of mind for individuals and families."
+          },
+          {
+            "title": "Advanced Technology and Innovation",
+            "description": "From robotics and artificial intelligence to automotive engineering and electronics, Japan continues to lead the world in innovation."
+          },
+          {
+            "title": "Excellent Healthcare System",
+            "description": "Residents benefit from access to a highly efficient and respected healthcare system known for quality care and long life expectancy."
+          },
+          {
+            "title": "Efficient Transportation",
+            "description": "Japan's world-famous transportation network, including the Shinkansen (bullet train), makes travel fast, convenient, and reliable."
+          },
+          {
+            "title": "Rich Culture and Heritage",
+            "description": "Experience a unique blend of ancient traditions, historic temples, modern cities, festivals, cuisine, and cultural experiences found nowhere else in the world."
+          },
+          {
+            "title": "Strong Work Ethic and Professional Development",
+            "description": "Japan offers excellent opportunities for career growth, skill development, and international professional experience."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "Safe neighborhoods, quality education, excellent healthcare, and strong public services make Japan an attractive destination for families."
+          },
+          {
+            "title": "Gateway to Asia",
+            "description": "Strategically located in East Asia, Japan provides access to major international markets and business opportunities throughout the region."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Choose Your Program & Institution"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Letter of Acceptance from a Recognised Institution"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Study Permit Application"
+            "title": "Specified Skilled Worker Visa (SSW)"
           },
           {
             "step": "04",
-            "title": "Arrival, Orientation & Studies"
+            "title": "Engineer / Specialist in Humanities / International Services Visa"
           },
           {
             "step": "05",
-            "title": "Post-Graduation Work Permit & PR Pathways"
+            "title": "Highly Skilled Professional Visa"
+          },
+          {
+            "step": "06",
+            "title": "Work Visa"
+          },
+          {
+            "step": "07",
+            "title": "Business Manager Visa"
+          },
+          {
+            "step": "08",
+            "title": "Startup Visa"
+          },
+          {
+            "step": "09",
+            "title": "Investor & Business Pathways"
+          },
+          {
+            "step": "10",
+            "title": "Family Stay Visa"
+          },
+          {
+            "step": "11",
+            "title": "Spouse Visa"
+          },
+          {
+            "step": "12",
+            "title": "Long-Term Residence"
+          },
+          {
+            "step": "13",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "14",
+            "title": "Japanese Citizenship"
           }
         ],
         "biggerPictureBody": "Studying in Japan is more than earning a degree — it's a gateway to global careers, lifelong networks, and a credible path to permanent residency. With the right plan, your time here becomes the launchpad for everything that comes next."
+      }
+    },
+    {
+      "id": "south-korea",
+      "country": "South Korea",
+      "flagCode": "kr",
+      "href": "/destinations/south-korea",
+      "image": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?auto=format&fit=crop&w=1600&q=80",
+      "imageAlt": "Seoul skyline at night with N Seoul Tower",
+      "featured": false,
+      "description": "Asia's tech powerhouse with growing skilled worker pathways.",
+      "content": {
+        "about": {
+          "paragraphs": [
+            "Imagine living in one of the world's most technologically advanced countries—a place where innovation, safety, culture, and opportunity combine to create an exciting future for students, professionals, entrepreneurs, and families.",
+            "South Korea has transformed itself into a global powerhouse, becoming a leader in technology, manufacturing, healthcare, education, entertainment, and innovation. Home to internationally recognized brands, cutting-edge industries, and a vibrant economy, South Korea attracts ambitious individuals from around the world seeking career growth, quality education, and a high standard of living.",
+            "From the dynamic cityscape of Seoul and the thriving business centers of Busan and Incheon to the country's rich cultural heritage and breathtaking landscapes, South Korea offers a unique blend of modern living and traditional values.",
+            "Whether you are looking to advance your career, study at a prestigious university, launch a business, experience a new culture, or establish long-term residency in Asia, South Korea offers countless opportunities to achieve your goals.",
+            "For many newcomers, South Korea is more than a destination—it is a place where innovation meets opportunity."
+          ]
+        },
+        "advantages": [
+          {
+            "title": "Pathway to Long-Term Residency",
+            "description": "South Korea offers various visa and residency options that allow qualified individuals to live, work, study, and eventually establish long-term residence in the country."
+          },
+          {
+            "title": "Permanent Residency Opportunities",
+            "description": "Eligible foreign residents may eventually qualify for permanent residency, providing long-term stability and greater flexibility to live and work in South Korea."
+          },
+          {
+            "title": "South Korean Citizenship Opportunities",
+            "description": "Long-term residents who meet eligibility and integration requirements may become eligible to apply for South Korean citizenship."
+          },
+          {
+            "title": "Global Technology Leader",
+            "description": "South Korea is home to some of the world's leading technology, electronics, automotive, and manufacturing companies, creating outstanding career opportunities."
+          },
+          {
+            "title": "Strong Economy and Career Growth",
+            "description": "As one of Asia's largest economies, South Korea continues to offer opportunities in technology, healthcare, engineering, education, finance, logistics, manufacturing, and research."
+          },
+          {
+            "title": "World-Class Education",
+            "description": "South Korea is internationally recognized for educational excellence and is home to leading universities, research institutions, and innovation centers."
+          },
+          {
+            "title": "Safe and Modern Society",
+            "description": "South Korea consistently ranks among the safest countries in the world, offering peace of mind for individuals and families."
+          },
+          {
+            "title": "Advanced Healthcare System",
+            "description": "Residents benefit from access to one of Asia's most efficient and technologically advanced healthcare systems."
+          },
+          {
+            "title": "Excellent Infrastructure",
+            "description": "Modern transportation systems, high-speed internet, smart cities, and world-class public services make everyday life highly convenient."
+          },
+          {
+            "title": "Rich Culture and Global Influence",
+            "description": "From K-pop and Korean cinema to cuisine, fashion, and cultural heritage, South Korea's global influence continues to grow."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "Excellent schools, healthcare facilities, public safety, and modern amenities make South Korea attractive for families."
+          },
+          {
+            "title": "Business and Entrepreneurial Opportunities",
+            "description": "The country supports innovation and entrepreneurship through a growing startup ecosystem and international business environment."
+          },
+          {
+            "title": "Gateway to Asia",
+            "description": "Strategically located in East Asia, South Korea provides access to major international markets and business opportunities throughout the region."
+          },
+          {
+            "title": "High Quality of Life",
+            "description": "Residents enjoy modern cities, efficient public services, excellent healthcare, and a vibrant cultural scene."
+          }
+        ],
+        "pathways": [
+          {
+            "step": "01",
+            "title": "Tourist Visa"
+          },
+          {
+            "step": "02",
+            "title": "Student Visa"
+          },
+          {
+            "step": "03",
+            "title": "Language Training Visa"
+          },
+          {
+            "step": "04",
+            "title": "Employment Visa"
+          },
+          {
+            "step": "05",
+            "title": "Highly Skilled Professional Visa"
+          },
+          {
+            "step": "06",
+            "title": "E-Series Work Visas"
+          },
+          {
+            "step": "07",
+            "title": "Professor and Researcher Visa"
+          },
+          {
+            "step": "08",
+            "title": "Business and Startup Visa"
+          },
+          {
+            "step": "09",
+            "title": "Investor Visa"
+          },
+          {
+            "step": "10",
+            "title": "Family Sponsorship Visa"
+          },
+          {
+            "step": "11",
+            "title": "F-2 Long-Term Residence Visa"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Residency (F-5 Visa)"
+          },
+          {
+            "step": "13",
+            "title": "South Korean Citizenship"
+          }
+        ],
+        "biggerPictureBody": "Migrating to South Korea is not just about changing your location — it's about stepping into one of Asia's most dynamic economies, where innovation meets opportunity and your ambitions can take on a new dimension. Every year, thousands make the move and build extraordinary futures. Now, it's your turn."
       }
     },
     {
@@ -1100,60 +2200,126 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Turkey.",
-            "From its vibrant cities to its natural beauty, Turkey offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Turkey opens the door to a life filled with possibilities."
+            "Imagine living in a country where East meets West, where ancient history blends with modern opportunity, and where a vibrant lifestyle, growing economy, and strategic location create endless possibilities.",
+            "Turkey is one of the world's most fascinating destinations for tourism, business, education, investment, and long-term living. Positioned between Europe and Asia, Turkey serves as a global crossroads connecting continents, cultures, and markets.",
+            "From the bustling streets of Istanbul and the capital city of Ankara to the breathtaking coastlines of Antalya and the historical wonders of Cappadocia, Turkey offers an unmatched combination of cultural richness, affordability, and opportunity.",
+            "Whether you're seeking a better lifestyle, international business opportunities, quality education, real estate investment, or a gateway to Europe and Asia, Turkey provides a unique environment where individuals and families can thrive.",
+            "For many newcomers, Turkey is more than a destination—it is a place where opportunity, culture, and quality living come together."
           ]
         },
         "advantages": [
           {
-            "title": "Iconic Travel Experiences",
-            "description": "From historic landmarks to natural wonders, all in one country."
+            "title": "Pathway to Long-Term Residency",
+            "description": "Turkey offers various residence permit options that allow eligible individuals and families to legally live in the country for extended periods and potentially qualify for long-term residency."
           },
           {
-            "title": "World-Class Hospitality",
-            "description": "Hotels, dining and experiences at every price point."
+            "title": "Turkish Citizenship Opportunities",
+            "description": "Turkey is one of the few countries that offers multiple routes to citizenship, including long-term residence and investment-based programs for eligible applicants."
           },
           {
-            "title": "Easy Visa Process",
-            "description": "Streamlined application with clear documentation requirements."
+            "title": "Strategic Location Between Europe and Asia",
+            "description": "Turkey's unique geographical position provides easy access to major international markets, making it attractive for business owners, investors, and global professionals."
           },
           {
-            "title": "Excellent Connectivity",
-            "description": "Direct flights and modern in-country travel infrastructure."
+            "title": "Affordable Cost of Living",
+            "description": "Compared to many European destinations, Turkey offers a lower cost of living while maintaining a comfortable and modern lifestyle."
           },
           {
-            "title": "Year-Round Travel",
-            "description": "Diverse climates and experiences across the calendar."
+            "title": "Attractive Real Estate Investment Opportunities",
+            "description": "Turkey has become a popular destination for international property investors due to its growing market, competitive prices, and residency-related benefits."
           },
           {
-            "title": "Safe & Welcoming",
-            "description": "Among the most welcoming destinations for international travellers."
+            "title": "Growing Economy",
+            "description": "As one of the region's largest economies, Turkey offers opportunities across construction, manufacturing, healthcare, tourism, logistics, technology, agriculture, and international trade."
+          },
+          {
+            "title": "Excellent Healthcare System",
+            "description": "Turkey has invested heavily in healthcare infrastructure and is recognized as a leading destination for medical tourism and quality healthcare services."
+          },
+          {
+            "title": "World-Class Education",
+            "description": "The country offers respected universities, international schools, and educational institutions attracting students from around the world."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "Modern cities, quality schools, healthcare facilities, and a strong emphasis on family values make Turkey attractive for long-term settlement."
+          },
+          {
+            "title": "Rich History and Cultural Heritage",
+            "description": "Turkey is home to some of the world's most iconic historical sites, ancient civilizations, and cultural landmarks."
+          },
+          {
+            "title": "Tourism and Lifestyle Appeal",
+            "description": "From Mediterranean beaches and luxury resorts to vibrant cities and scenic mountain regions, Turkey offers something for every lifestyle."
+          },
+          {
+            "title": "Business and Entrepreneurial Opportunities",
+            "description": "Turkey's strategic location and expanding economy provide opportunities for entrepreneurs looking to access both European and Asian markets."
+          },
+          {
+            "title": "Strong International Connectivity",
+            "description": "Modern airports, transportation networks, and trade routes make Turkey one of the most connected countries in the region."
+          },
+          {
+            "title": "Diverse and Welcoming Society",
+            "description": "Millions of visitors and international residents choose Turkey every year because of its hospitality, cultural diversity, and welcoming atmosphere."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Confirm Visa Requirements for Your Nationality"
+            "title": "Tourist Visa"
           },
           {
             "step": "02",
-            "title": "Online Application & Documentation"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Biometrics or Interview (where required)"
+            "title": "Work Permit"
           },
           {
             "step": "04",
-            "title": "Decision & Passport Return"
+            "title": "Short-Term Residence Permit"
           },
           {
             "step": "05",
-            "title": "Travel, Explore & Re-Entry Within Validity"
+            "title": "Family Residence Permit"
+          },
+          {
+            "step": "06",
+            "title": "Long-Term Residence Permit"
+          },
+          {
+            "step": "07",
+            "title": "Business Visa"
+          },
+          {
+            "step": "08",
+            "title": "Entrepreneur Pathway"
+          },
+          {
+            "step": "09",
+            "title": "Property Investment Program"
+          },
+          {
+            "step": "10",
+            "title": "Investor Residence Permit"
+          },
+          {
+            "step": "11",
+            "title": "Citizenship by Investment Program"
+          },
+          {
+            "step": "12",
+            "title": "Permanent Settlement Pathways"
+          },
+          {
+            "step": "13",
+            "title": "Turkish Citizenship"
           }
         ],
-        "biggerPictureBody": "A trip to Turkey is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
+        "biggerPictureBody": "A relocation to Turkey is one of the most rewarding decisions a person can make. We make the visa and residency process simple so you can focus on the opportunities and experiences that await."
       }
     },
     {
@@ -1168,196 +2334,126 @@
       "content": {
         "about": {
           "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Italy.",
-            "From its vibrant cities to its natural beauty, Italy offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Italy opens the door to a life filled with possibilities."
+            "Imagine building your future in a country where history, culture, innovation, and quality of life come together to create one of the most captivating destinations in the world.",
+            "Italy is renowned for its rich heritage, world-famous cities, exceptional cuisine, thriving industries, and breathtaking landscapes. From the historic streets of Rome and Florence to the fashion capital of Milan and the stunning coastlines of Sicily and the Amalfi Coast, Italy offers an experience unlike any other.",
+            "But Italy is much more than a tourist destination. It is one of Europe's largest economies, home to globally recognized brands, advanced manufacturing industries, growing technology sectors, and prestigious educational institutions. Every year, students, professionals, entrepreneurs, investors, and families choose Italy as their gateway to Europe and a better quality of life.",
+            "Whether you are looking to pursue higher education, build an international career, establish a business, invest in Europe, or create a secure future for your family, Italy offers opportunities that extend far beyond its borders.",
+            "For many newcomers, Italy becomes more than a destination—it becomes a place to call home."
           ]
         },
         "advantages": [
           {
-            "title": "Iconic Travel Experiences",
-            "description": "From historic landmarks to natural wonders, all in one country."
+            "title": "Pathway to Permanent Residency",
+            "description": "Italy offers several immigration routes that allow eligible individuals to transition from temporary residence to long-term residence and eventually permanent settlement."
           },
           {
-            "title": "World-Class Hospitality",
-            "description": "Hotels, dining and experiences at every price point."
+            "title": "Italian Citizenship Opportunities",
+            "description": "Long-term residents may become eligible for Italian citizenship, opening the door to one of the world's most respected passports and the benefits of European Union citizenship."
           },
           {
-            "title": "Easy Visa Process",
-            "description": "Streamlined application with clear documentation requirements."
+            "title": "Access to the European Union",
+            "description": "Living in Italy provides access to the Schengen Area and convenient travel throughout Europe for business, tourism, and family activities."
           },
           {
-            "title": "Excellent Connectivity",
-            "description": "Direct flights and modern in-country travel infrastructure."
+            "title": "High Quality of Life",
+            "description": "Italy is widely admired for its balanced lifestyle, strong family values, rich culture, and enjoyable pace of life."
           },
           {
-            "title": "Year-Round Travel",
-            "description": "Diverse climates and experiences across the calendar."
+            "title": "Excellent Healthcare System",
+            "description": "Residents have access to a high-quality healthcare system that is recognized among the best in Europe."
           },
           {
-            "title": "Safe & Welcoming",
-            "description": "Among the most welcoming destinations for international travellers."
+            "title": "Globally Respected Education",
+            "description": "Italy is home to some of the world's oldest and most prestigious universities, attracting international students from across the globe."
+          },
+          {
+            "title": "Growing Career Opportunities",
+            "description": "Professionals can find opportunities in engineering, healthcare, hospitality, fashion, manufacturing, technology, logistics, agriculture, and tourism."
+          },
+          {
+            "title": "Family-Friendly Environment",
+            "description": "Safe communities, quality schools, and a strong emphasis on family life make Italy attractive for individuals and families seeking long-term settlement."
+          },
+          {
+            "title": "Business and Investment Opportunities",
+            "description": "Italy offers access to one of Europe's largest markets and a strategic location for businesses seeking to expand across the continent."
+          },
+          {
+            "title": "Rich Culture and Heritage",
+            "description": "Few countries can match Italy's contribution to art, architecture, music, fashion, food, and history. Living in Italy means experiencing culture every day."
+          },
+          {
+            "title": "Attractive Climate and Natural Beauty",
+            "description": "From the Alps in the north to the Mediterranean coastline in the south, Italy offers diverse landscapes and an exceptional lifestyle."
+          },
+          {
+            "title": "Strong Tourism Industry",
+            "description": "As one of the world's most visited countries, Italy provides countless opportunities for careers and investments in tourism, hospitality, and related industries."
+          },
+          {
+            "title": "Gateway to International Opportunities",
+            "description": "An Italian residence permit, permanent residence status, or citizenship can open doors to broader opportunities throughout Europe."
           }
         ],
         "pathways": [
           {
             "step": "01",
-            "title": "Confirm Visa Requirements for Your Nationality"
+            "title": "Visitor Visa"
           },
           {
             "step": "02",
-            "title": "Online Application & Documentation"
+            "title": "Student Visa"
           },
           {
             "step": "03",
-            "title": "Biometrics or Interview (where required)"
+            "title": "Work Visa"
           },
           {
             "step": "04",
-            "title": "Decision & Passport Return"
+            "title": "EU Blue Card"
           },
           {
             "step": "05",
-            "title": "Travel, Explore & Re-Entry Within Validity"
+            "title": "Highly Skilled Worker Visa"
+          },
+          {
+            "step": "06",
+            "title": "Seasonal Work Visa"
+          },
+          {
+            "step": "07",
+            "title": "Self-Employment Visa"
+          },
+          {
+            "step": "08",
+            "title": "Investor Visa"
+          },
+          {
+            "step": "09",
+            "title": "Startup Visa"
+          },
+          {
+            "step": "10",
+            "title": "Family Reunification Visa"
+          },
+          {
+            "step": "11",
+            "title": "Elective Residence Visa"
+          },
+          {
+            "step": "12",
+            "title": "Long-Term Residence Permit"
+          },
+          {
+            "step": "13",
+            "title": "Permanent Residency"
+          },
+          {
+            "step": "14",
+            "title": "Italian Citizenship"
           }
         ],
         "biggerPictureBody": "A trip to Italy is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
-      }
-    },
-    {
-      "id": "mexico",
-      "country": "Mexico",
-      "flagCode": "mx",
-      "href": "/destinations/mexico",
-      "image": "https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?auto=format&fit=crop&w=1600&q=80",
-      "imageAlt": "Tulum beach with palm trees and turquoise sea",
-      "featured": false,
-      "description": "No visa required for most nationalities.",
-      "content": {
-        "about": {
-          "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Mexico.",
-            "From its vibrant cities to its natural beauty, Mexico offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Mexico opens the door to a life filled with possibilities."
-          ]
-        },
-        "advantages": [
-          {
-            "title": "Iconic Travel Experiences",
-            "description": "From historic landmarks to natural wonders, all in one country."
-          },
-          {
-            "title": "World-Class Hospitality",
-            "description": "Hotels, dining and experiences at every price point."
-          },
-          {
-            "title": "Easy Visa Process",
-            "description": "Streamlined application with clear documentation requirements."
-          },
-          {
-            "title": "Excellent Connectivity",
-            "description": "Direct flights and modern in-country travel infrastructure."
-          },
-          {
-            "title": "Year-Round Travel",
-            "description": "Diverse climates and experiences across the calendar."
-          },
-          {
-            "title": "Safe & Welcoming",
-            "description": "Among the most welcoming destinations for international travellers."
-          }
-        ],
-        "pathways": [
-          {
-            "step": "01",
-            "title": "Confirm Visa Requirements for Your Nationality"
-          },
-          {
-            "step": "02",
-            "title": "Online Application & Documentation"
-          },
-          {
-            "step": "03",
-            "title": "Biometrics or Interview (where required)"
-          },
-          {
-            "step": "04",
-            "title": "Decision & Passport Return"
-          },
-          {
-            "step": "05",
-            "title": "Travel, Explore & Re-Entry Within Validity"
-          }
-        ],
-        "biggerPictureBody": "A trip to Mexico is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
-      }
-    },
-    {
-      "id": "qatar",
-      "country": "Qatar",
-      "flagCode": "qa",
-      "href": "/destinations/qatar",
-      "image": "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1600&q=80",
-      "imageAlt": "Doha skyline along the Corniche at dusk",
-      "featured": false,
-      "description": "Visa on arrival for eligible passport holders.",
-      "content": {
-        "about": {
-          "paragraphs": [
-            "Imagine a place where your hard work is rewarded, your future is secure, and your family thrives — welcome to Qatar.",
-            "From its vibrant cities to its natural beauty, Qatar offers a rare balance of opportunity, stability, and quality living. It's a country built on diversity, where newcomers are not just accepted, they are embraced.",
-            "Whether you're seeking better career prospects, world-class education, or a safer environment to raise your family, Qatar opens the door to a life filled with possibilities."
-          ]
-        },
-        "advantages": [
-          {
-            "title": "Iconic Travel Experiences",
-            "description": "From historic landmarks to natural wonders, all in one country."
-          },
-          {
-            "title": "World-Class Hospitality",
-            "description": "Hotels, dining and experiences at every price point."
-          },
-          {
-            "title": "Easy Visa Process",
-            "description": "Streamlined application with clear documentation requirements."
-          },
-          {
-            "title": "Excellent Connectivity",
-            "description": "Direct flights and modern in-country travel infrastructure."
-          },
-          {
-            "title": "Year-Round Travel",
-            "description": "Diverse climates and experiences across the calendar."
-          },
-          {
-            "title": "Safe & Welcoming",
-            "description": "Among the most welcoming destinations for international travellers."
-          }
-        ],
-        "pathways": [
-          {
-            "step": "01",
-            "title": "Confirm Visa Requirements for Your Nationality"
-          },
-          {
-            "step": "02",
-            "title": "Online Application & Documentation"
-          },
-          {
-            "step": "03",
-            "title": "Biometrics or Interview (where required)"
-          },
-          {
-            "step": "04",
-            "title": "Decision & Passport Return"
-          },
-          {
-            "step": "05",
-            "title": "Travel, Explore & Re-Entry Within Validity"
-          }
-        ],
-        "biggerPictureBody": "A trip to Qatar is one of the most rewarding experiences a traveller can plan. We make the visa side simple so you can focus on the experience itself."
       }
     }
   ]
