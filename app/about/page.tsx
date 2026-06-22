@@ -3,15 +3,18 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/about-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { B2BCollaborationSection } from "./_components/b2b-collaboration";
 import { OurPurposeSection } from "./_components/our-purpose";
 import { WhoWeAreSection } from "./_components/who-we-are";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "About",
+  path: "/about",
   description:
     "VersionOne is a global mobility advisory firm built on the belief that access to opportunity should not be complicated. Meet the team behind our travel, immigration, and investment expertise.",
-};
+  keywords: ["about VersionOne", "global mobility advisory", "company"],
+});
 
 export default function AboutPage() {
   return (

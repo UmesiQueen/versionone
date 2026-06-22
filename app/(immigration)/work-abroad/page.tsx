@@ -3,16 +3,24 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/work-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { CareerGlobalStageSection } from "./_components/career-global-stage";
 import { VisaPathwaysSection } from "./_components/visa-pathways";
 import { WorkDestinationsSection } from "./_components/work-destinations";
 import { WorkProcessSection } from "./_components/work-process";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Work Abroad",
+  path: "/work-abroad",
   description:
     "From securing the right work visa to navigating employer sponsorship, VersionOne guides you through every step of your international career journey — in over 50 countries worldwide.",
-};
+  keywords: [
+    "work abroad",
+    "work visa",
+    "employer sponsorship",
+    "international career",
+  ],
+});
 
 export default function WorkAbroadPage() {
   return (

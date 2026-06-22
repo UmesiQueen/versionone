@@ -3,14 +3,17 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/services-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { ServicesGridSection } from "./_components/services-grid";
 import { SupportOverviewSection } from "./_components/support-overview";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Services",
+  path: "/services",
   description:
     "Full-spectrum support, every step of the way. From expert consultation to post-landing assistance — VersionOne offers a complete suite of travel, visa, and relocation services tailored to your journey.",
-};
+  keywords: ["services", "visa services", "relocation", "consultation"],
+});
 
 export default function ServicesPage() {
   return (

@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 
 import { Container, Section } from "@/components/layout/section";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
+  path: "/privacy-policy",
   description:
     "How VersionOne collects, uses, stores, and protects the personal information you share with us across travel, immigration, and investment advisory services.",
-};
+  keywords: ["privacy policy", "data protection", "GDPR"],
+});
 
 // Bump this string when the policy is republished.
 const EFFECTIVE_DATE = "20 Jan 2025";
@@ -15,10 +18,7 @@ const EFFECTIVE_DATE = "20 Jan 2025";
 export default function PrivacyPage() {
   return (
     <>
-      {/* Compact hero — intentionally different from the image-led PageHero used
-          on About/Services/etc. Privacy/Terms/Cookie pages share this lighter
-          template: muted surface, centered eyebrow + H1 + lede. */}
-      <Section
+     <Section
         aria-labelledby="privacy-heading"
         surface="muted"
         padding="lg"
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
             {/* Intro */}
             <div className="flex flex-col gap-4">
               <p>
-                VersionOne ("we," "us," or "our") respects your privacy and is
+                VersionOne (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects your privacy and is
                 committed to protecting it through our compliance with this
                 policy. This policy describes the types of information we may
                 collect from you, or that you may provide to us, when you visit

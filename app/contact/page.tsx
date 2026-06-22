@@ -3,15 +3,18 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/contact-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { ContactFormSection } from "./_components/contact-form";
 import { FollowUsSocialSection } from "./_components/follow-us-social";
 import { ReachUsDirectlySection } from "./_components/reach-us-directly";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Contact",
+  path: "/contact",
   description:
     "Get in touch with VersionOne. Send a message, reach us by phone, WhatsApp or email, or follow us on social — our team typically responds within one business day.",
-};
+  keywords: ["contact VersionOne", "support", "customer service"],
+});
 
 export default function ContactPage() {
   return (

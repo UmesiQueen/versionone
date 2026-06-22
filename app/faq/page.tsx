@@ -5,13 +5,16 @@ import { PageHero } from "@/components/layout/page-hero";
 import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { FaqTabsSection } from "./_components/faq-tabs";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Help Center",
+  path: "/faq",
   description:
     "Answers to the questions we hear most often about travel, immigration, and investment migration with VersionOne — from booking and visas to residency and citizenship.",
-};
+  keywords: ["FAQ", "help center", "questions", "visa FAQ"],
+});
 
 export default function FaqPage() {
   return (

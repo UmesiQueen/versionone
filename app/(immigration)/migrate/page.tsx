@@ -3,15 +3,23 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/migrate-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { MigrationDestinationsSection } from "./_components/migration-destinations";
 import { MigrationOverview } from "./_components/migration-overview";
 import { MigrationProcessSection } from "./_components/migration-process";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Migrate",
+  path: "/migrate",
   description:
     "Whether you're seeking permanent residency, citizenship by investment, or a fresh start in a new country — VersionOne is your expert guide to international relocation. We handle complexity so you can focus on the future.",
-};
+  keywords: [
+    "migrate",
+    "permanent residency",
+    "international relocation",
+    "citizenship by investment",
+  ],
+});
 
 export default function MigratePage() {
   return (

@@ -8,6 +8,7 @@ import {
   getDestinationById,
   getOtherDestinations,
 } from "@/lib/destinations";
+import { buildMetadata } from "@/lib/seo";
 
 import { CountryAbout } from "./_components/country-about";
 import { CountryAdvantages } from "./_components/country-advantages";
@@ -70,14 +71,35 @@ export async function generateMetadata({
   const { country: countryId } = await params;
   const destination = getDestinationById(countryId);
 
-  if (!destination) return { title: "Destination not found" };
+  if (!destination) {
+    return buildMetadata({
+      title: "Destination not found",
+      path: `/destinations/${countryId}`,
+      description:
+        "We couldn't find that destination. Browse our full list of supported countries.",
+      noIndex: true,
+    });
+  }
 
-  return {
-    title: destination.country,
-    description:
-      destination.description ||
-      `Explore travel and immigration options for ${destination.country}.`,
-  };
+  const description =
+    destination.description ||
+    `Explore travel and immigration options for ${destination.country}.`;
+
+  return buildMetadata({
+    title: `${destination.country} — Travel & Immigration`,
+    path: `/destinations/${destination.id}`,
+    description,
+    image: destination.image,
+    imageAlt: destination.imageAlt,
+    keywords: [
+      destination.country,
+      `${destination.country} visa`,
+      `${destination.country} immigration`,
+      `move to ${destination.country}`,
+      `study in ${destination.country}`,
+      `work in ${destination.country}`,
+    ],
+  });
 }
 
 export default async function CountryDestinationPage({ params }: PageProps) {

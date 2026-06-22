@@ -4,13 +4,16 @@ import HeroImage from "@/app/assets/consultation-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
 import { JourneyProcessSection } from "@/components/sections/journey-process";
+import { buildMetadata } from "@/lib/seo";
 import { BookConsultationFormSection } from "./_components/book-consultation-form";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Book a Consultation",
+  path: "/book-consultation",
   description:
     "Speak with a VersionOne advisor to get clarity on your options and the best next steps. Free, confidential, and tailored to your goals.",
-};
+  keywords: ["book consultation", "advisor", "free consultation"],
+});
 
 const BOOKING_STEPS = [
   {

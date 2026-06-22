@@ -3,15 +3,24 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/tour-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { FindYourJourneySection } from "./_components/find-your-journey";
 import { OurPhilosophySection } from "./_components/our-philosophy";
 import { PackageIncludesSection } from "./_components/package-includes";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Tour Packages",
+  path: "/tour-packages",
   description:
     "Immersive, premium travel experiences designed around you. From honeymoon escapes to group adventures — every detail handled by our expert travel team.",
-};
+  keywords: [
+    "tour packages",
+    "premium travel",
+    "honeymoon",
+    "group tours",
+    "luxury travel",
+  ],
+});
 
 export default function TourPackagesPage() {
   return (

@@ -2,12 +2,15 @@ import type { Metadata } from "next";
 
 import { Container, Section } from "@/components/layout/section";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Terms of Service",
+  path: "/terms-of-service",
   description:
     "The terms and conditions that govern your use of VersionOne's website and our travel, immigration, and investment advisory services.",
-};
+  keywords: ["terms of service", "terms and conditions", "legal"],
+});
 
 // Bump this string when the terms are republished.
 const EFFECTIVE_DATE = "20 Jan 2025";
@@ -15,8 +18,6 @@ const EFFECTIVE_DATE = "20 Jan 2025";
 export default function TermsOfServicePage() {
   return (
     <>
-      {/* Compact hero — mirrors the lighter template used on Privacy. Muted
-          surface, centered eyebrow + H1 + lede, no background image. */}
       <Section aria-labelledby="terms-heading" surface="muted" padding="lg">
         <Container className="flex flex-col items-center gap-4 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
@@ -45,18 +46,19 @@ export default function TermsOfServicePage() {
             {/* Intro */}
             <div className="flex flex-col gap-4">
               <p>
-                These terms ("Terms") govern your access to and use of the
-                VersionOne website and the travel, immigration, and investment
-                advisory services we provide (together, the "Services"). By
-                visiting our site, requesting a consultation, or engaging us to
-                act on your behalf, you agree to these Terms. If you do not
-                agree, please do not use the Services.
+                These terms (&ldquo;Terms&rdquo;) govern your access to and use
+                of the VersionOne website and the travel, immigration, and
+                investment advisory services we provide (together, the
+                &ldquo;Services&rdquo;). By visiting our site, requesting a
+                consultation, or engaging us to act on your behalf, you agree to
+                these Terms. If you do not agree, please do not use the
+                Services.
               </p>
               <p>
-                We may update these Terms from time to time. The "Current as of"
-                date above reflects the most recent revision. Continued use of
-                the Services after a change has been published constitutes your
-                acceptance of the revised Terms.
+                We may update these Terms from time to time. The &ldquo;Current
+                as of&rdquo; date above reflects the most recent revision.
+                Continued use of the Services after a change has been published
+                constitutes your acceptance of the revised Terms.
               </p>
             </div>
 
@@ -81,9 +83,8 @@ export default function TermsOfServicePage() {
               <p>
                 Where the success of your matter depends on a government
                 authority, airline, hotel, fund, or other independent
-                organisation, we will represent your interests diligently and
-                in good faith, but the final decision rests with that
-                organisation.
+                organisation, we will represent your interests diligently and in
+                good faith, but the final decision rests with that organisation.
               </p>
             </section>
 
@@ -92,18 +93,18 @@ export default function TermsOfServicePage() {
                 What is the client obligation?
               </h2>
               <p>
-                You agree to provide accurate, complete, and current
-                information at the time of engagement and throughout the
-                course of your matter. This includes identity documents,
-                contact details, civil-status information, employment and
-                financial information, and any disclosures required by an
-                immigration authority or investment program.
+                You agree to provide accurate, complete, and current information
+                at the time of engagement and throughout the course of your
+                matter. This includes identity documents, contact details,
+                civil-status information, employment and financial information,
+                and any disclosures required by an immigration authority or
+                investment program.
               </p>
               <p>
                 You agree to respond promptly to requests for additional
                 information and documentation. Delays in providing what we
-                request may extend processing times or, in some cases, cause
-                an application to lapse.
+                request may extend processing times or, in some cases, cause an
+                application to lapse.
               </p>
               <p>
                 You also agree not to misrepresent any fact to us or to any
@@ -139,11 +140,11 @@ export default function TermsOfServicePage() {
               </h2>
               <p>
                 To the maximum extent permitted by law, VersionOne, its
-                directors, employees, and licensed partners shall not be
-                liable for any indirect, incidental, consequential, or special
-                damages arising out of or in connection with the Services —
-                including loss of profit, loss of opportunity, missed travel,
-                or refusal of a visa or investment application.
+                directors, employees, and licensed partners shall not be liable
+                for any indirect, incidental, consequential, or special damages
+                arising out of or in connection with the Services — including
+                loss of profit, loss of opportunity, missed travel, or refusal
+                of a visa or investment application.
               </p>
               <p>
                 Our total aggregate liability under any engagement shall not
@@ -162,10 +163,10 @@ export default function TermsOfServicePage() {
                 All content on our website — including text, logos, graphics,
                 checklists, templates, and process documentation — is the
                 property of VersionOne or its licensors and is protected by
-                copyright and trademark laws. You may view and print
-                reasonable amounts of content for your personal,
-                non-commercial use, but you may not reproduce, redistribute,
-                or commercially exploit it without our prior written consent.
+                copyright and trademark laws. You may view and print reasonable
+                amounts of content for your personal, non-commercial use, but
+                you may not reproduce, redistribute, or commercially exploit it
+                without our prior written consent.
               </p>
             </section>
 
@@ -174,9 +175,9 @@ export default function TermsOfServicePage() {
                 Governing Law
               </h2>
               <p>
-                These Terms are governed by the laws of the Federal Republic
-                of Nigeria. Any dispute arising out of or in connection with
-                these Terms or the Services shall be subject to the exclusive
+                These Terms are governed by the laws of the Federal Republic of
+                Nigeria. Any dispute arising out of or in connection with these
+                Terms or the Services shall be subject to the exclusive
                 jurisdiction of the courts of Rivers State, Nigeria, unless
                 otherwise agreed in writing.
               </p>
@@ -193,7 +194,7 @@ export default function TermsOfServicePage() {
               </h2>
               <p>
                 We may revise these Terms at any time. When we do, we will
-                update the "Current as of" date above and post the revised
+                update the &ldquo;Current as of&rdquo; date above and post the revised
                 Terms on this page. For material changes — including changes
                 affecting your rights or our liability — we will, where
                 practical, also notify you by email if you have an active
@@ -204,8 +205,8 @@ export default function TermsOfServicePage() {
                   Review the updated Terms when you next access the Services.
                 </li>
                 <li>
-                  Contact us if any change is unclear or you wish to discuss
-                  its impact on a live engagement.
+                  Contact us if any change is unclear or you wish to discuss its
+                  impact on a live engagement.
                 </li>
                 <li>
                   Discontinue use of the Services if you do not agree with the

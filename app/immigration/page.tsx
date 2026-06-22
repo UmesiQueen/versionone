@@ -3,14 +3,22 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/immigration-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { ImmigrationOverview } from "./_components/immigration-overview";
 import { ImmigrationPathwaysSection } from "./_components/immigration-pathways";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Immigration",
+  path: "/immigration",
   description:
     "Migrate, work, study, or invest abroad — VersionOne pairs you with the right immigration pathway and manages every step from eligibility to arrival.",
-};
+  keywords: [
+    "immigration services",
+    "immigration pathways",
+    "eligibility",
+    "relocation",
+  ],
+});
 
 export default function ImmigrationPage() {
   return (

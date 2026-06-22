@@ -3,14 +3,23 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/investment-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { GlobalAccessOverviewSection } from "./_components/global-access-overview";
 import { InvestmentRoutesSection } from "./_components/investment-routes";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Investment",
+  path: "/investment",
   description:
     "Invest. Relocate. Belong. VersionOne advises high-net-worth individuals and families on residency-by-investment, citizenship-by-investment, and the smart capital deployment that opens both portfolios and borders.",
-};
+  keywords: [
+    "investment migration",
+    "residency by investment",
+    "citizenship by investment",
+    "golden visa",
+    "high-net-worth",
+  ],
+});
 
 export default function InvestmentPage() {
   return (

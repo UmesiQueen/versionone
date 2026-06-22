@@ -3,16 +3,24 @@ import type { Metadata } from "next";
 import HeroImage from "@/app/assets/visit-hero.jpg";
 import { PageHero } from "@/components/layout/page-hero";
 import { FinalCtaSection } from "@/components/sections/final-cta";
+import { buildMetadata } from "@/lib/seo";
 import { RightVisaIntroSection } from "./_components/right-visa-intro";
 import { TravelSupportSection } from "./_components/travel-support";
 import { VisitDestinationsSection } from "./_components/visit-destinations";
 import { VisitProcessSection } from "./_components/visit-process";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Visit",
+  path: "/visit",
   description:
     "Whether you're visiting family, exploring a new city, or attending a conference abroad — VersionOne handles your visitor visa, travel logistics, and everything in between so you can focus on the journey.",
-};
+  keywords: [
+    "visit",
+    "visitor visa",
+    "tourist visa",
+    "travel logistics",
+  ],
+});
 
 export default function VisitPage() {
   return (
