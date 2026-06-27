@@ -32,7 +32,10 @@ const FOOTER_COLUMNS: FooterColumn[] = [
   {
     title: "Travel",
     links: [
-      { label: "Visit & Travel", href: "/visit" },
+      { label: "Visit", href: "/visit" },
+      { label: "Luxury Travel", href: "/luxury-travel" },
+      { label: "Sports Travel", href: "/sports-travel" },
+      { label: "Corporate Travel", href: "/corporate-travel" },
       { label: "Tour Packages", href: "/tour-packages" },
     ],
   },
