@@ -8,21 +8,16 @@ export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   path: "/privacy-policy",
   description:
-    "How VersionOne collects, uses, stores, and protects the personal information you share with us across travel, immigration, and investment advisory services.",
-  keywords: ["privacy policy", "data protection", "GDPR"],
+    "How VersionOne collects, uses, and protects your personal information across travel, visa, immigration, and relocation services.",
+  keywords: ["privacy policy", "data protection", "personal information"],
 });
 
-// Bump this string when the policy is republished.
-const EFFECTIVE_DATE = "20 Jan 2025";
+const EFFECTIVE_DATE = "20 June 2026";
 
 export default function PrivacyPage() {
   return (
     <>
-     <Section
-        aria-labelledby="privacy-heading"
-        surface="muted"
-        padding="lg"
-      >
+      <Section aria-labelledby="privacy-heading" surface="muted" padding="lg">
         <Container className="flex flex-col items-center gap-4 text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
             Current as of {EFFECTIVE_DATE}
@@ -50,13 +45,14 @@ export default function PrivacyPage() {
             {/* Intro */}
             <div className="flex flex-col gap-4">
               <p>
-                VersionOne (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects your privacy and is
-                committed to protecting it through our compliance with this
-                policy. This policy describes the types of information we may
-                collect from you, or that you may provide to us, when you visit
-                our website or engage our travel, immigration, and investment
-                advisory services, and our practices for collecting, using,
-                maintaining, protecting, and disclosing that information.
+                VersionOne (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
+                &ldquo;our&rdquo;) respects your privacy and is committed to
+                protecting it through our compliance with this policy. This
+                policy describes the types of information we may collect from
+                you, or that you may provide to us, when you visit our website
+                or engage our travel, immigration, and investment advisory
+                services, and our practices for collecting, using, maintaining,
+                protecting, and disclosing that information.
               </p>
               <p>
                 This policy applies to information we collect on our website, in
@@ -91,8 +87,8 @@ export default function PrivacyPage() {
                 submitting a visa application, booking travel, or processing an
                 investment — we may also collect supporting documents and
                 biometric data required by the relevant authority. We only
-                request what is necessary for the service you have engaged us
-                to provide.
+                request what is necessary for the service you have engaged us to
+                provide.
               </p>
             </section>
 
@@ -123,10 +119,10 @@ export default function PrivacyPage() {
               </h2>
               <p>
                 We use cookies and similar technologies to recognise you when
-                you return to our website, remember your preferences,
-                understand how the site is used, and improve your experience.
-                You can configure your browser to refuse all or some cookies;
-                if you do, parts of our site may no longer function correctly.
+                you return to our website, remember your preferences, understand
+                how the site is used, and improve your experience. You can
+                configure your browser to refuse all or some cookies; if you do,
+                parts of our site may no longer function correctly.
               </p>
             </section>
 
@@ -156,11 +152,6 @@ export default function PrivacyPage() {
                 need-to-know access, PCI-compliant payment processing, and
                 regular review of our security practices.
               </p>
-              <p>
-                The safety of your information also depends on you. Where you
-                have chosen a password to access any part of our services, you
-                are responsible for keeping that password confidential.
-              </p>
             </section>
 
             <section className="flex flex-col gap-4">
@@ -169,11 +160,11 @@ export default function PrivacyPage() {
               </h2>
               <p>
                 Subject to applicable law, you may have the right to access,
-                correct, update, or request deletion of the personal
-                information we hold about you, to object to or restrict our
-                processing of it, to withdraw consent where processing is based
-                on consent, and to lodge a complaint with a relevant
-                data-protection authority.
+                correct, update, or request deletion of the personal information
+                we hold about you, to object to or restrict our processing of
+                it, to withdraw consent where processing is based on consent,
+                and to lodge a complaint with a relevant data-protection
+                authority.
               </p>
               <p>
                 To exercise any of these rights, please contact us using the
@@ -217,6 +208,36 @@ export default function PrivacyPage() {
                   between 8&nbsp;AM and 6&nbsp;PM WAT.
                 </li>
               </ol>
+            </section>
+
+            {/* Acceptance */}
+            <section
+              aria-labelledby="privacy-acceptance-heading"
+              className="flex flex-col gap-4 rounded-lg border border-border bg-muted/50 p-6"
+            >
+              <h2
+                id="privacy-acceptance-heading"
+                className="text-xl font-bold text-foreground sm:text-2xl"
+              >
+                Acceptance
+              </h2>
+              <p>
+                By using our website or engaging our services, you acknowledge
+                that you have read and understood this Privacy Policy and agree
+                to the collection and use of your information as described
+                herein.
+              </p>
+              <p>
+                For our full legal policies — including Terms &amp; Conditions,
+                Refund Policy, and Disclaimer — please visit our{" "}
+                <a
+                  href="/terms-of-service"
+                  className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
+                >
+                  Terms of Service page
+                </a>
+                .
+              </p>
             </section>
           </article>
         </Container>
