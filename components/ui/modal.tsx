@@ -85,7 +85,8 @@ export default function Modal({
 
   // Closes the modal — and, in the redirect case, navigates first.
   const closeModal = React.useCallback(() => {
-    if (isRedirect && calendlyUrl) window.location.href = calendlyUrl;
+    if (isRedirect && calendlyUrl)
+      window.open(calendlyUrl, "_blank", "noopener,noreferrer");
     onClose();
   }, [isRedirect, calendlyUrl, onClose]);
 

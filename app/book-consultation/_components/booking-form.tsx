@@ -42,8 +42,10 @@ import {
 } from "@/lib/booking";
 import { cn } from "@/lib/utils";
 
-const FORM_SPREE_ID = process.env.NEXT_PUBLIC_CONTACT_FORMSPREE_ID;
 const CALENDLY_URL = "https://calendly.com/queenumesi01/30min";
+
+// const CALENDLY_URL =
+//   "https://calendly.com/versiononetravels/book-appointment-with-us";
 
 const buildCalendlyUrl = (data: BookingFormData) => {
   const url = new URL(CALENDLY_URL);
@@ -73,15 +75,13 @@ const buildCalendlyUrl = (data: BookingFormData) => {
 
 const formatData = (data: BookingFormData) => {
   return {
-    Client_Name: data.fullName,
-    Client_Nationality: data.nationality,
-    Client_Email: data.email,
-    Client_Phone: data.phone,
-    Destination: data.destination,
-    Service_Type: data.service,
-    ...(data.additionalInformation && {
-      More_Information: data.additionalInformation,
-    }),
+    client_name: data.fullName,
+    client_nationality: data.nationality,
+    client_phone: data.phone,
+    destination: data.destination,
+    service_type: data.service,
+    more_information:
+      data.additionalInformation ?? "No additional information provided.",
   };
 };
 interface BookingFormProps {
@@ -114,23 +114,27 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
 
   const onSubmit: SubmitHandler<BookingFormData> = async (data) => {
     const formattedData = formatData(data);
+    const calendly_url = buildCalendlyUrl(data);
 
     try {
-      const response = await fetch(`https://formspree.io/f/${FORM_SPREE_ID}`, {
+      const response = await fetch("/api/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(formattedData),
+        body: JSON.stringify({
+          email: data.email,
+          variables: { ...formattedData, calendly_url },
+        }),
       });
 
-      if (!response.ok) throw new Error("Failed to send message");
+      if (!response.ok) throw new Error("Failed to create booking request.");
 
       setModal({
         variant: "success",
         name: data.fullName,
-        calendlyUrl: buildCalendlyUrl(data),
+        calendlyUrl: calendly_url,
       });
       reset();
     } catch (error) {
