@@ -118,6 +118,8 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
     const formattedData = formatData(data);
     const calendly_url = buildCalendlyUrl(data);
 
+    const newTab = window.open("", "_blank");
+
     try {
       const response = await fetch("/api/booking", {
         method: "POST",
@@ -134,6 +136,8 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
 
       if (!response.ok) throw new Error("Failed to create booking request.");
 
+      if (newTab) newTab.location.href = calendly_url;
+
       setModal({
         variant: "success",
         name: data.fullName,
@@ -141,6 +145,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
       });
       reset();
     } catch (error) {
+      newTab?.close();
       console.error("Form submission error:", error);
       setModal({ variant: "error", name: data.fullName });
     }

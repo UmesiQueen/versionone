@@ -83,12 +83,9 @@ export default function Modal({
       "Your request has been received — we'll be in touch shortly."
     );
 
-  // Closes the modal — and, in the redirect case, navigates first.
   const closeModal = React.useCallback(() => {
-    if (isRedirect && calendlyUrl)
-      window.open(calendlyUrl, "_blank", "noopener,noreferrer");
     onClose();
-  }, [isRedirect, calendlyUrl, onClose]);
+  }, [onClose]);
 
   React.useEffect(() => {
     if (!openModal) return;
