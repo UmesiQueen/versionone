@@ -5,23 +5,23 @@ import { cn } from "@/lib/utils";
 const TESTIMONIALS = [
   {
     quote:
-      "VersionOne turned what felt like an impossible process into a smooth, manageable journey. My Canada PR was approved on the first attempt — I can't recommend them enough.",
-    authorName: "Adaeze Okereke",
-    authorRole: "Skilled worker",
-    authorLocation: "United Kingdom",
+      "I have traveled with VersionOne twice; first to France and later to the USA and both journeys were handled professionally from start to finish. Their expert guidance, excellent customer support, and reliable service gave me complete confidence throughout the process. I highly recommend VersionOne to anyone looking for a trusted travel consultant.",
+    authorName: "David Mensah",
+    authorRole: "Client",
+    authorLocation: "Ghana",
   },
   {
     quote:
-      "From the initial consultation to landing in London, everything was handled professionally. My UK Skilled Worker Visa was approved within 3 weeks. Exceptional service.",
-    authorName: "Kola Iya",
-    authorRole: "Software lead",
-    authorLocation: "United Kingdom",
+      "VersionOne has successfully handled visas and international flight arrangements for our offshore workers on several occasions. More than eight visas were processed faster than the agreed timeline, and every application was managed with exceptional professionalism. Their efficiency, responsiveness, and attention to detail make them a trusted travel partner for our business.",
+    authorName: "James Anderson",
+    authorRole: "Operations Manager,Offshore Energy Sector",
+    authorLocation: "Nigeria",
   },
   {
     quote:
-      "My daughter is now studying in Germany. VersionOne handled every detail — university shortlisting, student visa, pre-departure briefing. Absolutely seamless from start to finish.",
-    authorName: "Funke Martins",
-    authorRole: "Parent",
+      "VersionOne helped me secure my UK Tourist Visa when I was traveling with my family. From the initial consultation to receiving our visas, the entire process was smooth and stress-free. Their team was always available to answer our questions and provide expert guidance. I highly recommend VersionOne to anyone looking for exceptional travel and visa services.",
+    authorName: "Amina Hassan",
+    authorRole: "Client",
     authorLocation: "Nigeria",
   },
 ] as const;
