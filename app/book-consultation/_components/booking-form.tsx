@@ -1,6 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Turnstile } from "@marsidev/react-turnstile";
 import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Controller, type SubmitHandler, useForm } from "react-hook-form";
@@ -94,6 +95,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
     name?: string;
     calendlyUrl?: string;
   } | null>(null);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const {
     handleSubmit,
@@ -126,6 +128,7 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
         body: JSON.stringify({
           email: data.email,
           variables: { ...formattedData, calendly_url },
+          turnstileToken,
         }),
       });
 
@@ -446,10 +449,18 @@ const BookingForm = ({ tone = "default" }: BookingFormProps) => {
           )}
         />
 
+        <Turnstile
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? ""}
+          onSuccess={setTurnstileToken}
+          onExpire={() => setTurnstileToken(null)}
+          onError={() => setTurnstileToken(null)}
+          options={{ theme: tone === "invert" ? "dark" : "light" }}
+        />
+
         <Button
           type="submit"
           size="xl"
-          disabled={isSubmitting}
+          disabled={isSubmitting || !turnstileToken}
           className="mt-2 h-12 w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
         >
           {isSubmitting ? (
