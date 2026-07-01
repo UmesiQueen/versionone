@@ -100,7 +100,7 @@ function SiteFooter() {
                   href="tel:+2348170000165"
                   className="hover:text-brand-navy-foreground focus-visible:underline"
                 >
-                  +234 817&ndash;000&ndash;0165
+                  +2348170000165
                 </a>
               </li>
               <li className="flex items-start gap-2 text-brand-navy-foreground/80">

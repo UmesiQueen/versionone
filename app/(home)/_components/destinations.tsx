@@ -3,11 +3,6 @@ import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import { getFeaturedDestinations } from "@/lib/destinations";
 
-/**
- * Homepage "Featured Destinations" grid.
- * Pulls the canonical list of featured countries from `data/destinations.json`
- * and renders each as an overlay-style card (no description).
- */
 function DestinationsSection() {
   const destinations = getFeaturedDestinations();
 
