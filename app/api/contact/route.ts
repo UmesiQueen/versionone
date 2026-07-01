@@ -2,8 +2,8 @@ import { Resend } from "resend";
 import { verifyTurnstile } from "@/lib/turnstile";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const INTERNAL_NOTIFY_EMAIL = process.env.INTERNAL_NOTIFY_EMAIL ?? "";
 const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL ?? "";
+const INTERNAL_NOTIFY_EMAIL = process.env.INTERNAL_NOTIFY_EMAIL ?? "";
 
 export async function POST(req: Request) {
     try {
@@ -18,27 +18,19 @@ export async function POST(req: Request) {
             return Response.json({ error: "Bot check failed" }, { status: 403 });
         }
 
-        const { data, error } = await resend.batch.send([
-            {
-                // 1. Client-facing confirmation
-                from: RESEND_FROM_EMAIL,
-                to: email,
-                template: { id: "consultation-confirmation", variables, },
-            },
-            {
-                // 2. Internal alert
-                from: RESEND_FROM_EMAIL,
-                to: INTERNAL_NOTIFY_EMAIL,
-                replyTo: email,
-                subject: `New consultation alert from ${variables.client_name}`,
-                template: { id: "new-consultation-internal-alert", variables },
-            }
-        ]);
+        const { error } = await resend.emails.send({
+            // 1. Both client and user get this email for easy reply
+            from: RESEND_FROM_EMAIL,
+            to: email,
+            bcc: INTERNAL_NOTIFY_EMAIL,
+            replyTo: email,
+            template: { id: "contact-confirmation", variables, },
+        });
 
         if (error) return Response.json({ error: error.message }, { status: 400 });
-        return Response.json({ ok: true, id: data?.id });
+        return Response.json({ ok: true });
     } catch (err) {
-        console.error("Booking email error:", err);
+        console.error("Contact email error:", err);
         return Response.json({ error: "Failed to send" }, { status: 500 });
     }
 }

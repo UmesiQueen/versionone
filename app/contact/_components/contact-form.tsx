@@ -1,6 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Turnstile } from "@marsidev/react-turnstile";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -23,11 +24,19 @@ import { Textarea } from "@/components/ui/textarea";
 import { OfficeCardAside } from "./office-card";
 
 const contactSchema = z.object({
-  fullName: z.string().min(1, "Full name is required"),
-  email: z.email("Invalid email address"),
-  phone: z.string().min(5, "Phone number is required"),
-  subject: z.string(),
-  message: z.string().min(1, "Message is required"),
+  fullName: z
+    .string()
+    .trim()
+    .min(2, "Full name is required")
+    .max(100, "Name is too long"),
+  email: z.email("Invalid email address").max(254, "Email is too long"),
+  phone: z
+    .string()
+    .trim()
+    .min(5, "Phone number is required")
+    .max(20, "Phone number is too long"),
+  subject: z.string().trim().max(200, "Subject is too long").optional(),
+  message: z.string().trim().min(1, "Message is required"),
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
@@ -45,9 +54,11 @@ function ContactFormSection() {
     variant: "success" | "error";
     name?: string;
   } | null>(null);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const {
     handleSubmit,
+    reset,
     control,
     formState: { isSubmitting },
   } = useForm<ContactForm>({
@@ -57,10 +68,36 @@ function ContactFormSection() {
 
   const onSubmit: SubmitHandler<ContactForm> = async (data) => {
     try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          email: data.email,
+          variables: {
+            client_name: data.fullName,
+            client_email: data.email,
+            client_phone: data.phone,
+            subject:
+              data.subject ||
+              `${data.fullName} sent a message via the contact form`,
+            message: data.message,
+          },
+          turnstileToken,
+        }),
+      });
+
+      if (!response.ok) throw new Error("Failed to send message.");
+
       setModal({ variant: "success", name: data.fullName });
+      reset();
     } catch (error) {
       console.error("Form submission error:", error);
       setModal({ variant: "error", name: data.fullName });
+    } finally {
+      setTurnstileToken(null);
     }
   };
 
@@ -217,10 +254,18 @@ function ContactFormSection() {
               )}
             />
 
+            <Turnstile
+              siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? ""}
+              onSuccess={setTurnstileToken}
+              onExpire={() => setTurnstileToken(null)}
+              onError={() => setTurnstileToken(null)}
+              options={{ theme: "light" }}
+            />
+
             <Button
               type="submit"
               size="xl"
-              disabled={isSubmitting}
+              disabled={isSubmitting || !turnstileToken}
               className="mt-1 self-start rounded-full bg-primary px-6 text-primary-foreground hover:bg-primary/90"
             >
               {isSubmitting ? (
