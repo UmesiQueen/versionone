@@ -43,10 +43,7 @@ import {
 } from "@/lib/booking";
 import { cn } from "@/lib/utils";
 
-const CALENDLY_URL = "https://calendly.com/queenumesi01/30min";
-
-// const CALENDLY_URL =
-//   "https://calendly.com/versiononetravels/book-appointment-with-us";
+const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL ?? "";
 
 const buildCalendlyUrl = (data: BookingFormData) => {
   const url = new URL(CALENDLY_URL);
@@ -78,6 +75,7 @@ const formatData = (data: BookingFormData) => {
   return {
     client_name: data.fullName,
     client_nationality: data.nationality,
+    client_email: data.email,
     client_phone: data.phone,
     destination: data.destination,
     service_type: data.service,

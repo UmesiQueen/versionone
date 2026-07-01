@@ -1,6 +1,8 @@
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const INTERNAL_NOTIFY_EMAIL = process.env.INTERNAL_NOTIFY_EMAIL ?? "";
+const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL ?? "";
 
 async function verifyTurnstile(token: string): Promise<boolean> {
     const res = await fetch(
@@ -31,14 +33,22 @@ export async function POST(req: Request) {
             return Response.json({ error: "Bot check failed" }, { status: 403 });
         }
 
-        const { data, error } = await resend.emails.send({
-            from: "VersionOne Consultation <booking@umesi.xyz>",
-            to: email,
-            template: {
-                id: "consultation-confirmation",
-                variables,
+        const { data, error } = await resend.batch.send([
+            {
+                // 1. Client-facing confirmation
+                from: RESEND_FROM_EMAIL,
+                to: email,
+                template: { id: "consultation-confirmation", variables, },
             },
-        });
+            {
+                // 2. Internal alert
+                from: RESEND_FROM_EMAIL,
+                to: INTERNAL_NOTIFY_EMAIL,
+                replyTo: email,
+                subject: `New consultation alert from ${variables.client_name}`,
+                template: { id: "new-consultation-internal-alert", variables },
+            }
+        ]);
 
         if (error) return Response.json({ error: error.message }, { status: 400 });
         return Response.json({ ok: true, id: data?.id });
