@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://versiononetravels.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
 export const siteConfig = {
   name: "VersionOne",
@@ -9,16 +9,10 @@ export const siteConfig = {
   title: "VersionOne — Your Gateway to Global Opportunities",
   description:
     "VersionOne helps individuals, families, professionals, corporate organizations, and investors navigate immigration, travel, study, and investment migration — with expert guidance at every step.",
-  ogImage: `${SITE_URL}/opengraph-image`,
+  ogImage: `${SITE_URL}/opengraph-image.png`,
   locale: "en_US",
   twitterHandle: "@version1travels",
   themeColor: "#004e99",
-  // TODO: replace with real verification tokens.
-  verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "TODO_GOOGLE_SITE_VERIFICATION",
-    yandex: process.env.NEXT_PUBLIC_YANDEX_SITE_VERIFICATION ?? undefined as string | undefined,
-    bing: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION ?? undefined as string | undefined,
-  },
   keywords: [
     "immigration",
     "visa services",

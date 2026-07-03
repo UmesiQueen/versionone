@@ -12,12 +12,12 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: "#ffffff",
     theme_color: siteConfig.themeColor,
     orientation: "portrait-primary",
-    categories: ["business", "travel", "education", "finance"],
+    categories: ["visa", "travel", "education", "investment", "immigration"],
     icons: [
       {
         src: "/icon",
         sizes: "32x32",
-        type: "image/png",
+        type: "image/x-icon",
       },
       {
         src: "/apple-icon",

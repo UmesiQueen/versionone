@@ -23,15 +23,6 @@ export const metadata: Metadata = {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
   },
-  // File-convention assets (app/icon.tsx, app/apple-icon.tsx, app/manifest.ts)
-  // are picked up automatically by Next — listed here for documentation only.
-  verification: {
-    google: siteConfig.verification.google,
-    yandex: siteConfig.verification.yandex,
-    other: siteConfig.verification.bing
-      ? { "msvalidate.01": siteConfig.verification.bing }
-      : undefined,
-  },
   appleWebApp: {
     capable: true,
     title: siteConfig.name,
