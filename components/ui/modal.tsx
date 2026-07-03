@@ -1,7 +1,6 @@
 "use client";
 
 import { Calendar, CheckCircle, RotateCcw, X } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -41,22 +40,6 @@ export default function Modal({
   duration = 3000,
 }: ModalProps) {
   const [openModal, setOpenModal] = React.useState(true);
-  const initialCount = duration / 1000;
-  const [countdown, setCountdown] = React.useState(initialCount);
-
-  React.useEffect(() => {
-    if (!openModal) return;
-    const interval = setInterval(() => {
-      setCountdown((prev) => {
-        if (prev <= 1) {
-          clearInterval(interval);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [openModal]);
 
   const v = variantStyles[variant];
   const Icon = v.icon;
@@ -75,10 +58,7 @@ export default function Modal({
     variant === "error" ? (
       "We couldn't send your request. Please try again."
     ) : isRedirect ? (
-      <>
-        Request sent! Taking you to book a time slot in{" "}
-        <span className="font-semibold text-foreground">{countdown}s</span>{" "}
-      </>
+      "Request sent! Your booking page is open in a new tab."
     ) : (
       "Your request has been received — we'll be in touch shortly."
     );
@@ -133,31 +113,19 @@ export default function Modal({
           </p>
         </div>
 
-        {/* Auto-close countdown bar — shown for every variant, animated in CSS */}
-        {isRedirect && (
-          <div className="w-full h-1.5 rounded-full bg-muted overflow-hidden">
-            <div
-              className="h-full bg-primary rounded-full origin-left countdown-shrink"
-              style={{ animationDuration: `${duration}ms` }}
-            />
-          </div>
-        )}
-
         {/* Actions */}
         {hasAction && (
           <>
             <hr className="w-full border-border" />
             <div className="flex w-full flex-col gap-3">
               {isRedirect && calendlyUrl && (
-                <Button asChild size="xl" className="w-full rounded-full">
-                  <Link
-                    href={calendlyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Calendar className="mr-2 h-4 w-4" />
-                    Book Now
-                  </Link>
+                <Button
+                  size="xl"
+                  className="w-full rounded-full"
+                  onClick={() => handleOpenChange(false)}
+                >
+                  <Calendar className="mr-2 h-4 w-4" />
+                  Got it
                 </Button>
               )}
 
