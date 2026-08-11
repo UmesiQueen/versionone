@@ -5,56 +5,62 @@ import {
   type TourPackageCardProps,
 } from "./tour-package-card";
 
-const COMMON_HIGHLIGHTS = [
-  "Desert Safari",
-  "Burj Khalifa Visit",
-  "Dubai Mall & Fountains",
-];
-
 const PACKAGES: TourPackageCardProps[] = [
   {
-    title: "Dubai Luxury Escape",
+    title: "France Escape",
     duration: "5 Days / 4 Nights",
     rating: 4.9,
     reviewCount: 214,
-    highlights: COMMON_HIGHLIGHTS,
-    price: "$1,299",
+    highlights: [
+      "Eiffel Tower Visit",
+      "Louvre Museum Tour",
+      "Seine River Cruise",
+    ],
+    price: "$699",
     image:
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Dubai skyline at sunset",
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "The Eiffel Tower rising above Paris rooftops",
   },
   {
-    title: "Santorini Island Retreat",
+    title: "Qatar Discovery",
     duration: "5 Days / 4 Nights",
     rating: 4.9,
     reviewCount: 214,
-    highlights: COMMON_HIGHLIGHTS,
-    price: "$1,299",
+    highlights: ["Desert Safari", "Souq Waqif Walk", "Museum of Islamic Art"],
+    price: "$699",
     image:
-      "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "White-washed buildings on Santorini cliffside",
+      "https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Doha skyline at dusk seen across the bay",
   },
   {
-    title: "Bali Tropical Retreat",
+    title: "China Cultural Journey",
     duration: "5 Days / 4 Nights",
     rating: 4.9,
     reviewCount: 214,
-    highlights: COMMON_HIGHLIGHTS,
-    price: "$1,299",
+    highlights: [
+      "Great Wall Trek",
+      "Forbidden City Tour",
+      "Shanghai Bund Nights",
+    ],
+    price: "$699",
     image:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Tropical Bali rice terraces and palms",
+      "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "The Great Wall of China winding across green hills",
   },
   {
-    title: "Tokyo Cultural Journey",
+    title: "United Kingdom Highlights",
     duration: "5 Days / 4 Nights",
     rating: 4.9,
     reviewCount: 214,
-    highlights: COMMON_HIGHLIGHTS,
-    price: "$1,299",
+    highlights: [
+      "Tower of London",
+      "Stonehenge Day Trip",
+      "Thames River Cruise",
+    ],
+    price: "$699",
     image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "Tokyo temple with cherry blossoms",
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+    imageAlt: "Big Ben and a red double-decker bus in central London",
   },
 ];
 
