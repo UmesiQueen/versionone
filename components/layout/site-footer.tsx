@@ -120,11 +120,16 @@ function SiteFooter() {
                   aria-hidden="true"
                   className="mt-0.5 size-4 shrink-0 text-secondary"
                 />
-                <span>
-                  129/131 Olu-Obasanjo Road,
+                <a
+                  href="https://maps.app.goo.gl/NzvErdUc2tZqbE157"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-brand-navy-foreground focus-visible:underline"
+                >
+                  24 Olu Obasanjo Rd, Elechi
                   <br />
                   Port Harcourt, Nigeria 500272
-                </span>
+                </a>
               </li>
             </ul>
           </div>

@@ -1,16 +1,5 @@
 import destinationsData from "@/data/destinations.json";
 
-/**
- * Destination data + helpers.
- *
- * Source of truth: `data/destinations.json` — one record per country with a
- * single general `description` and a `content` block (about, advantages,
- * pathways, biggerPictureBody) used by the `destinations/[country]` page.
- *
- * Pages that list multiple countries pass an ordered list of country IDs to
- * `getDestinationsForPage`. The country detail page reads the full record.
- */
-
 export type Advantage = { title: string; description: string };
 export type Pathway = { step: string; title: string };
 

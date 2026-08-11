@@ -9,13 +9,15 @@ const BUSINESS_HOURS = [
 ] as const;
 
 const OFFICE_ADDRESS = {
-  name: "VersionOne Advisory",
-  lines: ["12 Aba Road, GRA Phase 2", "Port Harcourt, Rivers State", "Nigeria"],
-  // Embed URL using the address — no API key required.
+  name: "VersionOne Travels",
+  lines: [
+    "24 Olu Obasanjo Rd, Elechi",
+    "Port Harcourt, Rivers State",
+    "Nigeria",
+  ],
   mapEmbedSrc:
-    "https://www.google.com/maps?q=12+Aba+Road+GRA+Phase+2+Port+Harcourt+Rivers+State+Nigeria&output=embed",
-  directionsHref:
-    "https://www.google.com/maps/dir/?api=1&destination=12+Aba+Road+GRA+Phase+2+Port+Harcourt+Rivers+State+Nigeria",
+    "https://www.google.com/maps?q=24%20Olu%20Obasanjo%20Rd,%20Elechi,%20Port%20Harcourt,%20Rivers%20State,%20Nigeria&output=embed",
+  directionsHref: "https://maps.app.goo.gl/NzvErdUc2tZqbE157",
 } as const;
 
 function OfficeCardAside() {

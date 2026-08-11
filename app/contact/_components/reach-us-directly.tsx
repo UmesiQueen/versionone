@@ -31,7 +31,7 @@ const CHANNELS: ReadonlyArray<DirectChannel> = [
     label: "WhatsApp",
     value: "+234 817 000 0169",
     helper: "Quick replies within minutes",
-    href: "https://wa.me/2348170000169",
+    href: "https://wa.me/2348170000169?text=Hello%20VersionOne!%20I%27d%20like%20to%20enquire%20about%20your%20visa%20and%20immigration%20services.%20Please%20help%20me%20get%20started.",
     cta: "Chat now",
     icon: WhatsApp,
     chipClass: "bg-emerald-100 text-emerald-600",
