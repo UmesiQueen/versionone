@@ -33,7 +33,11 @@ function FloatingWhatsApp() {
   }, []);
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed bottom-4 right-4 isolate rounded-full">
+      <span
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 rounded-full bg-green-500 motion-safe:animate-[pulse-ring_2s_cubic-bezier(0.4,0,0.6,1)_infinite] motion-reduce:hidden"
+      />
       <span
         role="status"
         aria-live="polite"

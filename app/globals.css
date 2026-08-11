@@ -227,3 +227,9 @@ html.v1-preloading body::-webkit-scrollbar {
 .countdown-shrink {
   animation: countdown-shrink linear forwards;
 }
+
+@keyframes pulse-ring {
+  0%   { transform: scale(1);    opacity: 0.55; }
+  70%  { transform: scale(1.75); opacity: 0; }
+  100% { transform: scale(1.75); opacity: 0; }
+}
