@@ -28,6 +28,73 @@ export const siteConfig = {
   authors: [{ name: "VersionOne", url: SITE_URL }],
 } as const;
 
+export const businessInfo = {
+  legalName: "VersionOne Travels",
+  telephone: "+2348170000165",
+  email: "ph@versiononetravels.com",
+  address: {
+    streetAddress: "24 Olu-Obasanjo Road",
+    addressLocality: "Port Harcourt",
+    addressRegion: "Rivers State",
+    postalCode: "500272",
+    addressCountry: "NG",
+  },
+  openingHours: [
+    {
+      days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+    { days: ["Saturday"], opens: "09:00", closes: "15:00" },
+  ],
+  sameAs: [
+    "https://x.com/version1travels",
+    "https://facebook.com/versiononetravels",
+    "https://instagram.com/versiononetravels",
+    "https://youtube.com/@versiononetravels7070",
+  ],
+  areaServed: ["Port Harcourt", "Rivers State", "Nigeria"],
+} as const;
+
+/**
+ * JSON-LD for the LocalBusiness entity (schema.org TravelAgency, a
+ * LocalBusiness subtype). Rendered once, site-wide, from the root layout —
+ * this is what feeds Google's local relevance/prominence signals for
+ * "immigration services near me"-style and Port Harcourt-specific queries.
+ *
+ * Note: no `geo` (lat/long) coordinates are included yet — add them once
+ * available (right-click the office location on Google Maps to copy exact
+ * coordinates) for a stronger local-pack signal.
+ */
+export function buildLocalBusinessSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "@id": `${siteConfig.url}/#business`,
+    name: businessInfo.legalName,
+    url: siteConfig.url,
+    image: siteConfig.ogImage,
+    description: siteConfig.description,
+    telephone: businessInfo.telephone,
+    email: businessInfo.email,
+    address: {
+      "@type": "PostalAddress",
+      ...businessInfo.address,
+    },
+    openingHoursSpecification: businessInfo.openingHours.map((slot) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: slot.days,
+      opens: slot.opens,
+      closes: slot.closes,
+    })),
+    areaServed: businessInfo.areaServed.map((name) => ({
+      "@type": "Place",
+      name,
+    })),
+    sameAs: businessInfo.sameAs,
+  };
+}
+
 /** Whether this build should be hidden from crawlers (staging). */
 function isNoIndex(): boolean {
   return process.env.NEXT_PUBLIC_APP_ENV === "staging";
@@ -41,11 +108,8 @@ export type BuildMetadataInput = {
   imageAlt?: string;
   keywords?: string[];
   type?: "website" | "article" | "profile";
-  /** Article publish date (ISO 8601) for og:type=article. */
   publishedTime?: string;
-  /** Article last-modified date (ISO 8601) for og:type=article. */
   modifiedTime?: string;
-  /** Force noindex regardless of env (e.g. internal pages). */
   noIndex?: boolean;
 };
 

@@ -8,7 +8,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { AppPreloader } from "@/components/providers/app-preloader";
 import { Toaster } from "@/components/ui/sonner";
 import { FloatingWhatsApp } from "@/components/ui/whatsapp-btn";
-import { buildMetadata, siteConfig } from "@/lib/seo";
+import { buildLocalBusinessSchema, buildMetadata, siteConfig } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -53,6 +53,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans">
+        <script
+          type="application/ld+json"
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: static, server-generated JSON-LD — no user input.
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildLocalBusinessSchema()),
+          }}
+        />
         <Script id="v1-preloader-bootstrap" strategy="beforeInteractive">
           {`document.documentElement.classList.add('v1-preloading')`}
         </Script>
