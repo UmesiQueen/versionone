@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VersionOne
 
-## Getting Started
+Marketing website for **VersionOne** — a global mobility consultancy covering immigration, study and work abroad, travel, and investment migration.
 
-First, run the development server:
+Built with the Next.js App Router, TypeScript, Tailwind CSS v4 and shadcn/ui. The site is public-facing and international, so **responsive layout and WCAG-level accessibility are treated as requirements, not nice-to-haves**.
+
+---
+
+## Tech stack
+
+| Concern | Choice |
+| --- | --- |
+| Framework | Next.js 16 (App Router, React 19, Server Components) |
+| Language | TypeScript (strict) |
+| Styling | Tailwind CSS v4 (CSS-first config in `app/globals.css`) |
+| Components | shadcn/ui (`radix-nova` style) on Radix UI + Base UI |
+| Icons | `lucide-react`, plus custom brand icons in `components/icons` |
+| Forms | `react-hook-form` + `zod` (via `@hookform/resolvers`) |
+| Email | Resend (templated transactional sends) |
+| Bot protection | Cloudflare Turnstile |
+| Toasts | `sonner` |
+| Formatting / linting | Biome (formatter + linter), ESLint (`eslint-config-next`) |
+| Package manager | Bun (`bun.lock`) |
+
+---
+
+## Getting started
+
+Requires **Bun**. Node 20+ works if you prefer npm, but the lockfile is Bun's.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+bun install
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+bun dev      # start the dev server
+bun run build # production build
+bun start    # serve the production build
+bun run lint # eslint
+bunx biome check --write .  # format + autofix
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Project structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+app/
+  (home)/              route group → "/" (parentheses keep the folder name out of the URL)
+  (immigration)/       migrate, study-abroad, work-abroad
+  (travel)/            visit, luxury-travel, sports-travel, corporate-travel, tour-packages
+  destinations/[country]/   dynamic country pages, generated from data/destinations.json
+  immigration/         immigration hub page
+  investment/          investment migration page
+  about/  services/  faq/  contact/  book-consultation/
+  privacy-policy/  terms-of-service/
+  api/
+    booking/route.ts   consultation booking → Turnstile check → Resend batch send
+    contact/route.ts   contact form → Turnstile check → Resend
+  layout.tsx           root layout: fonts, header/footer, JSON-LD, preloader, toaster
+  globals.css          Tailwind v4 @theme — all design tokens live here
+  sitemap.ts  robots.ts  manifest.ts  not-found.tsx
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+components/
+  ui/          shadcn primitives (button, input, dialog, combobox, phone-input…)
+  layout/      site-header, site-footer, page-hero, section, section-heading
+  sections/    reusable page sections (feature-row, final-cta, journey-process…)
+  cards/       destination-card
+  icons/       custom social/brand icons
+  providers/   app-preloader
 
-## Deploy on Vercel
+lib/
+  seo.ts         siteConfig, buildMetadata(), businessInfo, LocalBusiness JSON-LD
+  destinations.ts  typed accessors over data/destinations.json
+  booking.ts     zod schemas + select options for the booking form
+  turnstile.ts   server-side Turnstile verification
+  utils.ts       cn()
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+data/
+  destinations.json   19 country entries (content, advantages, pathways, imagery)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Built with ❤️ Queen
