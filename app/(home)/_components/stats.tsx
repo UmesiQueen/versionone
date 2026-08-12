@@ -6,7 +6,6 @@ const STATS = [
   { value: 18, suffix: "+", label: "Years of experience" },
   { value: 114, suffix: "+", label: "Countries covered" },
   { value: 22248, suffix: "+", label: "Successful applications" },
-  // { value: 93, suffix: "%", label: "Client satisfaction rate" },
   { value: 95, suffix: "%", label: "Approval rate" },
 ] as const;
 

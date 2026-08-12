@@ -115,19 +115,6 @@ export default function PrivacyPage() {
 
             <section className="flex flex-col gap-4">
               <h2 className="text-lg font-bold text-foreground sm:text-xl">
-                Do we use cookies and other tracking technologies?
-              </h2>
-              <p>
-                We use cookies and similar technologies to recognise you when
-                you return to our website, remember your preferences, understand
-                how the site is used, and improve your experience. You can
-                configure your browser to refuse all or some cookies; if you do,
-                parts of our site may no longer function correctly.
-              </p>
-            </section>
-
-            <section className="flex flex-col gap-4">
-              <h2 className="text-lg font-bold text-foreground sm:text-xl">
                 How long do we keep your information?
               </h2>
               <p>
@@ -189,21 +176,20 @@ export default function PrivacyPage() {
                     href="mailto:privacy@versionone.global"
                     className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
                   >
-                    privacy@versionone.global
+                    ph@versiononetravels.com
                   </a>
-                  .
                 </li>
                 <li>
-                  Write to VersionOne Advisory, 12 Aba Road, GRA Phase 2, Port
-                  Harcourt, Rivers State, Nigeria.
+                  Write to VersionOne Advisory, 24 Olu Obasanjo Rd, Elechi, Port
+                  Harcourt, Nigeria 500272
                 </li>
                 <li>
                   Call us at{" "}
                   <a
-                    href="tel:+2348000000000"
+                    href="tel:+2348170000169"
                     className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
                   >
-                    +234&nbsp;800&nbsp;000&nbsp;0000
+                    +234&nbsp;817&nbsp;000&nbsp;0169
                   </a>{" "}
                   between 8&nbsp;AM and 6&nbsp;PM WAT.
                 </li>

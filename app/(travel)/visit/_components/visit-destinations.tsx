@@ -3,10 +3,6 @@ import { Container, Section } from "@/components/layout/section";
 import { SectionHeading } from "@/components/layout/section-heading";
 import { getDestinationsForPage } from "@/lib/destinations";
 
-/**
- * Curated ordering for the Visit page. Countries are sourced from
- * `data/destinations.json`.
- */
 const VISIT_DESTINATION_IDS = [
   "france",
   "spain",

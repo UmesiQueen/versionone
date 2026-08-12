@@ -28,10 +28,6 @@ import { CountryPathways } from "./_components/country-pathways";
  * - Generates static params for every country so the page is fully prerendered.
  */
 
-/**
- * General copy templates used across every country page. `{country}` is
- * substituted via `formatLabel`.
- */
 const LABELS = {
   aboutEyebrowTemplate: "About {country}",
   aboutHeadingTemplate: "Why {country}?",

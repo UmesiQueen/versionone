@@ -34,7 +34,8 @@ const LUXURY_DESTINATIONS: Destination[] = [
     flagCode: "tz",
     image:
       "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80",
-    imageAlt: "A herd of wildebeest crossing the Serengeti plains at sunset, Tanzania",
+    imageAlt:
+      "A herd of wildebeest crossing the Serengeti plains at sunset, Tanzania",
   },
   {
     country: "Morocco",
@@ -42,7 +43,8 @@ const LUXURY_DESTINATIONS: Destination[] = [
     flagCode: "ma",
     image:
       "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1600&q=80",
-    imageAlt: "Vibrant souks and mosaic architecture in the medina of Marrakech, Morocco",
+    imageAlt:
+      "Vibrant souks and mosaic architecture in the medina of Marrakech, Morocco",
   },
   {
     country: "Portugal",
@@ -100,33 +102,24 @@ function LuxuryDestinationsSection() {
         />
 
         <div className="mt-12 grid grid-cols-2 gap-3 auto-rows-[180px] sm:auto-rows-[210px] lg:grid-cols-4 lg:grid-rows-[280px_210px_230px] lg:auto-rows-[unset]">
-          {/* France — 2 cols wide × 2 rows tall (featured anchor) */}
           <DestPhotoCard
             destination={france}
             className="col-span-2 lg:col-span-2 lg:row-span-2"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
-
-          {/* Italy — top-right, row 1 */}
           <DestPhotoCard
             destination={italy}
             sizes="(max-width: 640px) 50vw, 25vw"
           />
-
-          {/* Tanzania — top-right, row 1 */}
           <DestPhotoCard
             destination={tanzania}
             sizes="(max-width: 640px) 50vw, 25vw"
           />
-
-          {/* Morocco — 2 cols wide, row 2 (sits beside France) */}
           <DestPhotoCard
             destination={morocco}
             className="col-span-2 lg:col-span-2"
             sizes="(max-width: 1024px) 100vw, 50vw"
           />
-
-          {/* Bottom 4 — equal quarter-width cards, row 3 */}
           <DestPhotoCard
             destination={portugal}
             sizes="(max-width: 640px) 50vw, 25vw"
@@ -149,15 +142,17 @@ function LuxuryDestinationsSection() {
   );
 }
 
-/* ── Internal card ────────────────────────────────────────────────────────── */
-
 type DestPhotoCardProps = {
   destination: Destination;
   className?: string;
   sizes: string;
 };
 
-function DestPhotoCard({ destination, className = "", sizes }: DestPhotoCardProps) {
+function DestPhotoCard({
+  destination,
+  className = "",
+  sizes,
+}: DestPhotoCardProps) {
   const { country, region, flagCode, image, imageAlt } = destination;
 
   return (

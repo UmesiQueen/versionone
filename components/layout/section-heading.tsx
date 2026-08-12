@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 /**
  * SectionEyebrow
  * Small uppercase label rendered above a section title.
- * Used 6+ times across the homepage.
  */
 type SectionEyebrowProps = ComponentProps<"span"> & {
   /** Color tone — "primary" (blue text) or "inverse" (white text for dark surfaces). */

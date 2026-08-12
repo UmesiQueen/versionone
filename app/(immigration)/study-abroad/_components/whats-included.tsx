@@ -107,7 +107,7 @@ function WhatsIncludedSection() {
         <ul className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {SERVICES.map(({ icon: Icon, title, description, bullets }) => (
             <li key={title} className="flex">
-              <article className="flex w-full flex-col gap-4 rounded-2xl border border-border bg-muted/40 p-6 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-primary/20 hover:shadow-md sm:p-7">
+              <article className="flex w-full flex-col gap-4 rounded-2xl border border-border bg-muted/60 p-6 transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-primary/20 shadow-sm hover:shadow-md sm:p-7">
                 <span
                   aria-hidden="true"
                   className="inline-flex size-11 items-center justify-center rounded-md bg-primary/10 text-brand-light-blue"

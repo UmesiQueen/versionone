@@ -139,8 +139,6 @@ function SportsDestinationsSection() {
   );
 }
 
-/* ── Internal card ────────────────────────────────────────────────────────── */
-
 type DestPhotoCardProps = {
   destination: Destination;
   className?: string;

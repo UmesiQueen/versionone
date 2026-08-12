@@ -3,13 +3,6 @@ import type { MetadataRoute } from "next";
 import { getAllDestinations } from "@/lib/destinations";
 import { siteConfig } from "@/lib/seo";
 
-/**
- * Static + dynamic routes for crawlers.
- *
- * Add new top-level routes to `STATIC_ROUTES` as the site grows. Country
- * detail pages are sourced from `data/destinations.json` automatically.
- */
-
 type StaticRoute = {
   path: string;
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
@@ -27,6 +20,9 @@ const STATIC_ROUTES: readonly StaticRoute[] = [
   { path: "/work-abroad", changeFrequency: "monthly", priority: 0.8 },
   { path: "/visit", changeFrequency: "monthly", priority: 0.8 },
   { path: "/tour-packages", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/luxury-travel", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/sports-travel", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/corporate-travel", changeFrequency: "monthly", priority: 0.8 },
   { path: "/book-consultation", changeFrequency: "monthly", priority: 0.7 },
   { path: "/contact", changeFrequency: "yearly", priority: 0.6 },
   { path: "/faq", changeFrequency: "monthly", priority: 0.6 },
