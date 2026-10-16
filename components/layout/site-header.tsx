@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 
-import Logo from "@/app/assets/VersionOne.png";
+import Logo from "@/app/assets/VersionOne.webp";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,

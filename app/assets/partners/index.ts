@@ -1,10 +1,10 @@
-import ATTA from "./atta.png";
-import CCIC from "./ccic.png";
-import CLIA from "./clia.png";
-import IAA from "./iaa.png";
-import IDP from "./idp.png";
-import IELTS from "./ielts.png";
-import IRCC from "./ircc.png";
-import NANTA from "./nanta.png";
+import ATTA from "./atta.webp";
+import CCIC from "./ccic.webp";
+import CLIA from "./clia.webp";
+import IAA from "./iaa.webp";
+import IDP from "./idp.webp";
+import IELTS from "./ielts.webp";
+import IRCC from "./ircc.webp";
+import NANTA from "./nanta.webp";
 
 export { ATTA, CCIC, CLIA, IAA, IDP, IELTS, IRCC, NANTA };

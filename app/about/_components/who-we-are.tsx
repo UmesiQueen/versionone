@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HandshakeImage from "@/app/assets/about-handshake.jpg";
+import HandshakeImage from "@/app/assets/about-handshake.webp";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 

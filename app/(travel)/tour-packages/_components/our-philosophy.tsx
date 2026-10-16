@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TourImage from "@/app/assets/tour-vacation.jpg";
+import TourImage from "@/app/assets/tour-vacation.webp";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 

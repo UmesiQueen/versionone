@@ -4,9 +4,9 @@ import { ArrowRight, Calendar } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import HeroImage from "@/app/assets/about-hero.jpg";
-import Hero2Image from "@/app/assets/hero-img.jpg";
-import Hero3Image from "@/app/assets/immigration-hero.jpg";
+import HeroImage from "@/app/assets/about-hero.webp";
+import Hero2Image from "@/app/assets/hero-img.webp";
+import Hero3Image from "@/app/assets/immigration-hero.webp";
 import { Container } from "@/components/layout/section";
 import { Button } from "@/components/ui/button";
 

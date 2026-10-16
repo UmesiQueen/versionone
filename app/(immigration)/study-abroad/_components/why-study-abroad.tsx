@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CampusImage from "@/app/assets/study-campus.jpg";
+import CampusImage from "@/app/assets/study-campus.webp";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 

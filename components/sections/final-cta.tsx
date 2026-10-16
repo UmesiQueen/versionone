@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import FinalCTAImage from "@/app/assets/final-cta-img.png";
+import FinalCTAImage from "@/app/assets/final-cta-img.webp";
 import { Container } from "@/components/layout/section";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "../layout/section-heading";

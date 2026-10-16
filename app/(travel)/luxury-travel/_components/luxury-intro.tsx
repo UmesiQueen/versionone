@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import PlaceholderImage from "@/app/assets/luxury-aside.jpg";
+import PlaceholderImage from "@/app/assets/luxury-aside.webp";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 

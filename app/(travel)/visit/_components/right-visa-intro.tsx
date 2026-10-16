@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FamilyImage from "@/app/assets/visit-family.jpg";
+import FamilyImage from "@/app/assets/visit-family.webp";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 

@@ -17,8 +17,7 @@ const PACKAGES: TourPackageCardProps[] = [
       "Seine River Cruise",
     ],
     price: "$699",
-    image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/france.webp",
     imageAlt: "The Eiffel Tower rising above Paris rooftops",
   },
   {
@@ -28,8 +27,7 @@ const PACKAGES: TourPackageCardProps[] = [
     reviewCount: 214,
     highlights: ["Desert Safari", "Souq Waqif Walk", "Museum of Islamic Art"],
     price: "$699",
-    image:
-      "https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/qatar.webp",
     imageAlt: "Doha skyline at dusk seen across the bay",
   },
   {
@@ -43,8 +41,7 @@ const PACKAGES: TourPackageCardProps[] = [
       "Shanghai Bund Nights",
     ],
     price: "$699",
-    image:
-      "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/china.webp",
     imageAlt: "The Great Wall of China winding across green hills",
   },
   {
@@ -58,8 +55,7 @@ const PACKAGES: TourPackageCardProps[] = [
       "Thames River Cruise",
     ],
     price: "$699",
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/united-kingdom.webp",
     imageAlt: "Big Ben and a red double-decker bus in central London",
   },
 ];

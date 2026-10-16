@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import PlaceholderImage from "@/app/assets/sports-aside.jpg";
+import PlaceholderImage from "@/app/assets/sports-aside.webp";
 import { Container, Section } from "@/components/layout/section";
 import { SectionEyebrow } from "@/components/layout/section-heading";
 

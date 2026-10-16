@@ -16,24 +16,21 @@ const LUXURY_DESTINATIONS: Destination[] = [
     country: "France",
     region: "Europe",
     flagCode: "fr",
-    image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/destinations/france.webp",
     imageAlt: "The Eiffel Tower illuminated at dusk in Paris, France",
   },
   {
     country: "Italy",
     region: "Europe",
     flagCode: "it",
-    image:
-      "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/italy.webp",
     imageAlt: "The Colosseum in Rome, Italy",
   },
   {
     country: "Tanzania",
     region: "Africa",
     flagCode: "tz",
-    image:
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/tanzania.webp",
     imageAlt:
       "A herd of wildebeest crossing the Serengeti plains at sunset, Tanzania",
   },
@@ -41,8 +38,7 @@ const LUXURY_DESTINATIONS: Destination[] = [
     country: "Morocco",
     region: "Africa",
     flagCode: "ma",
-    image:
-      "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/destinations/morocco.webp",
     imageAlt:
       "Vibrant souks and mosaic architecture in the medina of Marrakech, Morocco",
   },
@@ -50,32 +46,28 @@ const LUXURY_DESTINATIONS: Destination[] = [
     country: "Portugal",
     region: "Europe",
     flagCode: "pt",
-    image:
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/portugal.webp",
     imageAlt: "Colourful tiled buildings in Lisbon, Portugal",
   },
   {
     country: "United Arab Emirates",
     region: "Middle East",
     flagCode: "ae",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/uae.webp",
     imageAlt: "Dubai Marina skyline at night, United Arab Emirates",
   },
   {
     country: "Japan",
     region: "Asia & Pacific",
     flagCode: "jp",
-    image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/japan.webp",
     imageAlt: "Mount Fuji reflected in a calm lake at sunrise, Japan",
   },
   {
     country: "Singapore",
     region: "Asia & Pacific",
     flagCode: "sg",
-    image:
-      "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/singapore.webp",
     imageAlt: "Marina Bay Sands and city skyline at night in Singapore",
   },
 ];

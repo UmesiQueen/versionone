@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/app/assets/VersionOne-2.png";
+import Logo from "@/app/assets/VersionOne-2.webp";
 import { Facebook, Instagram, X, YouTube } from "@/components/icons";
 import { Container } from "@/components/layout/section";
 import { cn } from "@/lib/utils";

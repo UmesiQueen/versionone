@@ -16,64 +16,56 @@ const SPORTS_DESTINATIONS: Destination[] = [
     country: "United Kingdom",
     sport: "Football · Tennis · Rugby",
     flagCode: "gb",
-    image:
-      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/destinations/united-kingdom.webp",
     imageAlt: "London skyline at dusk, home of Wembley Stadium and Wimbledon",
   },
   {
     country: "United States",
     sport: "NFL · NBA · Olympics",
     flagCode: "us",
-    image:
-      "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/united-states.webp",
     imageAlt: "New York City skyline, host city of major US sporting events",
   },
   {
     country: "Qatar",
     sport: "FIFA World Cup",
     flagCode: "qa",
-    image:
-      "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/qatar-night.webp",
     imageAlt: "Doha skyline at night, Qatar — host of the 2022 FIFA World Cup",
   },
   {
     country: "Brazil",
     sport: "Football · Olympics",
     flagCode: "br",
-    image:
-      "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1600&q=80",
+    image: "/images/destinations/brazil.webp",
     imageAlt: "Rio de Janeiro with Christ the Redeemer overlooking the city, Brazil",
   },
   {
     country: "Germany",
     sport: "Football · Formula 1",
     flagCode: "de",
-    image:
-      "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/germany.webp",
     imageAlt: "Brandenburg Gate in Berlin, Germany — home of top-flight football and motorsport",
   },
   {
     country: "France",
     sport: "Tennis · Cycling · Football",
     flagCode: "fr",
-    image:
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/france.webp",
     imageAlt: "Paris at dusk — home of Roland-Garros, the Tour de France and Ligue 1",
   },
   {
     country: "Japan",
     sport: "Olympics · Rugby · Martial Arts",
     flagCode: "jp",
-    image:
-      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/japan.webp",
     imageAlt: "Mount Fuji at sunrise, Japan — host of the 2020 Summer Olympics",
   },
   {
     country: "Australia",
     sport: "Tennis · Cricket · Rugby",
     flagCode: "au",
-    image:
-      "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=800&q=80",
+    image: "/images/destinations/australia.webp",
     imageAlt: "Sydney Opera House and Harbour Bridge, Australia — home of the Australian Open",
   },
 ];
