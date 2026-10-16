@@ -126,7 +126,7 @@ function SiteFooter() {
                   rel="noreferrer"
                   className="hover:text-brand-navy-foreground focus-visible:underline"
                 >
-                  24 Olu Obasanjo Rd, Elechi
+                  24 Olu Obasanjo Rd,
                   <br />
                   Port Harcourt, Nigeria 500272
                 </a>

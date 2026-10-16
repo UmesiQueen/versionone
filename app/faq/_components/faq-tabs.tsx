@@ -61,11 +61,6 @@ const FAQ_CATEGORIES: ReadonlyArray<FaqCategory> = [
         answer:
           "Yes. We partner with reputable insurers to offer policies covering trip cancellation, medical emergencies, baggage, and visa-related risks. Insurance is optional but strongly recommended for international travel.",
       },
-      {
-        question: "Are my payments and personal data protected?",
-        answer:
-          "All payments are processed through PCI-compliant gateways and we never store full card details on our systems. Personal data is handled in line with our privacy policy and the data-protection laws of the jurisdictions we operate in.",
-      },
     ],
   },
   {

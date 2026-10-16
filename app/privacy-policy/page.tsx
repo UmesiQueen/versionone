@@ -180,7 +180,7 @@ export default function PrivacyPage() {
                   </a>
                 </li>
                 <li>
-                  Write to VersionOne Advisory, 24 Olu Obasanjo Rd, Elechi, Port
+                  Write to VersionOne Advisory, 24 Olu Obasanjo Rd, Port
                   Harcourt, Nigeria 500272
                 </li>
                 <li>

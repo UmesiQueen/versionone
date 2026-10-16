@@ -11,7 +11,7 @@ const BUSINESS_HOURS = [
 const OFFICE_ADDRESS = {
   name: "VersionOne Travels",
   lines: [
-    "24 Olu Obasanjo Rd, Elechi",
+    "24 Olu Obasanjo Rd,",
     "Port Harcourt, Rivers State",
     "Nigeria",
   ],
