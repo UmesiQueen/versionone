@@ -3,6 +3,8 @@ import type { MetadataRoute } from "next";
 import { getAllDestinations } from "@/lib/destinations";
 import { siteConfig } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 type StaticRoute = {
   path: string;
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];

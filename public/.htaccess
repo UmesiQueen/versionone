@@ -1,0 +1,92 @@
+# ============================================================================
+# VersionOne — static Next.js export on cPanel/Apache
+# Lives in public/, so `next build` copies it into out/ automatically.
+# Upload the CONTENTS of out/ to public_html (this file included).
+# ============================================================================
+
+Options -Indexes
+DirectoryIndex index.html
+
+# ---------------------------------------------------------------------------
+# Canonical host + HTTPS
+# Edit the host below if you serve from www. instead of the apex domain.
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS (respects the proxy header cPanel sets behind its SSL layer)
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # Force apex (drop www). Comment this block out if www is canonical.
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 404 — Next's export writes 404.html at the root
+# ---------------------------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# ---------------------------------------------------------------------------
+# MIME types Apache may not know
+# ---------------------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType image/webp               .webp
+  AddType font/woff2               .woff2
+  AddType image/svg+xml            .svg
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Compression — this is load-bearing. Pages are ~200 KB raw / ~30 KB gzipped,
+# and the .txt navigation payloads are 9 MB raw / 1.6 MB gzipped.
+# ---------------------------------------------------------------------------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/javascript
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS application/manifest+json image/svg+xml
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/manifest+json image/svg+xml
+  # Never compress what is already compressed
+  SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|webp|avif|ico|woff2?|zip|gz)$ no-gzip dont-vary
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Caching
+#   /_next/static/*  content-hashed  -> immutable, one year
+#   images/fonts     stable names    -> 30 days
+#   .html / .txt     rebuilt each deploy -> must revalidate, or visitors get
+#                    a stale shell pointing at deleted JS chunks
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|avif|png|jpe?g|gif|svg|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.(html|txt|webmanifest|xml)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # Security headers (these replace the next.config.ts headers() block, which
+  # static exports ignore entirely)
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# Staging only: uncomment to keep a staging subdomain out of Google.
+# ---------------------------------------------------------------------------
+# <IfModule mod_headers.c>
+#   Header always set X-Robots-Tag "noindex, nofollow"
+# </IfModule>

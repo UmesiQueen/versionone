@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 
 import { siteConfig } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 /**
  * robots.txt — disallows all crawling on staging, opens the site on prod.
  * Mirrors the `noindex` logic in `lib/seo.ts`.
