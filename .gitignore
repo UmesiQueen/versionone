@@ -40,3 +40,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Passenger restart trigger (local only)
+tmp/restart.txt
+
+# generated files
+/BRAND_TOKENS.md
